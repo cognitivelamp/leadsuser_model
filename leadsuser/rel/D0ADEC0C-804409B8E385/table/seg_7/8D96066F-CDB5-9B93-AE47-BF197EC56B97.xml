@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="8D96066F-CDB5-9B93-AE47-BF197EC56B97" name="week">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[week]]></comment>
+<commentInRDBMS><![CDATA[week]]></commentInRDBMS>
+<generatorID>ADAE6B8E-90E5-9DB6-0FEE-3011A235FA8E</generatorID>
+<notes><![CDATA[week]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9E737228-5EC0-0A52-4E52-615BACB30351</importedID>
+<abbreviation>week</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="no#" id="004003EC-93F1-9FAD-8E33-7A354C6D1A39">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>7047E2CF-3E0E-FCD2-A986-2D548B406EDA</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F581A406-DC5A-1C20-56E3-23ECB60BFEAD</importedID>
+<constraintName>week_number_cons</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="name" id="47ED6420-6E9A-E662-3A62-D7B80F7CA711">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>E7204F7D-CC3C-2CD3-1E03-5EA310DFC0C1</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6E53242E-713E-46C0-2F62-D36102FA2E00</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B38BD41-120E-FB64-31FF-7EEE1EC60A6D" name="week_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>0C2239FD-BF2A-997C-0A03-515419055F78</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6467CF47-9A04-CCB7-153F-418DD5DA7D18</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="004003EC-93F1-9FAD-8E33-7A354C6D1A39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FC43BA9-ED77-65A0-CB98-EA97BBF24B89" name="week_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>D0569245-EA1F-73A4-5ED8-5D9D6E0F67EE</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>72265D72-4B90-C708-30BC-CCF214E7D878</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47ED6420-6E9A-E662-3A62-D7B80F7CA711"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C06FC75-BE7F-6FF8-5719-3FF354CA3798" name="week_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DB627C79-C459-2750-09CA-D65DF75231AA</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="004003EC-93F1-9FAD-8E33-7A354C6D1A39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E26D3771-0AA7-C4DB-B0DF-F4932DF4C9DF" name="week_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CC6201CC-492E-4AD0-A6DC-E5B462055BA3</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47ED6420-6E9A-E662-3A62-D7B80F7CA711"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="C487644E-99C8-7787-E1AA-57449761225F" name="learn_assessment">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>CF187931-B7DF-8E8C-8A24-DB286F8549A3</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>78113D0C-9EFA-9149-4008-4C96F9506592</importedID>
+<abbreviation>learn_assessment</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="learn_assessment_ID" id="7D1A0E4C-535C-92B5-E356-DA24CA4FE768">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="D0F3AB22-8C15-057B-CB84-ED5D7E53A27E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>AE3D9154-C03A-BC80-D766-92704DFFDA44</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="7BAC9146-3831-E5AD-D25C-6EC4743681C8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Assessment Type: COMPREHENSION QUESTION/SHORT PRESENTATION/DRILLS/SHORT QUIZ/WRITTEN ASSIGNMENT/GROUP ACTIVITY]]></comment>
+<commentInRDBMS><![CDATA[Assessment Type: COMPREHENSION QUESTION/SHORT PRESENTATION/DRILLS/SHORT QUIZ/WRITTEN ASSIGNMENT/GROUP ACTIVITY]]></commentInRDBMS>
+<generatorID>30A3364E-5253-632E-F6AE-6FC72174E838</generatorID>
+<notes><![CDATA[Assessment Type: COMPREHENSION QUESTION/SHORT PRESENTATION/DRILLS/SHORT QUIZ/WRITTEN ASSIGNMENT/GROUP ACTIVITY]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>23293A7F-C0E9-A16B-C7B8-EA63B7B58B8B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="303E9BAE-2517-2CAB-D121-B3FA10AF3DD7">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>21B37833-7358-59D7-FDD0-82BAEDFA90BB</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2F1F1CDF-C650-96ED-4D28-1A942F64EA19</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6CFEAB2-B6A9-A8D3-5C9C-D7E76AABDBB4" name="learn_assessment_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="7D1A0E4C-535C-92B5-E356-DA24CA4FE768"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B681593-C17D-4390-EBB7-EBA8E3E5A0CC" name="learn_assessment_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6D40202A-FA3D-87C7-27E8-7FC07882B583</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0F3AB22-8C15-057B-CB84-ED5D7E53A27E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78B683F0-72E0-B122-1F25-17D2C686975F" name="learn_assessment_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>5BD0271F-1135-3FB1-4B20-D733E08BA0FC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BCBC8193-2F35-A74B-8B24-F1F23B4D4B12</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BAC9146-3831-E5AD-D25C-6EC4743681C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47E4B589-00B4-5B8C-AC6F-06251A96C3D7" name="learn_assessment_id_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9F7D9085-7B9D-107D-8AF7-89A83C03F9F1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0F3AB22-8C15-057B-CB84-ED5D7E53A27E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1985C199-DC7E-3116-11FD-E16459D88F87" name="learn_assessment_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>63B45D2C-A7B4-C26A-0B51-39BF94F5C673</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BAC9146-3831-E5AD-D25C-6EC4743681C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

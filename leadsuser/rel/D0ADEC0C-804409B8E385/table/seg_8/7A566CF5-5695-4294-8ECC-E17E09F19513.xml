@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_8" id="7A566CF5-5695-4294-8ECC-E17E09F19513" name="std_shift">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<comment><![CDATA[shift log]]></comment>
+<commentInRDBMS><![CDATA[shift log]]></commentInRDBMS>
+<generatorID>5AB9538E-81A6-3535-688D-5687CABD62EF</generatorID>
+<notes><![CDATA[shift log]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>std_shift</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="student_id" id="277D5978-7AB5-9E29-4B38-90DF84DB6E7C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Student ID]]></commentInRDBMS>
+<generatorID>5701FC6E-E105-D630-E2A1-99F116E0EA4F</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="244037F1-5A7C-468B-D37A-6339A11DFC30" referredColumn="F0636E8C-54CE-FA7F-0BEC-F292DF8286BB"/>
+</associations>
+</Column>
+<Column name="created_by" id="87D7A923-5AE2-53D1-0EC6-3245D244C859">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<comment><![CDATA[record created by]]></comment>
+<commentInRDBMS><![CDATA[record created by]]></commentInRDBMS>
+<generatorID>75B4B87E-DEC4-D5CC-FC05-753E3747E694</generatorID>
+<notes><![CDATA[record created by]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_on" id="124D368B-F395-E0BC-BCE1-FA757794C2A8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<comment><![CDATA[Created On]]></comment>
+<commentInRDBMS><![CDATA[Created On]]></commentInRDBMS>
+<generatorID>CCBB2566-09B3-6A2B-7270-EE2BF881F65A</generatorID>
+<notes><![CDATA[Created On]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_by" id="6190B546-E47C-3276-52CA-6822CAAED0CA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<comment><![CDATA[updated by]]></comment>
+<commentInRDBMS><![CDATA[updated by]]></commentInRDBMS>
+<generatorID>1858D24E-319B-8480-E290-DEF3800449D7</generatorID>
+<notes><![CDATA[updated by]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="changedate" id="86B491F5-E0A4-D688-9827-2D99B371576D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<generatorID>60D100BD-7DEC-81F7-257E-2EC8529D8510</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="std_shift_ID" id="D249F8D8-7B14-3A52-ED0B-CE1AE7A460AA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6E28996-8707-6EF2-416A-449ABAD0ADE2" name="std_shift_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D249F8D8-7B14-3A52-ED0B-CE1AE7A460AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E7A5160-1738-6A9B-3210-C29FC3609DA4" name="StdShift_Student_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<generatorID>5ACA3EEA-EF19-8595-6B5C-0D959E16E313</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="277D5978-7AB5-9E29-4B38-90DF84DB6E7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_6" id="E8B3F884-4293-301F-0A18-450DEE212633" name="staggered_group">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Staggering of group in the class]]></comment>
+<commentInRDBMS><![CDATA[Staggering of group in the class]]></commentInRDBMS>
+<notes><![CDATA[Staggering of group in the class]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5F59C8CC-04E6-292A-6594-73E458F7A1B0</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>staggered_group</preferredAbbreviation>
+<shortName>staggered_group</shortName>
+<synonym>staggered_group</synonym>
+<synonymToDisplay>staggered_group</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="name" id="C98A5462-7269-4AF1-8AA7-ECA67A3BBAB5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Group A/B/C/D]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E055FD71-0EF9-A8D6-A79C-FF23BE46A3B7</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo_name" id="FC8982C3-44A2-2688-FC34-2ABE6B4A0191">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2327E3AA-0AAF-CF2E-B3C0-3B2CDAA4CC50</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="1A6A1230-75BD-7656-4AC8-55912C691ADC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F8ED8C77-6C70-3085-02C7-C654C23A5956</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CAF89FE1-3149-100B-E03A-027CAC5A0310" name="staggered_group_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D855DA7A-B4E5-C513-3ABC-6DD92DFCB89D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>C98A5462-7269-4AF1-8AA7-ECA67A3BBAB5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E3A3FAA6-CD66-204D-3FEC-1D460EC54674" name="staggered_group_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>46ABCFA6-AB1F-C278-6F47-9B393C99ED20</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>FC8982C3-44A2-2688-FC34-2ABE6B4A0191</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

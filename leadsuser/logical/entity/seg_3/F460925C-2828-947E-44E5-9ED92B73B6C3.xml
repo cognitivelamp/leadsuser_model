@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="F460925C-2828-947E-44E5-9ED92B73B6C3" name="leave">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[employee leave]]></comment>
+<commentInRDBMS><![CDATA[employee leave]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6D348AD7-6BD0-7FF9-ECA2-767DFBE62371</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>leave</preferredAbbreviation>
+<shortName>leave</shortName>
+<synonym>leave</synonym>
+<synonymToDisplay>leave</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="9368813E-393F-B691-931E-B547D9D0F543">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Leave Code]]></comment>
+<commentInRDBMS><![CDATA[Leave Code]]></commentInRDBMS>
+<notes><![CDATA[Leave Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1830ED8E-0E98-8306-736C-BF24506404AF</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="890AD491-FEB2-C66B-3189-1E0B40F96E31">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[leave type]]></comment>
+<commentInRDBMS><![CDATA[leave type]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BBB13946-3F44-475D-0481-205C1DC0D064</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="pseudo" id="8A30DC27-8001-27B5-8648-F559425953AD">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2E1C5D6F-3EFE-F357-9C81-639E16970C48</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="6F3A87BE-D920-63F3-7C79-DF1A9313187C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[leave type description]]></comment>
+<commentInRDBMS><![CDATA[leave type description]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8F3E8564-8564-63C5-DCA6-9EC35894FA9B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="035D45A8-4DA0-FA9C-85B6-B06A6091E264" name="leave_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0C5E5DF7-A98A-4CFF-3AD5-096409219BE1</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9368813E-393F-B691-931E-B547D9D0F543</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F19BB804-D929-6C74-B9FF-7DF82D7ADB62" name="leave_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C3633B0E-B6AE-3DBA-CF3E-26EF396C0BF7</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>890AD491-FEB2-C66B-3189-1E0B40F96E31</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B16EFCA5-F812-C734-EFAA-717B933CE55A" name="leave_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7A56CD6D-9084-4F70-DDFF-EF85CF55A4B7</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>8A30DC27-8001-27B5-8648-F559425953AD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

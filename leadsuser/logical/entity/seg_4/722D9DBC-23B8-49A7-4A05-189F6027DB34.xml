@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="722D9DBC-23B8-49A7-4A05-189F6027DB34" name="postal_office">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A8C9909F-FA49-AA94-E381-3A6B86768E2F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>postal_office</shortName>
+<synonym>postal_office</synonym>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="name" id="45C433D4-7927-E3AE-2FCC-A7EFF13F30AE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[country name]]></comment>
+<commentInRDBMS><![CDATA[country name]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D5D598E2-BBD4-C6A2-2E2B-67D93954FA8D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="pin_code" id="3933AA03-3D6F-5AE4-68AC-51D44399D9D8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Postal Identification No.]]></comment>
+<commentInRDBMS><![CDATA[Postal Identification No.]]></commentInRDBMS>
+<notes><![CDATA[Postal Identification No.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8032496A-203D-87CE-3AB9-DE4C0F71ACF1</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9134A9AC-0FFF-5A44-981C-E1E3CFCFC0B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city_ID" id="3E594EF3-A0E6-8B6E-A63C-A5913BD9131A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[City ID]]></comment>
+<commentInRDBMS><![CDATA[City ID]]></commentInRDBMS>
+<generatorID>92F30206-708E-3D07-4DA2-67AD87E222E4</generatorID>
+<notes><![CDATA[City ID]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9EEE7F00-92F8-B0D0-2615-BFA470FF94B1</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>F9ED8084-8659-F7CF-CC32-2F8B847EC3B4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="BD98419A-4DA6-E952-5FBB-C73B6D3BC549">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EDD0813B-A434-E0AA-BEE4-1C98735F7DC1</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DA3E718B-0B6C-9FEF-E89E-5756251269E0" name="postal_office_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4DE7867A-BD77-3EF1-038A-16575810949C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>45C433D4-7927-E3AE-2FCC-A7EFF13F30AE</attributeRef>
+<attributeRef>3933AA03-3D6F-5AE4-68AC-51D44399D9D8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

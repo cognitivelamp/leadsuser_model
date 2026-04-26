@@ -1,0 +1,283 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="4D32FA69-9A74-51E9-7C6E-DB2B5BF0C989" name="fee_payment">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[student fee Payment - transactions]]></comment>
+<commentInRDBMS><![CDATA[student fee Payment - transactions]]></commentInRDBMS>
+<notes><![CDATA[student fee Payment - transactions]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A896AF01-F0C6-F244-4FF6-5175E6FC3126</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>fee_payment</preferredAbbreviation>
+<shortName>fee_payment</shortName>
+<synonym>fee_payment</synonym>
+<synonymToDisplay>fee_payment</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="school_code" id="06147344-4010-1E17-D997-C50837240579">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[School Code]]></commentInRDBMS>
+<generatorID>F9F5AB3A-A674-6415-F051-C1EFDE6C269D</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2E833CAE-1E82-B034-49D8-12E52932DD43</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>3CCBCFCB-28F7-521B-BFFA-7A69A4144FC5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1AB0B0D5-0C91-82C9-89AB-4FC02173FC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="batch_no#" id="7617CE0F-AF04-214E-380A-A5BFA77CC6FA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Batch Year]]></commentInRDBMS>
+<generatorID>FE5F0860-8C8F-67A7-3FBB-66F833420EDC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8654214F-32F6-0E42-629E-2634D95AD864</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>AA9DF642-E1D3-2CE4-9ED1-BB1FB4A68130</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>57E4E726-0278-DC93-9196-ABB2B37DFF18</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="student_id" id="4453A769-547A-749A-BDB2-17B62AC6AA0F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Student ID]]></commentInRDBMS>
+<generatorID>8BAE8D93-7D16-668C-7328-CEE11E62CF19</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3C83B547-B759-7A4E-07A7-7EFBE34E7192</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>B11B7FA7-429A-CEA0-95A0-836BBEEFC564</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fee_code" id="45A35F05-E1B9-E139-DF63-30224A0B972B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Fee Code]]></comment>
+<commentInRDBMS><![CDATA[Fee Code]]></commentInRDBMS>
+<generatorID>15584DBB-780C-40F4-9FA9-296CFCD7A3FE</generatorID>
+<notes><![CDATA[Fee Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CC732C88-693D-E0E0-E1A9-A30CBFF79F39</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1291A9E7-4AB8-97A0-43DA-8EB4286FCC4C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="amount" id="9CAAF02A-C755-43BA-8B20-73A1425E2866">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[amount of fee payment]]></comment>
+<commentInRDBMS><![CDATA[amount of fee payment]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5D988F7B-830A-8EF6-9E91-AB691326E2DE</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F01E2F38-7AC8-86BD-B098-0A79206A3B16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="paid_on" id="B304FD0C-DE5F-D4D2-246A-F0C5CDC038C0">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Payment made on]]></comment>
+<commentInRDBMS><![CDATA[Payment made on]]></commentInRDBMS>
+<notes><![CDATA[Payment made on]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6E6DBA96-443C-CAFE-49CE-D84AF87EA407</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="payment_mode" id="6EF2B592-1CB5-7E75-27A5-E742021C32CF">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></comment>
+<commentInRDBMS><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></commentInRDBMS>
+<generatorID>9EE98627-7698-C93F-D1FF-FB019DE4D069</generatorID>
+<notes><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>28A369DB-6DCA-704D-F2EB-5EFA3A2EE05A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>fee_payment_mode_def</constraintName>
+<referedAttribute>3187A10D-DA56-AB0A-B0A8-F8370082921A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>CASH</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="notes" id="E62824E0-F3C9-ADB5-A30E-04B6EAB8076C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Any Note on Fee Payment - reference/month/amount/descriptions/etc]]></comment>
+<commentInRDBMS><![CDATA[Any Note on Fee Payment - reference/month/amount/descriptions/etc]]></commentInRDBMS>
+<notes><![CDATA[Any Note on Fee Payment - reference/month/amount/descriptions/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1131C85E-CD0B-1E8A-BA12-58AC6F9A3BEC</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="created_by" id="466EAE2E-3F5E-DE98-B74C-A8C4CABBF07A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[User who created the record]]></comment>
+<commentInRDBMS><![CDATA[User who created the record]]></commentInRDBMS>
+<notes><![CDATA[User who created the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F10B786A-41AE-38DC-CA6B-710940040801</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="created_on" id="99C809D9-5176-66F4-E1A8-2A1CFC20D61E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Record created - date and time]]></comment>
+<commentInRDBMS><![CDATA[Record created - date and time]]></commentInRDBMS>
+<notes><![CDATA[Record created - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>476908B5-A92C-E095-B8A6-767AAA70F698</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="updated_by" id="A0D21EA6-A7ED-F702-4C3C-A649C633A680">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[User who updated the record]]></comment>
+<commentInRDBMS><![CDATA[User who updated the record]]></commentInRDBMS>
+<notes><![CDATA[User who updated the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>95DF8C54-FDD9-D4E0-DA96-1E5AD476B180</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="changed_on" id="3EC16F9D-E672-293E-4EBE-4B0C113F993B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Last record changed - date and time]]></comment>
+<commentInRDBMS><![CDATA[Last record changed - date and time]]></commentInRDBMS>
+<notes><![CDATA[Last record changed - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>ABF3DAC1-5989-3C97-21DA-EBC648EE1CF5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B590B119-3845-635C-7386-D975110A7DDE" name="fee_payment_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C73BC95C-89F5-E882-509C-EDB97F0A5B52</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>06147344-4010-1E17-D997-C50837240579</attributeRef>
+<attributeRef>7617CE0F-AF04-214E-380A-A5BFA77CC6FA</attributeRef>
+<attributeRef>4453A769-547A-749A-BDB2-17B62AC6AA0F</attributeRef>
+<attributeRef>99C809D9-5176-66F4-E1A8-2A1CFC20D61E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

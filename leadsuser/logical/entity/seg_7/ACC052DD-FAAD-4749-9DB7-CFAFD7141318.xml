@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_7" id="ACC052DD-FAAD-4749-9DB7-CFAFD7141318" name="work_role">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[employee's work role code and name]]></comment>
+<commentInRDBMS><![CDATA[employee's work role code and name]]></commentInRDBMS>
+<notes><![CDATA[employee's work role code and name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F70F5FCD-FC4E-995E-1E49-A7D646FC694A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>work_role</preferredAbbreviation>
+<shortName>work_role</shortName>
+<synonym>work_role</synonym>
+<synonymToDisplay>work_role</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="D1AFA5FE-AEC8-44B0-651C-8A160C5222BB">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Role Code]]></comment>
+<commentInRDBMS><![CDATA[Role Code]]></commentInRDBMS>
+<notes><![CDATA[Role Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>204F6E2C-34AF-BD2A-C56F-912FB35E7584</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0000</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="name" id="83F72F4E-9C2F-4D0E-AADF-70F0254E1324">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Role Name]]></comment>
+<commentInRDBMS><![CDATA[Role Name]]></commentInRDBMS>
+<notes><![CDATA[Role Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8D3B4732-0F86-8A5D-51B7-D8D5004AFAC8</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="pseudo" id="46ABC636-B505-3BE7-E2D9-D229F3FAFC98">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Pseudo Role Name]]></comment>
+<commentInRDBMS><![CDATA[Pseudo Role Name]]></commentInRDBMS>
+<notes><![CDATA[Pseudo Role Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7207E55D-AD48-595A-7C85-99E3B8984EDB</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="197001C7-65F2-09ED-1A4E-8C54505B68EA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[role code is the unique name description given to an employee]]></comment>
+<commentInRDBMS><![CDATA[role code is the unique name description given to an employee]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A8488486-8EF6-3FE6-12AF-091B2C5BAD65</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DAC159E5-80A4-3FDC-C651-F6D66700CFD1" name="work_role_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>89073749-2F86-D9E4-D4D9-4BF9CEFDE782</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>83F72F4E-9C2F-4D0E-AADF-70F0254E1324</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="24910FA9-85FD-D4F5-7A63-CFB9EB1E152C" name="work_role_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0102F144-B47E-5E1B-CD13-92EDF2BB72F5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D1AFA5FE-AEC8-44B0-651C-8A160C5222BB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

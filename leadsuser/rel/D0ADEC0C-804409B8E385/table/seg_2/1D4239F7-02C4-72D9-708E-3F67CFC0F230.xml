@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="1D4239F7-02C4-72D9-708E-3F67CFC0F230" name="entity">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>80D7C774-AAC3-BF01-09D7-DFAF04EC27B0</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>82AE5B69-8167-A755-2BFA-7CB661182FB4</importedID>
+<abbreviation>entity</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="entity_ID" id="24F33875-4C8C-9F21-9BFA-916CB97298FE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="A1DD19B6-37A5-B766-B4FA-17B92C3EEA96">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B2318974-2FC4-4829-EB95-DCD6BBF3B6D7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="764D9650-FCF4-ED7F-A72A-AEEF39556D8E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>2289B40B-BA62-604C-15FA-F64A877AA3BE</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9C8B29E0-FDB9-3C3C-3C31-09B1A9B544FA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="notes" id="0749C5A1-6820-D18E-8099-D8AC8C78B29F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>247E6328-D3A1-45A0-C9DC-9EC66F889557</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>ADB17B57-4FAF-CEA9-A431-B73E1EFBA5BE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A7421A2E-292E-1AE1-C472-BDD8DFB0E560" name="entity_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="24F33875-4C8C-9F21-9BFA-916CB97298FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="796F9751-568E-FFAE-5017-9335CC754B70" name="entity_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1C5836B6-5C47-CD73-FF3D-6E2B70F15E66</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1DD19B6-37A5-B766-B4FA-17B92C3EEA96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EEA655B-3FAD-73EC-20A8-0C5E03FBA272" name="entity_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>9126448F-D97B-246F-1677-7B2AC397D9AB</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0B78AA0B-9728-37E5-9F60-8EF95B81AA0F</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="764D9650-FCF4-ED7F-A72A-AEEF39556D8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

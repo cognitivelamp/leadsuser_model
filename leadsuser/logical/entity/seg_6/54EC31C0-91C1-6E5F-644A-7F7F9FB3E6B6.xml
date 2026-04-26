@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_6" id="54EC31C0-91C1-6E5F-644A-7F7F9FB3E6B6" name="sex">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[sex/gender]]></comment>
+<commentInRDBMS><![CDATA[sex - gender]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2BC4AA88-E10B-49BB-E689-49643E15DD1A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>sex</preferredAbbreviation>
+<shortName>sex</shortName>
+<synonym>gender</synonym>
+<synonymToDisplay>sex</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="name" id="E272EE19-5313-FDD8-B786-10A2D1F58ADE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[sex = M/F/O]]></comment>
+<commentInRDBMS><![CDATA[sex = M/F/O]]></commentInRDBMS>
+<notes><![CDATA[sex = M/F/O]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0B6B794F-C83B-4D19-97A9-3E96035026C3</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<defaultValue>A</defaultValue>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="pseudo" id="0886D571-BFE5-5863-0521-A66F48AB241B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Pseudo Name of the Gender]]></comment>
+<commentInRDBMS><![CDATA[Pseudo Name of the Gender]]></commentInRDBMS>
+<notes><![CDATA[Pseudo Name of the Gender]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>ACD46F85-7889-D282-4A95-17A8DB00C95E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="descriptions" id="2F24E235-5FD4-E6CD-E10D-0F061C192B0E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8EA1AE5C-F6A6-3610-71D6-6C57E852BA41</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="83D530DD-1C45-FB32-95E8-28465F47E073" name="sex_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>ACF3157B-4C1E-3D5E-F6C7-ADD10E26703D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>E272EE19-5313-FDD8-B786-10A2D1F58ADE</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5125325C-BC6C-BBE2-B5C5-3AEE6AB3F999" name="sex_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>47BED8C3-82CA-9345-BBE4-4054CE90BFEF</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>0886D571-BFE5-5863-0521-A66F48AB241B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

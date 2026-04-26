@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="A9A11AFD-D32F-339C-CB3A-5B4CEA666FF0" name="measurement">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>3EFD2E0B-9B39-9D16-4CB9-A3EFE2E7AB2E</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1229AB36-8DC6-4E26-E195-EE2B86491E09</importedID>
+<abbreviation>measurement</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="measurement_ID" id="467C5A87-1002-F668-554E-39F92F918C7C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="262F747C-A1A7-CF41-BE50-F126239D14A9">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>56B040B7-E9D2-99C8-3A10-EC320665938C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="EB6B2A84-E35E-484D-9F65-84845D67644A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Measurement Type - Length, Weight, Breadth, Height, Capacity]]></comment>
+<commentInRDBMS><![CDATA[Measurement Type - Length, Weight, Breadth, Height, Capacity]]></commentInRDBMS>
+<generatorID>E9E39F30-F9AE-9077-34D3-247D4DD17E15</generatorID>
+<notes><![CDATA[Measurement Type - Length, Weight, Breadth, Height, Capacity]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0C7E05A3-A5E4-6AB3-24C6-BBF4E8A4ED1A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pseudo" id="F43C8AB3-1855-A616-1C1A-CE8C99C556C1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>F1CA2002-62B7-E06D-ADBB-A2DF540A395C</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>73081FA7-5586-1D64-5EC8-87671310727C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="9FAFDCE9-213B-C4DC-F3E3-F75349DE425C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>A81706C2-7868-6BED-A0A1-18F4D691FE85</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F8420737-4D19-3356-6441-851E29424E18</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3EAA31E7-571D-91D0-1560-A3F3000EADD6" name="measurement_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="467C5A87-1002-F668-554E-39F92F918C7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DEEB4453-E2D2-137F-86F7-E090A5BDADA0" name="measurement_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7DEFC776-4AB4-F645-1D92-2517C46EEA39</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="262F747C-A1A7-CF41-BE50-F126239D14A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="163BAED6-E5A9-9E2E-FF95-CF837967641B" name="measurement_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>CA0712CD-63BC-275B-9618-53CE55EFE937</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2672795D-DA1C-50DB-0215-52DE4330C46E</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB6B2A84-E35E-484D-9F65-84845D67644A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

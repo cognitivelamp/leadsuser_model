@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="875EDBFA-69A6-001F-9229-CC1B2D7A1F60" name="district">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[District]]></comment>
+<commentInRDBMS><![CDATA[District]]></commentInRDBMS>
+<generatorID>27D2415A-A4A8-4F3D-FA2B-AD2306D1C8BB</generatorID>
+<notes><![CDATA[District]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D3C0B175-3D91-28ED-9095-BD10EA3119E6</importedID>
+<abbreviation>district</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="444C2E37-DCE9-CBA2-CA87-D860E8EA7868">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[District ID]]></comment>
+<commentInRDBMS><![CDATA[District ID]]></commentInRDBMS>
+<generatorID>AD6FEBA4-E47D-01B7-D611-62E443535E9D</generatorID>
+<notes><![CDATA[District ID]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DF1506BD-A108-4B1C-1CC4-0E41B8BCD3DC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="D52D6900-379C-222F-ABA5-79FD53D98E33">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[country name]]></comment>
+<commentInRDBMS><![CDATA[country name]]></commentInRDBMS>
+<generatorID>96B24402-5523-9526-0CF6-F65E43AB2FDE</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C942DCC9-6355-147D-BE27-32AB4F9E4E42</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state_ID" id="A5EF2538-E307-2B38-E514-0E9166931AE4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[State ID]]></comment>
+<commentInRDBMS><![CDATA[State ID]]></commentInRDBMS>
+<generatorID>19895BE1-2C54-7494-C6BA-C8D6001F825D</generatorID>
+<notes><![CDATA[State ID]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7FA6ADE9-11EE-1205-0D19-FFB90FB01765</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7640C21-3E22-E972-7DCB-44D8D9EA973B" referredColumn="3D74D434-C8EF-E5FD-B562-5B7D21B2DB2D"/>
+</associations>
+</Column>
+<Column name="descriptions" id="DC9C754F-B1A1-B951-EF3B-4AB8EE6932A2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>171DF9C0-27F9-1AFD-E2BF-08FC0AB2D1B2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C01D7DFD-1EBB-FAA6-9CC5-A32E25D3876F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BCB97E16-E536-109B-1193-566829343168" name="district_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>C8A0FB61-B31D-23A2-5A7D-B7476BB78775</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9DF8F45E-EB0C-2BC7-761E-71522684AB9E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="444C2E37-DCE9-CBA2-CA87-D860E8EA7868"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D25107AD-4F52-7A03-E836-0C8D1468CA51" name="district_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>AFE69EDF-958A-921B-C51D-1C51AB179DAB</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C10057D3-DDAD-719A-51A1-8CC8837735BC</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D52D6900-379C-222F-ABA5-79FD53D98E33"/>
+<colUsage columnID="A5EF2538-E307-2B38-E514-0E9166931AE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAA22353-0272-E257-3420-D372CF5D9409" name="district_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1C0D193A-F9AC-A84E-ED5C-DFD7045B8A93</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="444C2E37-DCE9-CBA2-CA87-D860E8EA7868"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68F1CAE5-72D5-E91B-4FFF-EBD2D8FC3655" name="district_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>99197469-13AF-6493-5AFA-FA63F5D4E39F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D52D6900-379C-222F-ABA5-79FD53D98E33"/>
+<colUsage columnID="A5EF2538-E307-2B38-E514-0E9166931AE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18106DB3-E47E-AA4C-3906-98ECFA6862C5" name="district_st_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>758C1AE9-C789-DE78-BD0E-CE23825AFF60</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5EF2538-E307-2B38-E514-0E9166931AE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="354B6EB3-7DBF-A513-8419-C410A87F6900" name="Distr_State_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:23 UTC</createdTime>
+<generatorID>A0319929-7054-0E98-4A73-6CE2D582AFC1</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5EF2538-E307-2B38-E514-0E9166931AE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

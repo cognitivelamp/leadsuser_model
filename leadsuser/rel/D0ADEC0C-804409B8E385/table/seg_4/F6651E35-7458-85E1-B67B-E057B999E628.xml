@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="F6651E35-7458-85E1-B67B-E057B999E628" name="payment">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></comment>
+<commentInRDBMS><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></commentInRDBMS>
+<generatorID>D9CF170B-7F45-D38D-88AE-E42AA17ED1D8</generatorID>
+<notes><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F90A2716-AF18-88D1-CF13-24FAB6AFFE1E</importedID>
+<abbreviation>payment</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="payment_ID" id="75FF03CE-55A8-B4FF-0845-B5A3E5DA624F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="B823ED16-B303-0608-5EE0-E81833E26983">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4FFBC444-7AC0-F0E8-93A1-5933B2AEEA29</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mode" id="07A1FE9A-9E27-50FE-166F-054517D57848">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></comment>
+<commentInRDBMS><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></commentInRDBMS>
+<generatorID>3187A10D-DA56-AB0A-B0A8-F8370082921A</generatorID>
+<notes><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>05B4F7E5-8951-A636-F758-6CC93229E149</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="1734EE4D-2D68-A67A-7E5C-804B0B7A6209">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>DE88FF09-677B-A746-ADD6-15392DD54EBB</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4C2DAC61-633F-EF49-C5FE-B581053C6CA4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5045C37D-A192-5F6B-F7FA-7DD6C53210ED" name="payment_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="75FF03CE-55A8-B4FF-0845-B5A3E5DA624F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F16FBAB-59EC-0AB0-686C-18DA8A772596" name="payment_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>68FF2C01-F132-5BDB-59AB-CB62D73A704A</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B823ED16-B303-0608-5EE0-E81833E26983"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DDD7155-34A1-F47C-F912-D1242360560C" name="payment_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>385129C2-851B-EB3F-D067-D084F02F2A49</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E2C909F1-3D74-AA03-973D-A6FDF7B225E3</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07A1FE9A-9E27-50FE-166F-054517D57848"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="041EAF9B-368E-1D4D-A79C-345965CCAE06" name="payment_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>985ADF65-467D-FDE4-145D-398FBDDAC269</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B823ED16-B303-0608-5EE0-E81833E26983"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C80E74A1-CE58-2D0B-9239-C2DF8C2E826A" name="payment_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B7860B9F-5D1B-315B-9013-83A45CCE5674</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07A1FE9A-9E27-50FE-166F-054517D57848"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

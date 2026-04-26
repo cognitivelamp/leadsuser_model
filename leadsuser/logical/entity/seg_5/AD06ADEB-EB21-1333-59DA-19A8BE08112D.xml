@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_5" id="AD06ADEB-EB21-1333-59DA-19A8BE08112D" name="resources">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Resource Type - EMPLOYEE/STUDENT/GUARDIAN/PUBLIC]]></comment>
+<commentInRDBMS><![CDATA[Resource Type - EMPLOYEE/STUDENT/GUARDIAN/PUBLIC]]></commentInRDBMS>
+<notes><![CDATA[Resource Type - EMPLOYEE/STUDENT/GUARDIAN/PUBLIC]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7E442BCF-68BD-45CE-DECB-62EFA14A2E95</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>resources</preferredAbbreviation>
+<shortName>resources</shortName>
+<synonym>resources</synonym>
+<synonymToDisplay>resources</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="05EE28F6-63BA-2DD6-C569-4AD9ED2D8B50">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[EMPLOYEE/STUDENT/GUARDIAN/PUBLIC]]></comment>
+<commentInRDBMS><![CDATA[EMPLOYEE/STUDENT/GUARDIAN/PUBLIC]]></commentInRDBMS>
+<notes><![CDATA[EMPLOYEE/STUDENT/GUARDIAN/PUBLIC]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>29C20825-C15F-7919-C3FE-D7234A388C0D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>type_default_cons</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>EMPLOYEE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="note" id="9E1BDC5D-1492-6402-FA30-282202979064">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7E03E653-CEA1-B9F8-6051-77FC517BED7F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B93E92B1-6A93-D14E-9D0C-44267D8BC39B" name="resources_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>871F0954-4A90-FFA0-DB15-ECEB330DBA4E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>05EE28F6-63BA-2DD6-C569-4AD9ED2D8B50</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

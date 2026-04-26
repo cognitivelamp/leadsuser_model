@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77A249D6-A688-FCC1-6A24-0166BDC97977" name="academic_category">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Subject Category - Scholastic/Co-Scholastic]]></comment>
+<commentInRDBMS><![CDATA[Subject Category - Scholastic/Co-Scholastic]]></commentInRDBMS>
+<notes><![CDATA[Subject Category - Scholastic/Co-Scholastic]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>FA02F662-A2F0-A3A2-1D6F-5342AB53CF5A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>academic_category</preferredAbbreviation>
+<shortName>academic_category</shortName>
+<synonym>academic_category</synonym>
+<synonymToDisplay>academic_category</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="A700E8D1-844E-004A-9FFB-E84003773BB2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Academic Category Code]]></comment>
+<commentInRDBMS><![CDATA[Academic Category Code]]></commentInRDBMS>
+<notes><![CDATA[Academic Category Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>232EE988-0F17-D8E5-C28A-6D60CCC8F570</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>411A7036-AE28-9018-332B-691EBC096EF9</domain>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="name" id="9F8E07BF-8FBF-F006-DE68-8A37479EAB44">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Subject Category - Scholastic/Co-Scholastic]]></comment>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A1E734A9-32FA-1BA8-1EF0-3007FF76241F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="pseudo" id="92AC091B-408B-79C4-DCF3-5F9AFB10B975">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6C86BD29-58A0-55B6-AF8A-E0F5A2E94F44</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="4106D19E-32A3-A17C-9C59-E1C4A4CACA00">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2775B9FE-5101-2CF5-2681-4A9DA1621DCC</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70035FA8-80CF-8BD0-8ABA-4414A8B83CF6" name="academic_category_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>90C3E42F-9F8A-3076-6468-25A724C07C43</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>9F8E07BF-8FBF-F006-DE68-8A37479EAB44</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E36BBD5D-78C0-E12E-8078-8B054A7D139A" name="academic_category_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9285D5A2-D401-B62C-0FDD-9D5B514B6168</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A700E8D1-844E-004A-9FFB-E84003773BB2</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="62DFE020-D3C2-793A-5081-DBEC09364483" name="academic_category_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CBCD2843-40C4-85A4-51F9-3EC3879E017C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>92AC091B-408B-79C4-DCF3-5F9AFB10B975</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

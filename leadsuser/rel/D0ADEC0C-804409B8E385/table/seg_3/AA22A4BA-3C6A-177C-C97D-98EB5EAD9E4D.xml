@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="AA22A4BA-3C6A-177C-C97D-98EB5EAD9E4D" name="league">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>7400A8E2-85CE-63B9-9E80-306F4688813F</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F03FC781-94AB-F36B-D3A2-BF0C31F974B6</importedID>
+<abbreviation>league</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code" id="B6C2C7B0-9619-F536-E432-5D778407F870">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[League Code - CANDIDATE/EMPLOYEE]]></comment>
+<commentInRDBMS><![CDATA[League Code - CANDIDATE/EMPLOYEE]]></commentInRDBMS>
+<generatorID>8285ACBF-5A1F-439A-91AE-0AED50B6E704</generatorID>
+<notes><![CDATA[League Code - CANDIDATE/EMPLOYEE]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7E834E49-2B93-35A7-7C1F-1F311C06E955</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="F127A555-1291-0F71-7464-577C69DC1740">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>B5511117-9D77-17BF-7AF9-69EB3F8EDDEA</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A7440667-083E-0F13-D886-0842661655B5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="78FE8E2A-37CB-ED59-2844-7CCF01CD9628">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[performance parameter description]]></comment>
+<commentInRDBMS><![CDATA[performance parameter description]]></commentInRDBMS>
+<generatorID>1A025D4E-6B53-7A45-2AB1-30478A1C0ECB</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B5BAC196-C45D-4445-6211-CCB40BA7B6D8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DE0CB1D1-C7B6-3E72-A1DC-0BC1A422A65C" name="league_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>BFD0EF9E-42F5-8ABD-7F76-A6AF9ABBD045</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E5188F72-61C8-816B-A0B4-1BA9B06F04B1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6C2C7B0-9619-F536-E432-5D778407F870"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F069135-D97E-93FD-0BAC-F6E880582117" name="league_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>6C11C4EE-E412-5E2B-6303-FED275BE7297</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E751B915-F02F-E988-ED03-9EFBC0BFE179</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F127A555-1291-0F71-7464-577C69DC1740"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6EDAE1D-13A6-761E-222A-B8AA0CA591DE" name="league_code_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>494A8513-C443-9E76-ABCE-14563595C2B8</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6C2C7B0-9619-F536-E432-5D778407F870"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBC67599-A6B5-F86B-0579-46FCD43DA90B" name="league_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>46A25F1E-AC48-202C-D5AA-2AD677C126F0</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F127A555-1291-0F71-7464-577C69DC1740"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_5" id="EE5FBBD0-7CFD-9335-0556-7EFE7DA64973" name="semester">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Semester Table - I Semester/II Semester/III Semester/IV Semester]]></comment>
+<commentInRDBMS><![CDATA[Semester Table - I Semester/II Semester/III Semester/IV Semester]]></commentInRDBMS>
+<generatorID>ECCC54E8-8684-663F-EBA1-C326349E8CBA</generatorID>
+<notes><![CDATA[Semester Table - I Semester/II Semester/III Semester/IV Semester]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>39E9E40D-3514-DCDA-AC6B-BEE551BE5A02</importedID>
+<abbreviation>semester</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code" id="E068537D-D8FD-05D2-A2BB-2307A82CEA31">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>DFD1CBD1-8714-200C-C993-A10413C82EDD</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B670D34A-0387-1A05-46BE-F9C950B22EA3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="91578876-B182-9A3D-3D2A-B8BA28A72C9E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>BAA748FC-5053-0035-8826-391810BAB514</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CB9C874E-EA2C-2808-243F-15CA5472B334</importedID>
+<constraintName>semester_default_cons</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>NOT APPLICABLE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="CD37D6E1-4C49-31E8-8D73-2587C1BBEBD1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>FDF88172-4076-8D48-88A0-1FC88C412BC0</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2D980066-8FDE-53F7-17DE-07C413F8FCF0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3AADFEF-CB2C-6B6C-1DB8-62423679E005" name="semester_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>591C114D-C0EE-3C65-CA7B-C5D67588635A</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D79FF29B-DBD8-35C9-65E5-12F0772141A4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E068537D-D8FD-05D2-A2BB-2307A82CEA31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35C719B7-D0DC-076C-DCE2-EAF14984127F" name="semester_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>6D3477D7-D642-0D21-BAF9-AB7E527BF1F2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>17D5867E-7CEE-DB79-FD84-C3BBDEBF6F83</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91578876-B182-9A3D-3D2A-B8BA28A72C9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0F3105E-F5E3-9515-2C83-D78C03E9C885" name="semester_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EE3BCA38-F5C9-1791-E0BD-08EB7FB84D3C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E068537D-D8FD-05D2-A2BB-2307A82CEA31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75F3F141-7CEE-8CEB-61A4-2BB02159D902" name="semester_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EE58E1DB-8B70-A60D-1B46-15DF6C52A62D</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91578876-B182-9A3D-3D2A-B8BA28A72C9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

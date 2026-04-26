@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="teacher_specialization_chg_trg" directorySegmentName="seg_0" id="35402BD5-E98F-A65D-0BDA-76E6BC35E305">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 10:00:33 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+	v_user VARCHAR2(150);
+	v_now  TIMESTAMP := CURRENT_TIMESTAMP;
+BEGIN
+    v_user := COALESCE(
+                 SYS_CONTEXT('APEX$SESSION', 'APP_USER'),
+                 USER
+              );
+
+    IF INSERTING THEN
+        :NEW.created_by := v_user;
+        :NEW.created_on := v_now;
+    END IF;
+
+   IF UPDATING THEN
+        :NEW.updated_by := v_user;
+        :NEW.changed_on := v_now;
+    END IF;
+
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>973CF92D-8F6A-F1F2-011F-BD60B58CA0A7</table>
+</TriggerOraclev10g>

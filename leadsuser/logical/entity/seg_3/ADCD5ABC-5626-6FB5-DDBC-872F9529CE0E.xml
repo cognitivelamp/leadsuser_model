@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="ADCD5ABC-5626-6FB5-DDBC-872F9529CE0E" name="monetary">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[monetary type: YES/NO]]></comment>
+<commentInRDBMS><![CDATA[monetary type: YES/NO]]></commentInRDBMS>
+<notes><![CDATA[monetary type: YES/NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>191C8B65-F4BF-B812-41A8-597F871330E3</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>monetary</preferredAbbreviation>
+<shortName>monetary</shortName>
+<synonym>monetary</synonym>
+<synonymToDisplay>monetary</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="373E6419-894D-5738-DAFE-4ACF3A2DAD96">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Type: REVENUE/NON-REVENUE]]></comment>
+<commentInRDBMS><![CDATA[Type: REVENUE/NON-REVENUE]]></commentInRDBMS>
+<notes><![CDATA[Type: REVENUE/NON-REVENUE]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>50A8B4B5-31E7-0421-2A0A-8971D9580614</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="7BF36690-1A60-F3DE-BAE3-A06F6C6939AF">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F96D6E51-A1D7-B792-9244-246B2DA8019B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="DA7D87DD-EE35-A9CC-A9D9-9A3745860076">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9D31ED8C-ABC8-CA0C-731C-0FD16A80F2EB</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="36288B9E-4A65-459C-9A98-6B613E1B4AB9" name="monetary_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B815C9F0-D9A4-5C80-C78B-B70B734E0F58</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>373E6419-894D-5738-DAFE-4ACF3A2DAD96</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7F6F09CF-B4A8-01E5-294E-017F3A251CB1" name="monetary_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>741D5833-3574-A593-B1AE-C018682743D6</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>7BF36690-1A60-F3DE-BAE3-A06F6C6939AF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

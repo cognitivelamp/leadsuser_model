@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="DFFF4B6C-C094-0E0A-AC6D-91F53083156C" name="day_ratio">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Day Flag, 1 - FULL DAY, 0.5 - HALF DAY]]></comment>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>590F9AAC-6C5B-7FB2-4D2C-30DF3F3D60EC</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>day_ratio</preferredAbbreviation>
+<shortName>day_ratio</shortName>
+<synonym>day_ratio</synonym>
+<synonymToDisplay>day_ratio</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="val" id="7D843541-5B04-1666-B4FC-5862EABB0339">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Ratio Value: 1 FULL DAY, 0.5 HALF DAY]]></comment>
+<commentInRDBMS><![CDATA[Ratio Value: 1 FULL DAY, 0.5 HALF DAY]]></commentInRDBMS>
+<notes><![CDATA[Ratio Value: 1 FULL DAY, 0.5 HALF DAY]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>47720087-90D2-3BEE-CAAB-D2C76B922DBB</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F01E2F38-7AC8-86BD-B098-0A79206A3B16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="120EAEB8-5E69-0B66-F630-B0EFE353E399">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E334136A-3A50-D761-E323-65291461C367</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A0C7BDD0-C1FC-0B10-B918-2C036A839CA9" name="day_ratio_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1189F129-A1BE-BCA4-3544-72B33045DB43</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>7D843541-5B04-1666-B4FC-5862EABB0339</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

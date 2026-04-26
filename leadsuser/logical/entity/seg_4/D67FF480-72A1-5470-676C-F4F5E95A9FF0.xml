@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="D67FF480-72A1-5470-676C-F4F5E95A9FF0" name="question_set">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Question Set A/B/C/etc]]></comment>
+<commentInRDBMS><![CDATA[Question Set A/B/C/etc]]></commentInRDBMS>
+<notes><![CDATA[Question Set A/B/C/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>43F7A2AF-7C4B-6B02-2EDA-D9006E3CDCEC</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>question_set</preferredAbbreviation>
+<shortName>question_set</shortName>
+<synonym>question_set</synonym>
+<synonymToDisplay>question_set</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="no" id="24F68C38-A538-FDBF-BB1B-AC88894FD650">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Question Set]]></comment>
+<commentInRDBMS><![CDATA[Question Set]]></commentInRDBMS>
+<notes><![CDATA[Question Set]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>310E91F0-31C5-5E91-4975-236C23FC58BC</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="DD89D843-F775-5459-2C25-B996D5B0DC7F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Question Set I/II/III/IV/V/VI/VII]]></comment>
+<commentInRDBMS><![CDATA[Question Set I/II/III/IV/V/VI/VII]]></commentInRDBMS>
+<notes><![CDATA[Question Set I/II/III/IV/V/VI/VII]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3B0952A2-418C-A8E9-D69F-81161F1A1205</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="abbrv" id="67CF86F8-F40A-063B-EBAC-1296C3F99C5B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Abbreviation]]></comment>
+<commentInRDBMS><![CDATA[Abbreviation]]></commentInRDBMS>
+<notes><![CDATA[Abbreviation]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E7640B80-F863-F7C7-516D-E9F34CD62C16</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="E049B232-90A3-0BD4-709E-94D66E5BE74F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>85B67E97-E251-0BC5-2C7A-1529F73B3671</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="31F68C88-A113-DD6D-E1F3-2DE2D5BEF072" name="question_set_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1A45C45A-7B2E-3582-DD42-D38EC0AF7AA5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>DD89D843-F775-5459-2C25-B996D5B0DC7F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F737C767-8075-D0A4-528F-64428891E858" name="question_set_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D02B847E-5C69-2355-A0E1-E778823BB440</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>24F68C38-A538-FDBF-BB1B-AC88894FD650</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

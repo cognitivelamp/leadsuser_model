@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="098B73BA-5A58-13EC-F98D-C153FE2FC227" name="choice">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Right Choice of the Answer]]></comment>
+<commentInRDBMS><![CDATA[Right Choice of the Answer]]></commentInRDBMS>
+<notes><![CDATA[Right Choice of the Answer]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>457B85C1-0A63-18E0-40B0-ABA215E39476</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>choice</preferredAbbreviation>
+<shortName>choice</shortName>
+<synonym>choice</synonym>
+<synonymToDisplay>choice</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="BC693BCE-0160-3A4D-BAEA-ECD1F2A3D7D1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Right Answer: 1 YES/0 NO]]></comment>
+<commentInRDBMS><![CDATA[Right Answer: 1 YES/0 NO]]></commentInRDBMS>
+<notes><![CDATA[Right Answer: 1 YES/0 NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CBBE0462-F01F-2B27-CF65-11CD4D3ADBDA</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="3E87C899-B91D-C4D0-2A9D-36F84645EB91">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Pseudo Name of Boolean Type]]></comment>
+<commentInRDBMS><![CDATA[Pseudo Name of Boolean Type]]></commentInRDBMS>
+<notes><![CDATA[Pseudo Name of Boolean Type]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>47E74D5D-149E-8D85-8A77-04B3F167D57B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="35FA758C-2226-3E50-8F57-126D42AE1DB9">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E128E03A-595B-65DA-63E1-D28C9B21FF2C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B11D12C8-5663-D635-8EDF-14AC49A112DA" name="choice_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A8733FE1-EA3A-DA60-A6E2-EF2789A93FC6</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>3E87C899-B91D-C4D0-2A9D-36F84645EB91</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F10A4C08-4FF2-B272-1C97-134A85D9C5C2" name="choice_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BB13B203-B4E1-4FD4-8303-4ADB1B439695</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BC693BCE-0160-3A4D-BAEA-ECD1F2A3D7D1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

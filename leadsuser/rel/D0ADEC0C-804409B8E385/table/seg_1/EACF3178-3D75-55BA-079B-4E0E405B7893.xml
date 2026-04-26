@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="EACF3178-3D75-55BA-079B-4E0E405B7893" name="collect_email">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>3866BE7E-FD91-F033-397D-7A39518B808F</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9C66A52C-DD2C-36CC-D766-272CD3A98A7A</importedID>
+<abbreviation>collect_email</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type" id="D28D6871-C475-60E4-6861-38E052CD2D8F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[1 YES/0 NO]]></comment>
+<commentInRDBMS><![CDATA[1 YES/0 NO]]></commentInRDBMS>
+<generatorID>F25EEF3D-7E52-29E4-7D87-E23446C95748</generatorID>
+<notes><![CDATA[1 YES/0 NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4ADCEC7A-E38E-D264-1B21-43C2A4BA73F0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pseudo" id="56FBD19A-6FAF-09B3-725B-7A71F7736EAF">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[YES/NO]]></commentInRDBMS>
+<generatorID>4AAAC64A-D7EC-EF12-F67C-C1766B62CBDD</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D870E876-7C4D-EAC9-2FC5-8DEE5B212982</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC6758B1-C791-00D1-8E53-CD1085D0AD3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="A8442A5F-E497-A650-9D5A-FB9956E40049">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>3CFA7353-8986-0AEF-7655-00E053F576D0</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0A0D6173-AE74-8995-70E4-BF6F9D35D811</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE6E5896-C29E-88B6-4AAC-462007E4EA72" name="collect_email_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>A678DC26-FC02-E408-B43A-446774A90DCA</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B308E08C-7CAB-83CE-3BEE-2BE2881F0886</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D28D6871-C475-60E4-6861-38E052CD2D8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0B8E996-CC9D-0350-FFE6-A3D7891D1D64" name="collect_email_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>4A0E7576-BFF7-4318-790D-D1C7F1CC841C</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B6A26D7E-700E-5143-41FA-FAB8147C4B53</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56FBD19A-6FAF-09B3-725B-7A71F7736EAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24460C03-EE3E-8DE6-2839-417A38FF4DB0" name="collect_email_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5284EC1A-3F0E-DF37-75AF-7A1B714945B0</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D28D6871-C475-60E4-6861-38E052CD2D8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A1F73CB-A2E3-F0CB-7A86-09704FE6D9A9" name="collect_email_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6B87CD39-5782-3468-14F3-615082298F31</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56FBD19A-6FAF-09B3-725B-7A71F7736EAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

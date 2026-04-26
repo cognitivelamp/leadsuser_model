@@ -1,0 +1,416 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="2555ED6F-6A23-677D-192C-9A365648C56B" name="fee_payment">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[student fee Payment - transactions]]></comment>
+<commentInRDBMS><![CDATA[student fee Payment - transactions]]></commentInRDBMS>
+<generatorID>4D32FA69-9A74-51E9-7C6E-DB2B5BF0C989</generatorID>
+<notes><![CDATA[student fee Payment - transactions]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>61BBEE42-513E-696D-C28F-657FF95AE28E</importedID>
+<abbreviation>fee_payment</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fee_payment_ID" id="A37C1485-5EBA-9B30-969E-271A288E6F0D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="495DDF66-1DC1-F686-B609-44C67624DBB0">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6F44DFA7-C34D-2D52-1562-085C705B88A9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="school_code" id="3E2FE779-A6CE-45AF-9FB0-6EBA1BD8784A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[School Code]]></commentInRDBMS>
+<generatorID>06147344-4010-1E17-D997-C50837240579</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3AF15AF0-A796-E10E-936C-6F6031239B79</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>1AB0B0D5-0C91-82C9-89AB-4FC02173FC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BEFB663F-0ACD-71C6-4C12-46C40698A528" referredColumn="37A89B2A-9618-AC1A-5B9D-C5109D7F8C6F"/>
+</associations>
+</Column>
+<Column name="batch_no#" id="6F6D3DA5-D9D0-B449-FDD1-96074CBEF041">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Batch Year]]></commentInRDBMS>
+<generatorID>7617CE0F-AF04-214E-380A-A5BFA77CC6FA</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CB207A7C-6B3E-50A5-87F4-8EA61DFF442D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8C5169C-6CC1-3116-D92D-CF59A79C7E89" referredColumn="F304E2D9-2A03-213E-0AB7-E5AB3DD2B5F6"/>
+</associations>
+</Column>
+<Column name="student_id" id="2FD1A256-020B-86CD-C6AC-95EC58897C60">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Student ID]]></commentInRDBMS>
+<generatorID>4453A769-547A-749A-BDB2-17B62AC6AA0F</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C6D7EF23-90F1-D6DC-73F0-464C92480A58</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E9ED019-1B8C-73CF-D30A-4ECB725F1A32" referredColumn="F0636E8C-54CE-FA7F-0BEC-F292DF8286BB"/>
+</associations>
+</Column>
+<Column name="fee_code" id="9F6AE242-15C6-0A33-EB91-FC4B260A60C3">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[Fee Code]]></comment>
+<commentInRDBMS><![CDATA[Fee Code]]></commentInRDBMS>
+<generatorID>45A35F05-E1B9-E139-DF63-30224A0B972B</generatorID>
+<notes><![CDATA[Fee Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BC2D55DB-2FF8-C59A-08B5-639CC372558A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="26BA23C1-D6B5-3CF1-F455-F55DCB6B79D7" referredColumn="6D49E587-2C7A-271B-57B0-CE1C419069A7"/>
+</associations>
+</Column>
+<Column name="amount" id="1CD6F99E-44B1-18EF-595C-CDFFD418EB37">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[amount of fee payment]]></comment>
+<commentInRDBMS><![CDATA[amount of fee payment]]></commentInRDBMS>
+<generatorID>9CAAF02A-C755-43BA-8B20-73A1425E2866</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>29C32B07-6BB7-20BF-8BE5-144B422F3A23</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F01E2F38-7AC8-86BD-B098-0A79206A3B16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="paid_on" id="995E3268-349A-671C-57A7-00B2FBDCD9C2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[Payment made on]]></comment>
+<commentInRDBMS><![CDATA[Payment made on]]></commentInRDBMS>
+<generatorID>B304FD0C-DE5F-D4D2-246A-F0C5CDC038C0</generatorID>
+<notes><![CDATA[Payment made on]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2301C55C-83DF-5CEA-BC7B-7CA1D3283849</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_mode" id="BCE8FA2C-B76F-76FF-21D8-E0EF267E8332">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></comment>
+<commentInRDBMS><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></commentInRDBMS>
+<generatorID>6EF2B592-1CB5-7E75-27A5-E742021C32CF</generatorID>
+<notes><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>57E0AA8D-C3AB-4E33-5C78-396D6926C72A</importedID>
+<constraintName>fee_payment_mode_def</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>CASH</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AF18836-92F2-D01A-7E49-D7AACF41EC57" referredColumn="07A1FE9A-9E27-50FE-166F-054517D57848"/>
+</associations>
+</Column>
+<Column name="notes" id="DF1FDC1D-ACEB-6032-174D-F4A35FDEDBC9">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[Any Note on Fee Payment - reference/month/amount/descriptions/etc]]></comment>
+<commentInRDBMS><![CDATA[Any Note on Fee Payment - reference/month/amount/descriptions/etc]]></commentInRDBMS>
+<generatorID>E62824E0-F3C9-ADB5-A30E-04B6EAB8076C</generatorID>
+<notes><![CDATA[Any Note on Fee Payment - reference/month/amount/descriptions/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DB927322-7F91-A2DF-DE2C-AE3FA93DF9E1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_by" id="29AC3D2B-11BC-5123-DDF9-6DDBB6728DEA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[User who created the record]]></comment>
+<commentInRDBMS><![CDATA[User who created the record]]></commentInRDBMS>
+<generatorID>466EAE2E-3F5E-DE98-B74C-A8C4CABBF07A</generatorID>
+<notes><![CDATA[User who created the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>AEC31FC0-0B64-5F89-C7D2-CC44610D5465</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_on" id="9F3CF158-9EBB-C927-DA50-61C17EF56340">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[Record created - date and time]]></comment>
+<commentInRDBMS><![CDATA[Record created - date and time]]></commentInRDBMS>
+<generatorID>99C809D9-5176-66F4-E1A8-2A1CFC20D61E</generatorID>
+<notes><![CDATA[Record created - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>81294B8B-A7F1-BE44-700A-D87EED5B8554</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_by" id="8C7E996A-2B25-F9C0-6E17-FB6DD5D959BF">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[User who updated the record]]></comment>
+<commentInRDBMS><![CDATA[User who updated the record]]></commentInRDBMS>
+<generatorID>A0D21EA6-A7ED-F702-4C3C-A649C633A680</generatorID>
+<notes><![CDATA[User who updated the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4C608C94-E3E5-8CEE-CF47-4E9DA97C90B4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="changed_on" id="32DC7956-158E-E63C-2012-017D914AE048">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[Last record changed - date and time]]></comment>
+<commentInRDBMS><![CDATA[Last record changed - date and time]]></commentInRDBMS>
+<generatorID>3EC16F9D-E672-293E-4EBE-4B0C113F993B</generatorID>
+<notes><![CDATA[Last record changed - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>08E32F5D-AA5B-0B09-4CE0-F19A9266BC85</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1460ED48-EF70-599C-53B9-416F73BF83F3" name="fee_payment_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="A37C1485-5EBA-9B30-969E-271A288E6F0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F25555BA-5640-36BE-3EC4-E56E29FA8EEC" name="fee_payment_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4514D711-F607-E403-324C-C1CECD7F9189</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="495DDF66-1DC1-F686-B609-44C67624DBB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8B08106-AA56-B4F9-A556-B4CD6E0293AB" name="fee_payment_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>B590B119-3845-635C-7386-D975110A7DDE</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0672F412-84F8-F527-A291-6FC484EFA3C2</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E2FE779-A6CE-45AF-9FB0-6EBA1BD8784A"/>
+<colUsage columnID="6F6D3DA5-D9D0-B449-FDD1-96074CBEF041"/>
+<colUsage columnID="2FD1A256-020B-86CD-C6AC-95EC58897C60"/>
+<colUsage columnID="9F3CF158-9EBB-C927-DA50-61C17EF56340"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E1B40F8-4605-3068-B865-299B83DBC03D" name="fee_payment_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1C95FD5B-E3E8-EE30-99DA-5D4014ED46BF</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="495DDF66-1DC1-F686-B609-44C67624DBB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="978A862C-4B4A-73E2-3617-5E8489C1B9F0" name="fee_payment_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>50DCEA6B-98D8-49C8-5369-211ED346A742</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E2FE779-A6CE-45AF-9FB0-6EBA1BD8784A"/>
+<colUsage columnID="6F6D3DA5-D9D0-B449-FDD1-96074CBEF041"/>
+<colUsage columnID="2FD1A256-020B-86CD-C6AC-95EC58897C60"/>
+<colUsage columnID="9F3CF158-9EBB-C927-DA50-61C17EF56340"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D180436-016C-47AB-616A-FCBCD3C75DF6" name="fee_payment_sch_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A1BC2CD5-391D-0BF4-561F-8BC32252D3D9</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E2FE779-A6CE-45AF-9FB0-6EBA1BD8784A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09DD3457-1BD5-DDD8-2DF0-77BB06B9D012" name="fee_payment_bat_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>880FFAE7-02EA-A824-D430-1BEE57A6A84B</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F6D3DA5-D9D0-B449-FDD1-96074CBEF041"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F139329B-8481-A3C6-D60B-AFC2D10BAFBE" name="fee_payment_std_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>30BF07CB-44CC-544F-316B-80B805ACDC63</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FD1A256-020B-86CD-C6AC-95EC58897C60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="766B7043-0C3F-1B1C-35A2-FBF4640E4C91" name="fee_payment_fee_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F710D263-9647-AAFA-43E6-2A5FC954530E</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F6AE242-15C6-0A33-EB91-FC4B260A60C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A86AA7E4-0686-2DE4-7186-15AC37E6685A" name="fee_payment__idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>525EEBED-E125-1C35-FEEA-2B9B28303B61</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCE8FA2C-B76F-76FF-21D8-E0EF267E8332"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="473D7B76-1B5F-8DAF-6C40-9559939BE442" name="FeePay_PaymentMode_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:20 UTC</createdTime>
+<generatorID>9EE98627-7698-C93F-D1FF-FB019DE4D069</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCE8FA2C-B76F-76FF-21D8-E0EF267E8332"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="687FE4D4-93B4-4C70-67D0-EA252842465D" name="FeePay_Student_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:20 UTC</createdTime>
+<generatorID>8BAE8D93-7D16-668C-7328-CEE11E62CF19</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FD1A256-020B-86CD-C6AC-95EC58897C60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7185C234-DB0F-9C96-791D-755E0EB81E2C" name="FeePay_Batch_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:20 UTC</createdTime>
+<generatorID>FE5F0860-8C8F-67A7-3FBB-66F833420EDC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F6D3DA5-D9D0-B449-FDD1-96074CBEF041"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="722CB3E5-701F-2B51-0F24-8705AE2F5AD3" name="FeePay_School_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:20 UTC</createdTime>
+<generatorID>F9F5AB3A-A674-6415-F051-C1EFDE6C269D</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E2FE779-A6CE-45AF-9FB0-6EBA1BD8784A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53131B6A-54FD-C3F5-0591-655FF5F94BD1" name="FeePay_Fee_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:20 UTC</createdTime>
+<generatorID>15584DBB-780C-40F4-9FA9-296CFCD7A3FE</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F6AE242-15C6-0A33-EB91-FC4B260A60C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

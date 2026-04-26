@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="ecalendar" directorySegmentName="seg_7" id="CB07EF6B-B3A7-693D-53D3-E6E51A8EE273">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="employee_id" id="03FB8D6B-FDD8-CE63-BD58-5EB8B3FF5E69">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="startdate" id="4C3552EE-141A-1CFA-5101-CD3600FE4294">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>TRUNC(sysdate, &apos;DD&apos;)</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="comments" id="4E8E9D13-5B44-2006-3D9F-8F33121DAD43">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>793001</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="reminder" id="B1D5C2A2-DF5C-536E-EACD-6B7E9532C914">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>TRUNC(sysdate, &apos;DD&apos;)</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="description" id="B6302A4B-DF5D-D025-2F81-B0C71C8EA240">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>793001</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ecalendar_ID" id="D06EAF67-4989-D6E1-19AE-B3FBCB186276">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="enddate" id="F03674BC-519B-122E-0797-774D525AB9AD">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>TRUNC(sysdate, &apos;DD&apos;)</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ecalendar_employee_fk" id="4C409ECF-2EA0-C1F7-A983-57D161DF9544">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ecalendar_PK" id="09CAAF68-52ED-40E1-25A3-E1337E44C851">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

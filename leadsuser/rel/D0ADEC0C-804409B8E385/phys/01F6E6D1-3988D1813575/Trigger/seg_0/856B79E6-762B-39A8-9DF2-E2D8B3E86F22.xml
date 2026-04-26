@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="priority_chg_trg" directorySegmentName="seg_0" id="856B79E6-762B-39A8-9DF2-E2D8B3E86F22">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-31 03:52:39 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	:new.priority_name := upper(:new.priority_name);
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<columns>90B0D17C-7417-3DD5-501A-4F03903AE682</columns>
+<table>5F605D4F-8221-EEA0-5C69-942113C21F0B</table>
+</TriggerOraclev10g>

@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="B981FAC8-BBFF-D5A0-837C-2A3A00237BAF" name="mandatory">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>1D535FD7-F759-030C-8670-92F88B0915CD</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F30C0BD9-65B6-8187-A7AA-0DD190A4F648</importedID>
+<abbreviation>mandatory</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type" id="B75F1580-804D-D4CB-47C7-643717AB1555">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Mandatory Type - 1 YES, 0 NO]]></comment>
+<commentInRDBMS><![CDATA[Mandatory Type - 1 YES, 0 NO]]></commentInRDBMS>
+<generatorID>FBC38F97-369C-412E-D96E-4AF2DA3045D2</generatorID>
+<notes><![CDATA[Mandatory Type - 1 YES, 0 NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>02BD607B-A0FA-1061-C119-B7F10CF6AD0E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pseudo" id="46E4904C-3948-5998-2A4E-A87E6E781DA9">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[YES/NO]]></comment>
+<commentInRDBMS><![CDATA[YES/NO]]></commentInRDBMS>
+<generatorID>B77520C0-4F12-3182-2BDA-10411F22E05C</generatorID>
+<notes><![CDATA[YES/NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B5422A40-1BB2-EADF-CC07-706E76E4FD06</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC6758B1-C791-00D1-8E53-CD1085D0AD3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="753F2EE3-1261-F06C-62E7-4769B61B97F1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>5A0B7E4E-9775-C04E-D347-83F97801C2A4</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EFDEA41F-B095-1D21-2268-D92580A7C5B1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C1ED0594-289C-A0BB-2F96-A84479F6C08E" name="mandatory_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>157283C6-447C-0EC5-4EFB-618A30BB9AB4</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A6102390-C918-818C-E7C4-A594F97440F7</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B75F1580-804D-D4CB-47C7-643717AB1555"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BD210A9-8E68-1782-273E-05C3A9D6356C" name="mandatory_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>1E547454-5A35-BBAC-7732-F5DC184D3998</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D03E270D-0804-6FCF-D9F4-82C72B466ED2</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46E4904C-3948-5998-2A4E-A87E6E781DA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AC22473-17B9-BF97-DFA8-17959F989F2C" name="mandatory_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B51E02B8-50A1-E689-04BC-B309C85BEF91</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46E4904C-3948-5998-2A4E-A87E6E781DA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA1D4E23-18D0-286F-5391-A640359DB50E" name="mandatory_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>357B6184-8DD0-48BF-7339-1BAC0E5C6E15</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B75F1580-804D-D4CB-47C7-643717AB1555"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_6" id="1A4C3F36-C211-AD8B-064E-66A4848F882D" name="service">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Service Table - type of service provided]]></comment>
+<commentInRDBMS><![CDATA[Service Table - type of service provided]]></commentInRDBMS>
+<notes><![CDATA[Service Table - type of service provided]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6008AC59-BFEC-4932-79C7-C2A16A87AD27</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>service</preferredAbbreviation>
+<shortName>service</shortName>
+<synonym>service</synonym>
+<synonymToDisplay>service</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="224BEE9A-2327-E97E-82C8-FC0120EC316D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Service Type - PICKUP/DROP/PICKUP AND DROP]]></comment>
+<commentInRDBMS><![CDATA[Service Type - PICKUP/DROP/PICKUP AND DROP]]></commentInRDBMS>
+<notes><![CDATA[Service Type - PICKUP/DROP/PICKUP AND DROP]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>FD5E1C83-08E4-073B-A9DA-9F2A27717B03</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="descriptions" id="FDCF3190-80C0-EBE3-9DF4-2C6C7F81C79A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[description of service]]></comment>
+<commentInRDBMS><![CDATA[description of service]]></commentInRDBMS>
+<notes><![CDATA[description of service]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B8E98FDE-CA40-D211-B21A-7AD5815885D2</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="95711ADC-B503-4B45-1CC2-1BDF03B86D3A" name="service_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>64E82621-9C06-1770-400C-F6EDB5BCBC33</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>224BEE9A-2327-E97E-82C8-FC0120EC316D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

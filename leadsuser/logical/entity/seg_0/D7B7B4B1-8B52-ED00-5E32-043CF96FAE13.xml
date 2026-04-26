@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D7B7B4B1-8B52-ED00-5E32-043CF96FAE13" name="caste">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[caste - ST/SC/OBC]]></comment>
+<commentInRDBMS><![CDATA[caste - ST/SC/OBC]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A2246773-4246-9636-267C-D8634A790940</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>caste</preferredAbbreviation>
+<shortName>caste</shortName>
+<synonym>caste</synonym>
+<synonymToDisplay>caste</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="95ADF58A-C6E8-293F-B15E-786887E75238">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Caste Code]]></comment>
+<commentInRDBMS><![CDATA[Caste Code]]></commentInRDBMS>
+<notes><![CDATA[Caste Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D6BAE658-8FE9-5436-1C15-CEE3E3146283</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="BD5EE09C-4454-B355-F936-8CDFF54941F4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Caste Name]]></comment>
+<commentInRDBMS><![CDATA[Caste Name]]></commentInRDBMS>
+<notes><![CDATA[Caste Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5CD028C8-79F4-43A9-1766-03B77AFD3066</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="descriptions" id="3447F7B3-D0DD-F1E8-AB4B-4E7EE2D35790">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Caste name description]]></comment>
+<commentInRDBMS><![CDATA[Caste name description]]></commentInRDBMS>
+<notes><![CDATA[Caste name description]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EA625554-2519-B7A6-14C5-9B4C645F8C74</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D8E88CEB-4F51-5FDA-C24E-502130A11AA0" name="caste_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EC2EFA24-FF77-81E6-1607-95219E2D449E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>BD5EE09C-4454-B355-F936-8CDFF54941F4</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CC652C1D-9309-9EDA-2E72-72CFCCEF6E7C" name="caste_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>083EDB57-375E-F256-0D7B-384E9B68C8E7</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>95ADF58A-C6E8-293F-B15E-786887E75238</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

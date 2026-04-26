@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="4D32631D-CF27-2A25-E42C-0A7B7434681D" name="iread">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Inbox read (YES) or unread (NO)]]></comment>
+<commentInRDBMS><![CDATA[Inbox read (YES) or unread (NO)]]></commentInRDBMS>
+<notes><![CDATA[Inbox read (YES) or unread (NO)]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1E62B81B-F141-A4C6-F1DD-FFAEE6BA7C2A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>iread</preferredAbbreviation>
+<shortName>iread</shortName>
+<synonym>iread</synonym>
+<synonymToDisplay>iread</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="flag" id="54D1405A-BD39-97DE-06CD-4F507E8DFD22">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Inbox read (YES) or unread (NO)]]></comment>
+<commentInRDBMS><![CDATA[Inbox read (YES) or unread (NO)]]></commentInRDBMS>
+<notes><![CDATA[Inbox read (YES) or unread (NO)]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>26598B6F-E485-C948-D974-AD49AFABA256</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>PENDING</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="description" id="50629214-755D-5C45-C1E4-2B1C092F57CC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>844B1744-2749-7028-A9C9-CFC10CFC1C07</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="47739CB3-7033-0258-95FF-73626939EBA5" name="iread_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>32FE0F3F-80CD-B667-4C25-3C92F15CAB7F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>54D1405A-BD39-97DE-06CD-4F507E8DFD22</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

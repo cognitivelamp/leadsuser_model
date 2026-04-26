@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="5F4A88DD-1DA6-262F-F734-5C14D502268B" name="our_mission">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[The mission of the organization]]></comment>
+<commentInRDBMS><![CDATA[The mission of the organization]]></commentInRDBMS>
+<notes><![CDATA[The mission of the organization]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6E3986A8-9D6E-A88B-C50B-A3A6C93259C5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>our_mission</preferredAbbreviation>
+<shortName>our_mission</shortName>
+<synonym>our_mission</synonym>
+<synonymToDisplay>our_mission</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="school_code" id="CD35F9D5-49F2-0720-97F0-E88D6E93E38B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[School Code]]></commentInRDBMS>
+<generatorID>9835CB5A-A6B8-68BF-1991-398FFC5031AB</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>87AB4D84-A764-CC43-CF7F-A904D37FA991</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>3CCBCFCB-28F7-521B-BFFA-7A69A4144FC5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1AB0B0D5-0C91-82C9-89AB-4FC02173FC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="elucidation" id="A63074AE-415B-954F-E884-7A71627F3E13">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[explanation that makes something clear]]></comment>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>00E57663-1876-1E32-0F7A-A4C72F4CA11E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="serial_no" id="DCB9C39B-A811-5784-7A95-0B322FC0B2C1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[1, 2, 3, 4,...]]></comment>
+<commentInRDBMS><![CDATA[1, 2, 3, 4,...]]></commentInRDBMS>
+<generatorID>EF334114-64EF-09CB-A918-E50F0DD309CE</generatorID>
+<notes><![CDATA[1, 2, 3, 4,...]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>ABF70FCE-26C1-7F84-AA7E-F3C24D683B12</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>D1406C02-98BE-E579-0425-6B01DDEEDC72</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="notes" id="4786ED72-B555-0D33-3F59-5AF19FEC9CDB">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1DC88165-1AF0-234D-EB96-DF7490AADE70</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created_by" id="283AEB9F-E1C6-6123-960B-10350FDA7F73">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[created by the apex user or any user]]></comment>
+<commentInRDBMS><![CDATA[created by the apex user or any user]]></commentInRDBMS>
+<notes><![CDATA[created by the apex user or any user]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A1BF3C66-3760-84A4-4CF3-FCBC3F3BEC0C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="created_on" id="B62677A5-B720-64FB-7256-466679314819">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Created on - Date and Time]]></comment>
+<commentInRDBMS><![CDATA[Created on - Date and Time]]></commentInRDBMS>
+<notes><![CDATA[Created on - Date and Time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>73767A3A-7F93-066D-5AF9-E44DDCD16CD3</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="updated_by" id="258C9F4A-F906-2CE7-DC34-454505626645">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Updated by the apex user or any user]]></comment>
+<commentInRDBMS><![CDATA[Updated by the apex user or any user]]></commentInRDBMS>
+<notes><![CDATA[Updated by the apex user or any user]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>57F232AD-5873-B251-26D8-22BF50DD77CD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="changed_on" id="6893993A-1971-DC2E-380E-D60BB279267A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Last Changed date and time]]></comment>
+<commentInRDBMS><![CDATA[Last Changed date and time]]></commentInRDBMS>
+<notes><![CDATA[Last Changed date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8319564B-279E-E18E-4168-4A50B538F1E8</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="29C98C58-5A32-D6DD-803C-5F2BD2ADB683" name="our_mission_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6533A14C-5D7E-47CA-4FEE-17874C24E848</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>CD35F9D5-49F2-0720-97F0-E88D6E93E38B</attributeRef>
+<attributeRef>DCB9C39B-A811-5784-7A95-0B322FC0B2C1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

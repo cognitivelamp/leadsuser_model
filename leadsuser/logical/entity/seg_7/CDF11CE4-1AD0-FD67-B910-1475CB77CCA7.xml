@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_7" id="CDF11CE4-1AD0-FD67-B910-1475CB77CCA7" name="subscriber">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[subscriber - type : student/teacher/staff/etc/]]></comment>
+<commentInRDBMS><![CDATA[subscriber - type : student/teacher/staff/etc/]]></commentInRDBMS>
+<notes><![CDATA[subscriber - type : student/teacher/staff/etc/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>707C3C80-857D-0E4B-CC39-82954953BC7A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>subscriber</preferredAbbreviation>
+<shortName>subscriber</shortName>
+<synonym>subscriber</synonym>
+<synonymToDisplay>subscriber</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="A9C8BB44-0D18-965B-963B-9692B5BE15D6">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[subscriber type - teacher/student/staff/etc/]]></comment>
+<commentInRDBMS><![CDATA[subscriber type - teacher/student/staff/etc/]]></commentInRDBMS>
+<notes><![CDATA[subscriber type - teacher/student/staff/etc/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E20A7F75-0828-FFAE-8FA2-D292D00A6B62</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="description" id="2F92A22F-F57C-0E5E-EC60-35FFB3A4A107">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[subscriber type description - teacher/student/staff/etc/]]></comment>
+<commentInRDBMS><![CDATA[subscriber type description - teacher/student/staff/etc/]]></commentInRDBMS>
+<notes><![CDATA[subscriber type description - teacher/student/staff/etc/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0FB625B9-DB48-8EEE-E865-9693D02BA79C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="40D414DF-1673-1101-9433-6A8C5FEA57FD" name="subscriber_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A19E13EA-2B38-4EA3-59A0-685150B791A0</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>A9C8BB44-0D18-965B-963B-9692B5BE15D6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

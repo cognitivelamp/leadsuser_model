@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="799FA039-2BB1-1CCF-FB07-FD74BB340A8C" name="contact">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Contact Type - Primary/Secondary/Third Party]]></comment>
+<commentInRDBMS><![CDATA[Contact Type - Primary/Secondary/Third Party]]></commentInRDBMS>
+<notes><![CDATA[Contact Type - Primary/Secondary/Third Party]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2E5791BF-1872-785E-D435-F6A8D5475ACF</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>contact</preferredAbbreviation>
+<shortName>contact</shortName>
+<synonym>contact</synonym>
+<synonymToDisplay>contact</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="4FBD178B-A357-8A13-15B3-25C31531F153">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Contact Type - Primary/Secondary/Third Party]]></comment>
+<commentInRDBMS><![CDATA[Contact Type - Primary/Secondary/Third Party]]></commentInRDBMS>
+<notes><![CDATA[Contact Type - Primary/Secondary/Third Party]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>87340B5C-0414-CC68-B615-9901117B1D5C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="descriptions" id="71894E83-9663-425B-BDA9-542B1E236DC2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9F8572EF-DDB8-E2B5-6840-8941F3C69FF4</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AB640265-4AA0-AF8C-27FA-5A3BD54E6F07" name="contact_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>AD777302-E120-DE88-70C2-45FB7F33F796</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>4FBD178B-A357-8A13-15B3-25C31531F153</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

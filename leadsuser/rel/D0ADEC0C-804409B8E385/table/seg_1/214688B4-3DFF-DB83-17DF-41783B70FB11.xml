@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="214688B4-3DFF-DB83-17DF-41783B70FB11" name="day_ratio">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[Day Flag, 1 - FULL DAY, 0.5 - HALF DAY]]></comment>
+<generatorID>DFFF4B6C-C094-0E0A-AC6D-91F53083156C</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D220D91F-F07A-51E7-84EC-6FC8CAF2D621</importedID>
+<abbreviation>day_ratio</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="day_ratio_ID" id="77B3F867-29F1-2A95-2FAB-87DFD0850C6C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="51A8A765-ABE5-F5C4-46E9-B8F9904C351D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>65E1846E-4F6A-AC9E-D8A1-21A17182E02C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="val" id="701D6B8A-FCCD-9E2C-551E-E8B4865F3EA9">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Ratio Value: 1 FULL DAY, 0.5 HALF DAY]]></comment>
+<commentInRDBMS><![CDATA[Ratio Value: 1 FULL DAY, 0.5 HALF DAY]]></commentInRDBMS>
+<generatorID>7D843541-5B04-1666-B4FC-5862EABB0339</generatorID>
+<notes><![CDATA[Ratio Value: 1 FULL DAY, 0.5 HALF DAY]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A47D146F-D742-E865-76B8-07996F2996CE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F01E2F38-7AC8-86BD-B098-0A79206A3B16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="8C52EE82-5D12-4B64-0285-BEA39509C0BA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>120EAEB8-5E69-0B66-F630-B0EFE353E399</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BCDE8548-5E90-DC2A-D62F-A81A82C2071F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A0EBE419-C8B6-735B-2854-7B2146283D3C" name="day_ratio_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="77B3F867-29F1-2A95-2FAB-87DFD0850C6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BDDE8BE1-4A2C-C397-817B-9AD5B4854D45" name="day_ratio_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4C93D468-FAD7-D894-FBB9-62DFA8866D67</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51A8A765-ABE5-F5C4-46E9-B8F9904C351D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9958F4DC-7D71-D545-C47C-D5F0AC2A19C9" name="day_ratio_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>A0C7BDD0-C1FC-0B10-B918-2C036A839CA9</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>47E33D56-6752-9EDB-604A-81D72037378E</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="701D6B8A-FCCD-9E2C-551E-E8B4865F3EA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="577B8AE7-B5DA-7CFF-CC6D-62EC42827563" name="day_ratio_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6F3374BC-71F7-79A1-71B5-252D163A8F38</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51A8A765-ABE5-F5C4-46E9-B8F9904C351D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3968B79E-7412-CB85-EC2C-65713A2683D5" name="day_ratio_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8CF7E33A-0460-A49B-2976-CAD76E61D007</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="701D6B8A-FCCD-9E2C-551E-E8B4865F3EA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

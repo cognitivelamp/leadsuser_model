@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="87C68384-09BA-0BC3-0D46-FBC9BB363B3F" name="multiple">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Possibility of Multiple Attempts]]></comment>
+<commentInRDBMS><![CDATA[Possibility of Multiple Attempts]]></commentInRDBMS>
+<notes><![CDATA[Possibility of Multiple Attempts]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>96DC2AD0-7571-E056-6877-FF5B5400C812</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>multiple</preferredAbbreviation>
+<shortName>multiple</shortName>
+<synonym>multiple</synonym>
+<synonymToDisplay>multiple</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="time" id="AF632FA0-4DE3-505E-4B4A-A4A6FD4B9A25">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Multiple Type: 1, 2, 3, 4, 5, 6, 7, 8, 9]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CA00A966-4602-2A5A-C462-C420D67DCD3E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="47EC30E4-2FE8-672E-5184-BDC5A157C03F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Pseudo Name of the Multiplicity]]></comment>
+<commentInRDBMS><![CDATA[Pseudo Name of the Multiplicity]]></commentInRDBMS>
+<notes><![CDATA[Pseudo Name of the Multiplicity]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>685D75D0-DC5F-61C1-8BAE-AC003B55E421</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="6CB79D17-3290-460F-648A-BF467C1B8C36">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>17ADD8D5-2C11-3F3B-10F1-8427DF564E18</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="118B4E5E-B79E-0D22-C1D8-2121CA4FFF7C" name="multiple_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9180B63D-F10B-858A-71B3-BD489871FF75</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>47EC30E4-2FE8-672E-5184-BDC5A157C03F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="98F6E3DF-0060-6D1A-13EA-160BEACA556E" name="multiple_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>822A610F-721A-08AD-5F1F-2E8BA2F07134</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AF632FA0-4DE3-505E-4B4A-A4A6FD4B9A25</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

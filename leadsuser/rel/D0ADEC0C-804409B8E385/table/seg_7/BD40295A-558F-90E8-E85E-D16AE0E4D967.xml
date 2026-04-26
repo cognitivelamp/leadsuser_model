@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="BD40295A-558F-90E8-E85E-D16AE0E4D967" name="lib_author">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Libarary author table constains the authors of the books.]]></comment>
+<commentInRDBMS><![CDATA[Libarary author table constains the authors of the books.]]></commentInRDBMS>
+<generatorID>34A6300E-1F9A-2287-D62C-FB74B9AA4746</generatorID>
+<notes><![CDATA[Libarary author table constains the authors of the books.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>lib_author</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lib_author_ID" id="AD025C69-5E99-8F76-E908-CB57EB79CF0A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="author_author_ID" id="38433124-E649-7F49-E2FC-9A152927C59D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E443F009-5040-DAD4-2F8F-575DBC553554" referredColumn="414CBACF-2D6A-4BE9-8E41-8C1D07D0AD13"/>
+</associations>
+</Column>
+<Column name="library_library_ID" id="8B8486EC-7A45-12A8-89AD-7F71AB849A36">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3683DE64-2B04-651B-DBE3-1D8BD76338CC" referredColumn="6BB76C32-8A40-D93F-DD61-5922720DBF42"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE33ECA6-BE31-60E1-9333-A3F7EEC8C109" name="lib_author_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="AD025C69-5E99-8F76-E908-CB57EB79CF0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3578F2E-C38F-EC08-1506-7CB66756CAC7" name="library_author_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>0C6E3B3E-B83D-D39C-3B68-CA3C1BCF0EA7</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="F93450B8-3C63-B8A7-5B3D-E5DC9CD43E4B" name="LibAuth_Author_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<generatorID>948B6B1B-7E63-E0F5-4A6E-EDC225CC69B9</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38433124-E649-7F49-E2FC-9A152927C59D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AD666F9-2073-452A-549C-11F4DE7735A2" name="LibAuth_Library_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<generatorID>8A368DC8-FBE4-6E66-73C4-FAEE56376E8E</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B8486EC-7A45-12A8-89AD-7F71AB849A36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

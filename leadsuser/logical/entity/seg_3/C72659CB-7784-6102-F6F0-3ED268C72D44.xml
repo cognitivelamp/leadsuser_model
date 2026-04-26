@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="C72659CB-7784-6102-F6F0-3ED268C72D44" name="grade">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[employee grade]]></comment>
+<commentInRDBMS><![CDATA[employee grade]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>55A2E3BA-05B7-4392-0FCA-5DD6F9E9B098</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>grade</preferredAbbreviation>
+<shortName>grade</shortName>
+<synonym>grade</synonym>
+<synonymToDisplay>grade</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="D6C0C04F-1F89-AC6E-0552-CB78FDE693BF">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Grade Code]]></comment>
+<commentInRDBMS><![CDATA[Grade Code]]></commentInRDBMS>
+<notes><![CDATA[Grade Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0BAC9318-2265-D12D-8137-9F2EA1E5871D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="no#" id="19029BC6-CB3A-041B-4DCC-A5CA626976C8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Grade Number]]></comment>
+<commentInRDBMS><![CDATA[Grade Number]]></commentInRDBMS>
+<notes><![CDATA[Grade Number]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B251C96D-2AF0-25A8-23ED-26E7A811596A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="5CF3A9D9-086F-9473-FA2B-EE69D49EB4C7">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Name of the Grade]]></comment>
+<commentInRDBMS><![CDATA[Name of the Grade]]></commentInRDBMS>
+<notes><![CDATA[Name of the Grade]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>86F4A66A-758C-5F72-6103-5C7195A20462</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="descriptions" id="98155113-2545-704B-5E97-CE52D4B4FF35">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[grade name description]]></comment>
+<commentInRDBMS><![CDATA[grade name description]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>73C252CE-1A78-4D06-0A49-DF3A90847BA0</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C2C4839B-0E55-94AC-B05F-DCF731453ED4" name="grade_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>611A4A79-C542-A318-3FFA-4E5EC524AA4A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>19029BC6-CB3A-041B-4DCC-A5CA626976C8</attributeRef>
+<attributeRef>5CF3A9D9-086F-9473-FA2B-EE69D49EB4C7</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="6E26C510-4606-102B-43C5-7BA9C48D25C2" name="grade_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1FA94A15-6DD5-E16B-F2F7-0E74CB22B05C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D6C0C04F-1F89-AC6E-0552-CB78FDE693BF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

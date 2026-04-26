@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="D562B58B-4540-F773-E342-19FD079ACA2A" name="ecriteria">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Criteria of Evaluation - Knowledge/Understanding/Creativity/Problem Solving/Application]]></comment>
+<commentInRDBMS><![CDATA[Criteria of Evaluation - Knowledge/Understanding/Creativity/Problem Solving/Application]]></commentInRDBMS>
+<generatorID>46481A4D-BCFF-3701-EA30-12CF140C3043</generatorID>
+<notes><![CDATA[Criteria of Evaluation - Knowledge/Understanding/Creativity/Problem Solving/Application]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>ecriteria</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="name" id="D13ECCD9-E61C-A4D9-D56D-1F3BB7D5CE6B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Criteria of Evaluation - Knowledge/Understanding/Creativity/Problem Solving/Application]]></comment>
+<commentInRDBMS><![CDATA[Criteria of Evaluation - Knowledge/Understanding/Creativity/Problem Solving/Application]]></commentInRDBMS>
+<generatorID>D9764063-3DEC-FBCC-45F7-95617B71CFA2</generatorID>
+<notes><![CDATA[Criteria of Evaluation - Knowledge/Understanding/Creativity/Problem Solving/Application]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="abbr" id="2609DC9E-DCCD-50A9-755A-08DC2EF101DC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Abbreviation of Criteria Name]]></comment>
+<commentInRDBMS><![CDATA[Abbreviation of Criteria Name]]></commentInRDBMS>
+<generatorID>B90D5583-0A00-5290-8A25-73EB1CF4EC4B</generatorID>
+<notes><![CDATA[Abbreviation of Criteria Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="4FD142F0-53ED-5870-A397-B39CC2CBCF48">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Description of the Criteria]]></comment>
+<commentInRDBMS><![CDATA[Description of the Criteria]]></commentInRDBMS>
+<generatorID>053B208D-1FBC-18D7-4781-201775F3B91E</generatorID>
+<notes><![CDATA[Description of the Criteria]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ecriteria_ID" id="5DB0DB4C-DA96-EB74-FDD8-D71716F2F4CC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="62FDB5A0-7229-83F9-0556-B6C365F0FD16" name="ecriteria_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="5DB0DB4C-DA96-EB74-FDD8-D71716F2F4CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2CAE854-1BAC-9B46-3E69-BD2031613DDE" name="ecriteria_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>8FBE63A9-D202-AFAC-3889-4AC96AAF4BA4</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D13ECCD9-E61C-A4D9-D56D-1F3BB7D5CE6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

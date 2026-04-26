@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="B1D165FB-D90A-F580-606C-04F12C0BC9BB" name="idelete">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Inbox Delete flag - YES/NO]]></comment>
+<commentInRDBMS><![CDATA[Inbox Delete flag - YES/NO]]></commentInRDBMS>
+<notes><![CDATA[Inbox Delete flag - YES/NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5DA69925-673A-AEAC-4636-A1CE99EC034C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>idelete</preferredAbbreviation>
+<shortName>idelete</shortName>
+<synonym>idelete</synonym>
+<synonymToDisplay>idelete</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="flag" id="678F3203-08D8-D2CF-7E30-382E67395508">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Inbox Delete flag - YES/NO]]></comment>
+<commentInRDBMS><![CDATA[Inbox Delete flag - YES/NO]]></commentInRDBMS>
+<notes><![CDATA[Inbox Delete flag - YES/NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3F3295B0-56A1-D669-C1A8-E8A919D7FEF5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>PENDING</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="description" id="AB477BE7-3F6E-F4AB-FF02-A817336FADB1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>FF450177-6089-3F1A-1F8B-BF40C606D111</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CFE0A723-454A-B4F4-4958-289409B6CE30" name="delete_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5295483B-BC7E-027A-0C88-189E3BE5A74B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>678F3203-08D8-D2CF-7E30-382E67395508</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

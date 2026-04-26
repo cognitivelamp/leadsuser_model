@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FB3DF7F5-EAF2-AA89-2498-17391CDBFFB0" name="assessment_ordinal">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Student's Assessment Ordinal - 1/2/3/4/5/6/7]]></comment>
+<commentInRDBMS><![CDATA[Student's Assessment Ordinal - 1/2/3/4/5/6/7]]></commentInRDBMS>
+<notes><![CDATA[Student's Assessment Ordinal - 1/2/3/4/5/6/7]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BA5D1F33-1CC6-0B90-8286-466936D0348B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>assessment_ordinal</preferredAbbreviation>
+<shortName>assessment_ordinal</shortName>
+<synonym>assessment_ordinal</synonym>
+<synonymToDisplay>assessment_ordinal</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="no" id="3C1AEC9D-19B2-ADCB-9BF8-7D18AD15612A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Heriarchy of Order]]></comment>
+<commentInRDBMS><![CDATA[Heriarchy of Order]]></commentInRDBMS>
+<generatorID>AEB97806-2CB7-A353-7AAF-89E20031FD58</generatorID>
+<notes><![CDATA[Heriarchy of Order]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D38FD3B0-B505-6E53-9C6A-FBCC699A456B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>A8EB8B7F-4F6A-0DC2-873E-E25009B66450</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="1207458C-7EA0-3A7F-C31A-6B9DD6B89740">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Assesment Ordinal - 1st TEST, 2nd TEST, etc]]></comment>
+<commentInRDBMS><![CDATA[Assesment Ordinal - 1st TEST, 2nd TEST, etc]]></commentInRDBMS>
+<notes><![CDATA[Assesment Ordinal - 1st TEST, 2nd TEST, etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BE982164-590B-8683-2F0D-6A33CF6D173C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>assessment_ordinal_name</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="47DE9FEF-08EE-D5D9-961F-A89CC0EEEACC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3796AAAF-4AC6-9F10-4610-D9DB38DE74DA</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="44DAA6F8-1F71-E491-EE59-0D5EA95969A4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D302BB68-3407-4E16-8FF5-364357EDCDBC</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E53F0720-3E99-DDEF-B0A1-9F71AC998761" name="assessment_ordinal_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2ED274B4-45B3-2251-ECCF-2742F53881B3</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>47DE9FEF-08EE-D5D9-961F-A89CC0EEEACC</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="38C060EA-1E9F-AFF1-FCC5-AC2AD50E3327" name="assessment_ordinal_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>093ECBD6-627C-27C2-64EB-35ADAF6056C1</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>1207458C-7EA0-3A7F-C31A-6B9DD6B89740</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D8D28E83-9899-1E98-E8D0-401855CD84F2" name="assessment_ordinal_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>53FC4CF0-10E7-8E61-B7AF-7D6400275C3C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C1AEC9D-19B2-ADCB-9BF8-7D18AD15612A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

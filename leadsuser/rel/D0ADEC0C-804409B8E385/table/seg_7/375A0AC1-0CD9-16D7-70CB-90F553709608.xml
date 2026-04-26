@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="375A0AC1-0CD9-16D7-70CB-90F553709608" name="teacher_availability">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<generatorID>35FF5582-E2C7-4CB8-ACA1-35C6F59EF02E</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="39DC4ECF-37B1-0101-A737-5EB9E64A2ABD">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="employee_ID" id="C8386F06-2857-4487-0F2E-55B0656D696B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<comment><![CDATA[Employee ID Number]]></comment>
+<commentInRDBMS><![CDATA[Employee ID Number]]></commentInRDBMS>
+<generatorID>FB8A752A-8531-D240-97E1-8A74F25DFE4B</generatorID>
+<notes><![CDATA[Employee ID Number]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D57A87A4-1AAD-FE34-82A1-0BE81A281AAA" referredColumn="3FC8E5C6-AC58-17FB-4585-348C27905E28"/>
+</associations>
+</Column>
+<Column name="time_slot_ID" id="D0AD083E-0ABD-99ED-72C3-5CE4543E4AF5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timetable Slot ID]]></commentInRDBMS>
+<generatorID>AC430548-93FE-7D45-1872-4666855C93E2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E203703B-0768-5328-11FE-C18D77701236" referredColumn="E8B3E4B2-937D-4A6F-92D5-7E1DA4A7E714"/>
+</associations>
+</Column>
+<Column name="is_available" id="D3E5C78A-BD24-2E17-DD48-29D5F4E4A7FA">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 09:51:49 UTC</createdTime>
+<generatorID>40245232-4175-D129-99AD-8F314A394872</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>0A613783-1FEF-4EB4-FC8C-7F07C1F5C8EC</domain>
+<defaultValue>Y</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="26B8C07F-DF5E-343B-4DE6-271ACD2BBA7D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<generatorID>488B20C8-FCF2-F471-68AE-35E553EFB9CF</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_by" id="6880344A-225A-6078-1B1D-94B7B491DB55">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<comment><![CDATA[User who created the record]]></comment>
+<commentInRDBMS><![CDATA[User who created the record]]></commentInRDBMS>
+<generatorID>A466635E-A12E-A206-11B5-239CA3D984B5</generatorID>
+<notes><![CDATA[User who created the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_on" id="2145E50B-0574-F8A1-E01B-F6DD05292F2D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<comment><![CDATA[Record created - date and time]]></comment>
+<commentInRDBMS><![CDATA[Record created - date and time]]></commentInRDBMS>
+<generatorID>B2AF26C8-500D-6E91-3E32-FC38C232C68E</generatorID>
+<notes><![CDATA[Record created - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_by" id="43B55BDD-439A-DB47-E534-F968FDDC6922">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<comment><![CDATA[User who updated the record]]></comment>
+<commentInRDBMS><![CDATA[User who updated the record]]></commentInRDBMS>
+<generatorID>D4D2228A-03FC-9E47-C74A-0C8DD886D940</generatorID>
+<notes><![CDATA[User who updated the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="changed_on" id="49ADCDF3-3995-B0A8-5849-E1A57A597D1F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<comment><![CDATA[Last record changed - date and time]]></comment>
+<commentInRDBMS><![CDATA[Last record changed - date and time]]></commentInRDBMS>
+<generatorID>1E038C8D-00A1-98AB-8DC0-6AB0B69890D9</generatorID>
+<notes><![CDATA[Last record changed - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98770CEC-4953-54C5-EA49-6B94DAF88169" name="teacher_availability_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="39DC4ECF-37B1-0101-A737-5EB9E64A2ABD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5ECA9655-6018-1EBF-8568-208BE5A8164D" name="teacher_availability_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<generatorID>5DE725D0-4A82-DFA8-0572-8C1C8706B8D5</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8386F06-2857-4487-0F2E-55B0656D696B"/>
+<colUsage columnID="D0AD083E-0ABD-99ED-72C3-5CE4543E4AF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94F50EBA-8833-0C7D-DE5B-C2744D5C210D" name="TchrAvail_Employee_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<generatorID>FFE65901-B9BC-ED5A-0645-C5939DE9187B</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8386F06-2857-4487-0F2E-55B0656D696B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27575D9D-0097-E672-D841-899A4DF10B69" name="TchrAvail_TimetableSlot_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<generatorID>433FC411-2FBD-973E-C23F-5293EE68C528</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0AD083E-0ABD-99ED-72C3-5CE4543E4AF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

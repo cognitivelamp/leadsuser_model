@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_5" id="E022AAE2-4646-ADFA-B743-DC1D972259AF" name="res_designation">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Resource Designation - Driver/Carpenter/CEO/etc]]></comment>
+<commentInRDBMS><![CDATA[Resource Designation - Driver/Carpenter/CEO/etc]]></commentInRDBMS>
+<notes><![CDATA[Resource Designation - Driver/Carpenter/CEO/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E5BDFC3E-D00E-821E-01C4-07181286DA98</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>res_designation</preferredAbbreviation>
+<shortName>res_designation</shortName>
+<synonym>res_designation</synonym>
+<synonymToDisplay>res_designation</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="resources_person" id="F96DD3E9-430A-9DDD-0E66-07ADFDDD05E7">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[EMPLOYEE/STUDENT/GUARDIAN/PUBLIC]]></comment>
+<commentInRDBMS><![CDATA[EMPLOYEE/STUDENT/GUARDIAN/PUBLIC]]></commentInRDBMS>
+<generatorID>E4BDD912-F0AE-FC5D-FF37-7CC8B71284A7</generatorID>
+<notes><![CDATA[EMPLOYEE/STUDENT/GUARDIAN/PUBLIC]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9AAD48A8-425E-2437-21EB-00CF7D945A55</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>05EE28F6-63BA-2DD6-C569-4AD9ED2D8B50</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="designation_code" id="410D26AD-6C4B-D958-AC4F-DEB6323092F5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Designation Code]]></comment>
+<commentInRDBMS><![CDATA[Designation Code]]></commentInRDBMS>
+<generatorID>B23407C3-B18E-B43D-0F0C-8B2091F2387F</generatorID>
+<notes><![CDATA[Designation Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6AD412FC-6BA2-04F6-C281-0DBE8708429D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>83B21843-21D9-508C-F977-4D2A2CE37B2E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="notes" id="488827E3-396E-AE3C-7455-4B6B1193BE97">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2D1C6653-BCF6-44CD-7437-FBCA1D110D6B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created_on" id="F9B44C98-E3BE-1D4D-B354-E62021C67EA8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3AAD4393-AF66-A345-6D5F-BB358A3D40FC</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created_by" id="C7602AC7-B739-B1C5-36C8-FBF96F267226">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5BCFADC2-5F3E-5BCC-B50C-0C5C53F86EC4</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="updated_by" id="417FBF8D-1917-08DB-7E27-BF2852C85D1E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>AB91A06E-1FBD-17B5-7B0D-F7BA87E35986</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="changedate" id="E84ED430-E383-EE1E-CF67-34F04065C929">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7B5F947A-288A-8AEC-1C61-465D973114AA</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="017BD45A-E78C-0077-CFD8-276B6A6CEC7E" name="res_designation_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>286333E6-EC03-2D45-0C01-9F564E311046</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>F96DD3E9-430A-9DDD-0E66-07ADFDDD05E7</attributeRef>
+<attributeRef>410D26AD-6C4B-D958-AC4F-DEB6323092F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

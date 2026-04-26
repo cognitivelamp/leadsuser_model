@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="A3BFBC8C-B6D8-E975-FA64-E5B6751B8DC5" name="product">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></comment>
+<commentInRDBMS><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></commentInRDBMS>
+<notes><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B111A879-1A9E-1477-E5FF-1727A3532B1A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>product</preferredAbbreviation>
+<shortName>product</shortName>
+<synonym>product</synonym>
+<synonymToDisplay>product</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="16BF57D8-8898-1D80-5C4E-3400481CF8F9">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Product Code]]></comment>
+<commentInRDBMS><![CDATA[Product Code]]></commentInRDBMS>
+<notes><![CDATA[Product Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3B541916-F79F-DA06-8334-F47B38FEFC57</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="CF86CBD2-1ADF-BA09-9F31-C3698D06C0C4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></comment>
+<commentInRDBMS><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></commentInRDBMS>
+<notes><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>81A0585C-61B2-9246-800B-AC0A2B8E503E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="descriptions" id="D38F175F-A68D-8407-814B-BE1DB445E3C2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8116C8A9-0E12-AA51-2487-00A3C52952B5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7635F15D-0465-BA82-DD3D-AC9691B2567B" name="product_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D4E79DFB-BECA-278D-D683-8ACC53861AFD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>CF86CBD2-1ADF-BA09-9F31-C3698D06C0C4</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BED4E059-77E4-F0AF-345A-D00355722F75" name="product_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>240D5C07-11D2-5C97-03C7-B3C47EF856A6</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>16BF57D8-8898-1D80-5C4E-3400481CF8F9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

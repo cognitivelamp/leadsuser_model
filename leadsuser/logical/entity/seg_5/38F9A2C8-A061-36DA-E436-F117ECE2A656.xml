@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_5" id="38F9A2C8-A061-36DA-E436-F117ECE2A656" name="religion">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F23EC2F8-E073-0099-314B-73C28D0EA11A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>religion</preferredAbbreviation>
+<shortName>religion</shortName>
+<synonym>religion</synonym>
+<synonymToDisplay>religion</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="C7253B42-D94C-7555-0C6C-9E5CF67BED85">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Religion Code]]></comment>
+<commentInRDBMS><![CDATA[Religion Code]]></commentInRDBMS>
+<notes><![CDATA[Religion Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A1D1A280-204A-5AA9-4CA7-1A761D9D3CF8</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="name" id="9D77F969-7EF0-512B-3A68-BE4FAA20AB3C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Name of the Religion]]></comment>
+<commentInRDBMS><![CDATA[Name of the Religion]]></commentInRDBMS>
+<notes><![CDATA[Name of the Religion]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6DC7EA7D-99E6-FB39-E5BE-D72873CDB1AA</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="93308857-62F3-503B-9B38-886ADBCDEA0E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Any description of the community.]]></comment>
+<commentInRDBMS><![CDATA[Any description of the community.]]></commentInRDBMS>
+<notes><![CDATA[Any description of the community.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7ED565AD-411C-4F03-3B73-E269478538A2</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D763D8FA-EB82-8970-79D7-68EEDEC2094C" name="religion_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F3E11840-2BB2-D372-EC5D-5D39F5723DEE</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>9D77F969-7EF0-512B-3A68-BE4FAA20AB3C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="06498825-4C5C-C4B0-951D-909CE5E88043" name="religion_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CF617A85-1EA0-D63D-B94D-6511CB084F25</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C7253B42-D94C-7555-0C6C-9E5CF67BED85</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

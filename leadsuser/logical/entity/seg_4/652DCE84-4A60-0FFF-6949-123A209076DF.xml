@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="652DCE84-4A60-0FFF-6949-123A209076DF" name="privilege">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Privilege of student - staff/regular/new student/scholarship/etc]]></comment>
+<commentInRDBMS><![CDATA[Privilege of student - staff/regular/new student/scholarship/etc]]></commentInRDBMS>
+<notes><![CDATA[Privilege of student - staff/regular/new student/scholarship/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A7B72B46-8F56-1628-FA8C-7B5D2BA9D313</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>privilege</preferredAbbreviation>
+<shortName>privilege</shortName>
+<synonym>privilege</synonym>
+<synonymToDisplay>privilege</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="3CF92A79-CFE0-E58A-F92E-BF67E3B42CDE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Privilege Code]]></comment>
+<commentInRDBMS><![CDATA[Privilege Code]]></commentInRDBMS>
+<notes><![CDATA[Privilege Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D446F7C9-D513-977F-FF2A-49D604BCB431</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="name" id="C8882155-53FB-339E-90F9-146C2004A09F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Privilege Name]]></comment>
+<commentInRDBMS><![CDATA[Privilege Name]]></commentInRDBMS>
+<notes><![CDATA[Privilege Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E0BF6A42-2F8C-55C7-135D-5C232CF4590F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="descriptions" id="5355024B-8F5E-E0D0-5914-DBC27A0C8384">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Privilege Description]]></comment>
+<commentInRDBMS><![CDATA[Privilege Description]]></commentInRDBMS>
+<notes><![CDATA[Privilege Description]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DF5A0B5D-E59C-65A2-8DC6-99EB1F9F6D49</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ED8206C7-6DED-62BD-DEAC-26DA05D2A2A7" name="privilege_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B0DC2276-3617-2FD8-D4BA-283A4DA97334</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>C8882155-53FB-339E-90F9-146C2004A09F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="40082CC2-3595-D2EA-53A7-EFA9C8E0495C" name="privilege_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D9939363-1592-3740-A426-3FA22AC1F37C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3CF92A79-CFE0-E58A-F92E-BF67E3B42CDE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

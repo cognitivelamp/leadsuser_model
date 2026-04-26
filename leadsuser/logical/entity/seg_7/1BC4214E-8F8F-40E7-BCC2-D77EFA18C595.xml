@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_7" id="1BC4214E-8F8F-40E7-BCC2-D77EFA18C595" name="syllabus_ordinal">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Unit Ordinal is the Unit number of Syllabus]]></comment>
+<commentInRDBMS><![CDATA[Unit Ordinal is the Unit number of Syllabus]]></commentInRDBMS>
+<notes><![CDATA[Unit Ordinal is the Unit number of Syllabus]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A691C383-6716-CCC1-A607-D7308F6CB82B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>syllabus_ordinal</preferredAbbreviation>
+<shortName>syllabus_ordinal</shortName>
+<synonym>syllabus_ordinal</synonym>
+<synonymToDisplay>syllabus_ordinal</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="no" id="A7573509-B6AD-DCCB-384F-9DAB3A3971CD">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Heriarchy of Order]]></comment>
+<commentInRDBMS><![CDATA[Heriarchy of Order]]></commentInRDBMS>
+<generatorID>7396B640-67C1-9002-8749-EC1E6D52B5F7</generatorID>
+<notes><![CDATA[Heriarchy of Order]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EB7343A0-F83F-C90A-C86B-4E89423A9B46</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>A8EB8B7F-4F6A-0DC2-873E-E25009B66450</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="4C59C531-2E30-29AE-D3AB-4467696A9D31">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[name - FIRST /SECOND /THIRD/FOURTH /FIFTH]]></comment>
+<commentInRDBMS><![CDATA[name - FIRST /SECOND /THIRD/FOURTH /FIFTH]]></commentInRDBMS>
+<notes><![CDATA[name - FIRST /SECOND /THIRD/FOURTH /FIFTH]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B39DDD8A-67E3-78E9-ACB5-A012D57DAF8E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="59AE6D84-3077-0373-8B2D-3AD8F13121BA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[order - 1st/2nd/3rd/4th/5th]]></comment>
+<commentInRDBMS><![CDATA[order - 1st/2nd/3rd/4th/5th]]></commentInRDBMS>
+<notes><![CDATA[order - 1st/2nd/3rd/4th/5th]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>78512ABB-CA0F-165F-31D0-F3B03BDEF2BD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="BAA3AEA5-0F90-6330-C7E9-6B884425EE79">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>49069F4F-C23A-47BE-D5F6-94C2E18F4FB2</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="29223DC3-EBC1-AABD-5AC9-F73ADE0BCC1A" name="syllabus_ordinal_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>806A175D-3E6A-AEA7-57FC-630C8A325AEF</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A7573509-B6AD-DCCB-384F-9DAB3A3971CD</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="6FBDD9F1-7BB4-8240-C961-B614320C8A3A" name="syllabus_ordinal_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5E03C923-9DA8-E177-FE41-93FACE4CF829</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>4C59C531-2E30-29AE-D3AB-4467696A9D31</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D508769C-35A5-8373-A64D-ED31FCBF18CF" name="syllabus_ordinal_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>13BD458F-65C4-EE08-261D-6B086B32693B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>59AE6D84-3077-0373-8B2D-3AD8F13121BA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

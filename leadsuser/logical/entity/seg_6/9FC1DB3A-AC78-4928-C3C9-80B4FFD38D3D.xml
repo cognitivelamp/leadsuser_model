@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_6" id="9FC1DB3A-AC78-4928-C3C9-80B4FFD38D3D" name="shift">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[shift timing for work]]></comment>
+<commentInRDBMS><![CDATA[shift timing]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EF11A1C7-77FE-2F1C-7E0F-6A76A32B6F71</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>shift</preferredAbbreviation>
+<shortName>shift</shortName>
+<synonym>shift</synonym>
+<synonymToDisplay>shift</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="78E29204-4BB0-19C3-8FA3-C215AD9D5EF4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Shift Code]]></comment>
+<commentInRDBMS><![CDATA[Shift Code]]></commentInRDBMS>
+<notes><![CDATA[Shift Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>AEF2E0FE-F55E-B067-BC95-A1456FE3CF9A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>A</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="name" id="EC19A6DB-77D6-E64C-D6FB-15896D474D74">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>007C5AAD-78E1-76C7-0F80-4DBA770B7F3A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="3CA59AD8-0304-02DF-75D0-BB2998D281D0">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>146622B5-CFE9-C627-4B11-EBC801541A9C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="A26A2F2F-9163-184A-C111-6EF9B1D7D8F1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[the shift code description]]></comment>
+<commentInRDBMS><![CDATA[the shift code description]]></commentInRDBMS>
+<notes><![CDATA[the shift code description]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>618B37C2-9A5C-FAB0-7605-6D7233BC34BD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8E453EFA-1952-8D94-B1CF-C1D1D8846845" name="shift_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>394DCF68-0272-D6A3-8122-1119EB07B128</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>78E29204-4BB0-19C3-8FA3-C215AD9D5EF4</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="028AE7DF-B3B1-B046-07DD-39DDEF5970AA" name="shift_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>564C5E5D-7C69-5855-3506-EC8E03666733</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>EC19A6DB-77D6-E64C-D6FB-15896D474D74</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="50203781-AA2A-4A96-9F33-A9A8903A193D" name="shift_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>12858842-43C5-2D93-19EE-7DADAA1BFC79</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>3CA59AD8-0304-02DF-75D0-BB2998D281D0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

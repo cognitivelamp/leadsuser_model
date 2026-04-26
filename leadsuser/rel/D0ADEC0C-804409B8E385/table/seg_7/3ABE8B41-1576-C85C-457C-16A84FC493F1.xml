@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="3ABE8B41-1576-C85C-457C-16A84FC493F1" name="email_log">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[email log]]></comment>
+<commentInRDBMS><![CDATA[email log]]></commentInRDBMS>
+<generatorID>63E1C335-F442-EE89-5977-624E9FA929D5</generatorID>
+<notes><![CDATA[email log]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>email_log</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="send_to" id="110853F7-4934-9419-F87B-2B349E15D86F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[sending to]]></comment>
+<commentInRDBMS><![CDATA[sending to]]></commentInRDBMS>
+<generatorID>2F46C68D-AF07-7C45-5579-26213C8A5534</generatorID>
+<notes><![CDATA[sending to]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="send_from" id="8C589205-AF68-7428-D506-626F42DE4CB5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[sending from]]></comment>
+<commentInRDBMS><![CDATA[sending from]]></commentInRDBMS>
+<generatorID>A3B7A2E3-2E2B-5CA7-7A18-42259C5CD5A5</generatorID>
+<notes><![CDATA[sending from]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>yourmailID@domain.com</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subject" id="B0A72735-3E2F-560E-ADD4-008247FADC8F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[subject of the email]]></comment>
+<commentInRDBMS><![CDATA[subject of the email]]></commentInRDBMS>
+<generatorID>C254D0D2-FE80-E3C2-E3E4-CA55612432E7</generatorID>
+<notes><![CDATA[subject of the email]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="message" id="B61C875D-59BF-C7F6-771B-C49463AA5895">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Message content or body of the email.]]></comment>
+<commentInRDBMS><![CDATA[Message content or body of the email.]]></commentInRDBMS>
+<generatorID>B20F98B7-0649-B285-9FB6-C4A5D6172D84</generatorID>
+<notes><![CDATA[Message content or body of the email.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="send_cc" id="AF322C54-F91E-23F1-EE25-59A027322235">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Carbon Copy]]></comment>
+<commentInRDBMS><![CDATA[Carbon Copy]]></commentInRDBMS>
+<generatorID>85FCCACE-6CB2-E649-284C-4FDD61F6A5F4</generatorID>
+<notes><![CDATA[Carbon Copy]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>yourmailID@domain.com</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="send_bcc" id="7692F9CB-6AB7-52BB-7198-52FF453DA8EF">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Blind Carbon Copy]]></comment>
+<commentInRDBMS><![CDATA[Blind Carbon Copy]]></commentInRDBMS>
+<generatorID>1EC42B7B-E89E-79A0-0A5D-D2F219F41BCE</generatorID>
+<notes><![CDATA[Blind Carbon Copy]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>yourmailID@domain.com</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="replyto" id="71FF0199-A8BC-7303-4306-EF3DF2DDC6A4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Reply to]]></comment>
+<commentInRDBMS><![CDATA[Reply to]]></commentInRDBMS>
+<generatorID>9927F790-210A-7D08-6EA5-97C10E0C3FE1</generatorID>
+<notes><![CDATA[Reply to]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>yourmailID@domain.com</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="changedate" id="98EF0E86-09D0-C4BE-DE20-C2D41298872E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[change date and time of the email sent.]]></comment>
+<commentInRDBMS><![CDATA[change date and time of the email sent.]]></commentInRDBMS>
+<generatorID>10C25890-2DCF-14C1-8F81-45ED95534234</generatorID>
+<notes><![CDATA[change date and time of the email sent.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_log_ID" id="AFF8002F-9E69-ACEC-128B-B17748A55265">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0551C82-11FC-5B44-9725-BF4B7D8476CA" name="email_log_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="AFF8002F-9E69-ACEC-128B-B17748A55265"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

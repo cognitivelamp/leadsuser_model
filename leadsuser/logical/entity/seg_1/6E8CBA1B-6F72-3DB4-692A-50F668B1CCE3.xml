@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="6E8CBA1B-6F72-3DB4-692A-50F668B1CCE3" name="document">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[document - PAN CARD/PASSPORT/DRIVING LICENCE/AADDHAAR CARD/PASSBOOK/BIRTH CERTIFICATE/ETC]]></comment>
+<commentInRDBMS><![CDATA[document - PAN CARD/PASSPORT/DRIVING LICENCE/AADDHAAR CARD/PASSBOOK/BIRTH CERTIFICATE/ETC]]></commentInRDBMS>
+<notes><![CDATA[document - PAN CARD/PASSPORT/DRIVING LICENCE/AADDHAAR CARD/PASSBOOK/BIRTH CERTIFICATE/ETC]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7A300F5C-D70E-E691-DB40-CFFE5CEAD936</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>document</preferredAbbreviation>
+<shortName>document</shortName>
+<synonym>document</synonym>
+<synonymToDisplay>document</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="27AEE375-C790-C672-2FF0-D80D802AB721">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Document Code]]></comment>
+<commentInRDBMS><![CDATA[Document Code]]></commentInRDBMS>
+<notes><![CDATA[Document Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>FC7D467C-98EF-522C-31F3-F256C6A61791</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="BFEFF000-8AB9-A2CB-DBFE-A8E2973EB228">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Document Name - PAN CARD/PASSPORT/DRIVING LICENCE/AADDHAAR CARD/PASSBOOK/BIRTH CERTIFICATE/ETC]]></comment>
+<commentInRDBMS><![CDATA[Document Name - PAN CARD/PASSPORT/DRIVING LICENCE/AADDHAAR CARD/PASSBOOK/BIRTH CERTIFICATE/ETC]]></commentInRDBMS>
+<notes><![CDATA[Document Name - PAN CARD/PASSPORT/DRIVING LICENCE/AADDHAAR CARD/PASSBOOK/BIRTH CERTIFICATE/ETC]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3EBAC196-DF2E-67F0-8141-977ED5AF9FD7</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="1D161202-6484-0924-A544-18FA9E0F119F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Pseudo Name of the Document]]></comment>
+<commentInRDBMS><![CDATA[Pseudo Name of the Document]]></commentInRDBMS>
+<notes><![CDATA[Pseudo Name of the Document]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E7895C48-1D20-6C06-285B-C8EAE13673A6</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="58F579DD-881F-7F03-9668-3BDEAE68F201">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>11BE3188-DD1A-4601-A71B-85CC6B62BA9C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D6CC17D5-CA71-4E0F-C34E-4AFF67439394" name="document_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>97E2D890-8FE9-84FB-EEE9-BC929B7D44A0</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>27AEE375-C790-C672-2FF0-D80D802AB721</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="9D49727B-DF9D-9C99-63D2-5E68174494D6" name="document_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CAB7E8D5-5805-DA6B-631B-CF4366B9FF85</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>BFEFF000-8AB9-A2CB-DBFE-A8E2973EB228</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="278C1F38-D767-0DFF-01A8-D86F4BC2A231" name="document_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2D0B4241-9DF1-F469-77EB-F34807EF4FA4</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>1D161202-6484-0924-A544-18FA9E0F119F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

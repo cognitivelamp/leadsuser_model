@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="E456C7ED-8FC0-F4DF-C85E-CD31201D36D5" name="question_section">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Question Section: Section A/Section B/Section C]]></comment>
+<commentInRDBMS><![CDATA[Question Section: Section A/Section B/Section C]]></commentInRDBMS>
+<notes><![CDATA[Question Section: Section A/Section B/Section C]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>996553FB-E4A7-5623-337B-A5A2DB5DFB27</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>question_section</preferredAbbreviation>
+<shortName>question_section</shortName>
+<synonym>question_section</synonym>
+<synonymToDisplay>question_section</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="no" id="6A19E13F-D376-A11B-E9A4-525410B6E992">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Section Number]]></comment>
+<commentInRDBMS><![CDATA[Section Number]]></commentInRDBMS>
+<notes><![CDATA[Section Number]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>941D902E-E368-63A2-7540-A1AB75AC34DB</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="BC0BEBF7-CBDC-CCD3-2C56-775EF34EC0E2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2EE2F153-E10A-AB1F-41CD-C70EAC4C52F3</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="41C063A5-A701-D016-8A8C-76363E502DBC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>17791567-087A-ED7F-CFBA-BDA4EA71A08C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="149C9388-0AAA-BC29-3D85-2AB47CF49BF3" name="question_section_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E7224049-4EC8-94B0-D6FC-B9DD75F61F31</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>BC0BEBF7-CBDC-CCD3-2C56-775EF34EC0E2</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0CE6BFF7-C853-251C-1AF1-3FEDF03A0597" name="question_section_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1D5E05DF-6593-8750-E026-920D806607E5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6A19E13F-D376-A11B-E9A4-525410B6E992</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

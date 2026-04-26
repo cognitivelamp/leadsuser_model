@@ -1,0 +1,249 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="FB356D9C-C190-D277-D71C-53574F8802D7" name="lib_management">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[libarary management table contains all the information regarding transaction of books.]]></comment>
+<commentInRDBMS><![CDATA[libarary management table contains all the information regarding transaction of books.]]></commentInRDBMS>
+<notes><![CDATA[libarary management table contains all the information regarding transaction of books.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>90A834B8-2117-FA17-130F-E4474C2CB8AE</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>lib_management</preferredAbbreviation>
+<shortName>lib_management</shortName>
+<synonym>lib_management</synonym>
+<synonymToDisplay>lib_management</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="subscriber#" id="D87BBAED-2ED6-5EDB-FFFE-7AA0E6E7102E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Subscriber ID]]></comment>
+<commentInRDBMS><![CDATA[Subscriber full name.]]></commentInRDBMS>
+<notes><![CDATA[Subscriber full name.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A343AB78-69C3-F388-F64B-DE62ACC1136D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="subscriber_type" id="B11A47DF-51D7-D508-7534-E728C1D64EFA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[subscriber type - teacher/student/staff/etc/]]></comment>
+<commentInRDBMS><![CDATA[subscriber type - teacher/student/staff/etc/]]></commentInRDBMS>
+<generatorID>C103C593-0392-47C1-A06E-94F7FF790B0D</generatorID>
+<notes><![CDATA[subscriber type - teacher/student/staff/etc/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7E33241C-9438-674C-5CD7-DF029AB555AF</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>A9C8BB44-0D18-965B-963B-9692B5BE15D6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="policy_type" id="7FAEB1A3-5074-83B5-09FE-BDD47F8B6B15">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Policy Name of the Library - weekly/monthly/quarterly, etc.]]></comment>
+<commentInRDBMS><![CDATA[Policy Name of the Library - weekly/monthly/quarterly, etc.]]></commentInRDBMS>
+<generatorID>00C6A893-76E9-97CB-4B73-0B9EDF368A6D</generatorID>
+<notes><![CDATA[Policy Name of the Library - weekly/monthly/quarterly, etc.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>91762301-21CE-B3E6-7739-51A1C9054BD7</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>EC32D9C7-0BA7-628B-59CF-E07C0A2EEF50</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="takenon" id="FE077402-182D-D1C3-3103-F61595F8AC77">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[The date the book was taken on.]]></comment>
+<commentInRDBMS><![CDATA[The date the book was taken on.]]></commentInRDBMS>
+<notes><![CDATA[The date the book was taken on.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>641E8CE7-28B8-E8A6-207E-C84DBADC08F5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>lib_management_takenon_cons</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>TRUNC(sysdate, &apos;DAY&apos;)</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="returnedon" id="C3099DE3-722B-E496-3455-766ED6E3B094">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[The date the book was returned.]]></comment>
+<commentInRDBMS><![CDATA[The date the book was returned.]]></commentInRDBMS>
+<notes><![CDATA[The date the book was returned.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>18254CF0-35A0-B0D8-F810-E204833A5154</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="remarks" id="FFCFA8F7-A183-7385-33A5-A3A6C44EEE3C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Remarks on the book and subscriber.]]></comment>
+<commentInRDBMS><![CDATA[Remarks on the book and subscriber.]]></commentInRDBMS>
+<notes><![CDATA[Remarks on the book and subscriber.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>296D50C4-2F1E-3BC1-E9A5-50D986E12171</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="created_by" id="325BC914-6F15-0F17-C957-C0708F8D0A6D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Created By]]></comment>
+<commentInRDBMS><![CDATA[Created By]]></commentInRDBMS>
+<notes><![CDATA[Created By]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C660172A-AC57-8B9F-B478-B6D5E739479A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="created_on" id="0B78AFB4-03E5-D2A0-B77A-93634CB83BD5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Created Date and Time]]></comment>
+<commentInRDBMS><![CDATA[Created Date and Time]]></commentInRDBMS>
+<notes><![CDATA[Created Date and Time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>57F77A2B-0611-D0CC-04CF-B401E5F4BE4F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="updated_by" id="57E99884-C721-B008-DE28-9040185522DF">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Last Updated Date and Time]]></comment>
+<commentInRDBMS><![CDATA[Last Updated Date and Time]]></commentInRDBMS>
+<notes><![CDATA[Last Updated Date and Time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B39E4476-5E9F-5B64-310F-E40F1ECFC639</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="changedate" id="1423237A-5807-1A65-7C00-3103F13C9562">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Change date of the record.]]></comment>
+<commentInRDBMS><![CDATA[Change date of the record.]]></commentInRDBMS>
+<notes><![CDATA[Change date of the record.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>16C9B082-DFB3-6323-BA00-78B860040339</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E2EAAA72-4114-2AF4-2E38-AE23EAA01F68" name="lib_management_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6221B12C-1EB7-3463-2F2F-A220C0E7E2BE</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>D87BBAED-2ED6-5EDB-FFFE-7AA0E6E7102E</attributeRef>
+<attributeRef>FE077402-182D-D1C3-3103-F61595F8AC77</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

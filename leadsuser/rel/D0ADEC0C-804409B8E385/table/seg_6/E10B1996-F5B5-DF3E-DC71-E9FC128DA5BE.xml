@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_6" id="E10B1996-F5B5-DF3E-DC71-E9FC128DA5BE" name="subscriptions">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>0518EC61-5639-AF18-8755-F99F607F3121</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C1B6CD8E-EE05-0EF3-9A44-9E20AB16BF8F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5D0F9C19-C5C2-9D9F-F45F-CD129978D738">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Subscription ID]]></commentInRDBMS>
+<generatorID>5D6795AD-C96C-9CE4-AB82-F5077870AD9F</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1A05DAEB-D95B-ECF8-6AA3-67BF8A8C4C0A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="092041DF-69BD-5AD9-72F4-85740DCC7197">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Subscription Name]]></commentInRDBMS>
+<generatorID>7E105B85-053F-7C97-2005-F81DBB6F4D5E</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2280002F-C519-AA17-4375-044E4DA9F7C7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="C66B4D3C-0445-DB62-947E-52804F3F1C7A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>501C1B4C-0919-2B93-BC5F-4856146AD194</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>98FA625F-DBE6-9E0F-38B7-62D1AB6C5C86</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1AAAF0DD-80BD-335A-32F0-9076AC95FDE1" name="subscription_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>7A95A15D-CABD-5A00-F823-B298EC85950E</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D1E4C2D7-3735-020B-6AB5-71F8756F96A9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D0F9C19-C5C2-9D9F-F45F-CD129978D738"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4718F83F-E47A-BE4B-60E6-A93E1A193B69" name="subscription_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>E3B09AA2-7CAA-17AF-066C-73BB47615748</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>86558D93-F256-C78E-77F3-8338524B3174</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="092041DF-69BD-5AD9-72F4-85740DCC7197"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5FCEE12-6305-02F6-B645-5541FD905233" name="subscription_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>067AD9F2-8505-2D68-2F60-2F6C486539E5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D0F9C19-C5C2-9D9F-F45F-CD129978D738"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32F16909-75E4-185E-7B6F-C9D255D9E379" name="subscription_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>55D06F21-0C4A-5379-A22B-8F68128ACEC2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="092041DF-69BD-5AD9-72F4-85740DCC7197"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

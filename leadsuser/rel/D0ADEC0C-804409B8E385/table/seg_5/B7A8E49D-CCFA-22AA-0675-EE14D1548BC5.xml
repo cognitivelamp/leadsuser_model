@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_5" id="B7A8E49D-CCFA-22AA-0675-EE14D1548BC5" name="salary_component">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>21A8D546-FBB7-54A4-3371-FD2399558973</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>465FDB9C-CCC3-860C-222F-E3B05C76D700</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="salary_component_ID" id="EF82A56A-90FB-0E6C-DE45-99F36799455E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="D9800DBF-8CDA-BCE3-7426-C8B0DB8B76CD">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C4EC82EC-A2EE-4E59-1428-0D04EAE485A8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="67F7ACB3-CA9C-19AB-E0BA-392DAEA4CE7E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[FIXED/VARIABLE]]></commentInRDBMS>
+<generatorID>464F1731-3EDE-1E95-93F1-730FDE7D6EF7</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E97B844E-522C-2BEE-16CF-7522E8B8FDE8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="FCE1723A-FFA7-23F5-7784-5782D201FB7D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>8A362A30-75D0-584A-D8CB-EECB11B4EE74</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>205A62D1-E5A3-466E-81DE-11FEDF8CBF83</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F33156E1-9B61-BD88-940E-FA093D05C734" name="salary_component_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="EF82A56A-90FB-0E6C-DE45-99F36799455E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4BDA0645-AC9D-F42C-75B4-2FF62DBD3AA5" name="salary_component_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>03347243-8C69-7491-0AE4-05072A741596</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9800DBF-8CDA-BCE3-7426-C8B0DB8B76CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F61CE28-C0C7-04B4-5F73-70D59CB10C4B" name="salary_component_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>07A090F4-D621-4A7D-413A-8FC3E768198F</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4AC4570D-665D-F928-F7EA-3878B550246C</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67F7ACB3-CA9C-19AB-E0BA-392DAEA4CE7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

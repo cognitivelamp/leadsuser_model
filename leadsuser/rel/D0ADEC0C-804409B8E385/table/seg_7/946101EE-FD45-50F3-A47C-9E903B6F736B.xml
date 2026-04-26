@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="946101EE-FD45-50F3-A47C-9E903B6F736B" name="quarter">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[quarter of the year - 3 months]]></comment>
+<commentInRDBMS><![CDATA[quarter of the year - 3 months]]></commentInRDBMS>
+<generatorID>7FBA1A23-2A69-0136-9078-022EAA9A5D8F</generatorID>
+<notes><![CDATA[quarter of the year - 3 months]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>quarter</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="name" id="AA22B959-89CF-57B0-94E4-F967BD87636C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Name of the Quarter - First quarter/Second Quarter/Third Quarter/Fourth Quarter]]></comment>
+<commentInRDBMS><![CDATA[Name of the Quarter - First quarter/Second Quarter/Third Quarter/Fourth Quarter]]></commentInRDBMS>
+<generatorID>DCA52205-C9D6-0DA5-7A17-ACF36757FE1B</generatorID>
+<notes><![CDATA[Name of the Quarter - First quarter/Second Quarter/Third Quarter/Fourth Quarter]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="3F363DC8-599C-C65B-A232-AA8CFB5D91CE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>E6C8CB99-9FE8-5631-125C-F2ADACFEC649</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quarter_ID" id="4F84F810-C4D9-F305-F93B-798DDF633B78">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="20D5B983-D981-19C3-F639-1636AB38340D" name="quarter_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="4F84F810-C4D9-F305-F93B-798DDF633B78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EA96409-E107-3C62-D552-3284C07DE549" name="quarter_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>02BAE459-4358-6CFD-DF8E-FC988E084362</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA22B959-89CF-57B0-94E4-F967BD87636C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="872BC7D0-44A1-E32D-0BDF-7633C8DADA2F" name="academic">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>C93855AF-E9B1-2376-1205-F14BF4898BF2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7208ED1E-4E29-19D0-9123-4B9FAF382538</importedID>
+<abbreviation>academic</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="academic_ID" id="D15C9059-1821-7D2A-9E9E-82ED4835B0AE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="F03EC4A9-150F-F96A-7397-1DA975433BEC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>379623BE-FFA8-746E-7858-D8AADE5E54F2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="BF0CD428-D20D-DC8E-2445-61671590068D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Academic Type - Main, Minor, Optional, Additional, Extra-Curricular]]></comment>
+<commentInRDBMS><![CDATA[Academic Type - Main, Minor, Optional, Additional, Extra-Curricular]]></commentInRDBMS>
+<generatorID>C75A0913-1975-E4B4-2EEF-CBB3C876B1BE</generatorID>
+<notes><![CDATA[Academic Type - Main, Minor, Optional, Additional, Extra-Curricular]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>10855E0C-7CFB-E053-3D1C-18D05791152F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC6758B1-C791-00D1-8E53-CD1085D0AD3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pseudo" id="4BE13DE7-3FA2-E8A8-E7BF-5B50DFC8FA3D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>A54206CA-58A6-B0D2-C532-0157988A0D99</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8F919185-516A-0C55-84B4-1CA54371E579</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="B18FC9D7-BADD-D225-4EAB-DAB70C2CD6B3">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>32641C8B-24B0-B1E4-3326-73367F7BF5AF</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6A28FB30-52C2-A57C-D1D4-8DEF709B14A2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E9864178-AA0C-A28C-E8D3-CDDA3549A6AA" name="academic_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D15C9059-1821-7D2A-9E9E-82ED4835B0AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D677C821-1B5C-E39A-3DCB-D4B6319BC9FB" name="academic_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B4554080-5F5C-448D-4BC2-9648E61F5A01</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F03EC4A9-150F-F96A-7397-1DA975433BEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEFCFC71-7C14-239C-0925-5E37F1A6B89C" name="academic_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>EFCF10BD-972F-16C0-E777-3EDE5F9C5A15</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EA082E37-0A00-F963-4B87-58F158942264</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF0CD428-D20D-DC8E-2445-61671590068D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="323B7FBF-C83B-DCB1-2545-918BF2EC47BD" name="academic_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4A096292-F6FD-6A5F-1936-090302F7DA59</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F03EC4A9-150F-F96A-7397-1DA975433BEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B78C031-1B91-7E29-DC14-1091EB551DF0" name="academic_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3CE4C3C7-6F46-07F3-536B-9B7B15430793</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF0CD428-D20D-DC8E-2445-61671590068D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

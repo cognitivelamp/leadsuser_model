@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="CB07EF6B-B3A7-693D-53D3-E6E51A8EE273" name="ecalendar">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Employee Calendar]]></comment>
+<commentInRDBMS><![CDATA[Employee Calendar]]></commentInRDBMS>
+<generatorID>EDABB446-2F81-E3A2-2FFC-F0CFBC89392F</generatorID>
+<notes><![CDATA[Employee Calendar]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>ecalendar</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="startdate" id="4C3552EE-141A-1CFA-5101-CD3600FE4294">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Start Date and Time]]></comment>
+<commentInRDBMS><![CDATA[Start Date and Time]]></commentInRDBMS>
+<generatorID>034D4B3E-5A4A-D36B-1C0E-8772802C8CD4</generatorID>
+<notes><![CDATA[Start Date and Time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>TRUNC(sysdate, &apos;DD&apos;)</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="enddate" id="F03674BC-519B-122E-0797-774D525AB9AD">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[End Date and Time]]></comment>
+<commentInRDBMS><![CDATA[End Date and Time]]></commentInRDBMS>
+<generatorID>B5A97948-F393-99A2-E0F9-14CA79951010</generatorID>
+<notes><![CDATA[End Date and Time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>TRUNC(sysdate, &apos;DD&apos;)</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reminder" id="B1D5C2A2-DF5C-536E-EACD-6B7E9532C914">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Reminder of the Calendar]]></comment>
+<commentInRDBMS><![CDATA[Reminder of the Calendar]]></commentInRDBMS>
+<generatorID>E962F5D5-444B-9C63-28B9-3602E1B4C398</generatorID>
+<notes><![CDATA[Reminder of the Calendar]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>TRUNC(sysdate, &apos;DD&apos;)</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="B6302A4B-DF5D-D025-2F81-B0C71C8EA240">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>AC2AB38A-5674-04F4-6C4A-C5A2BAC13D36</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comments" id="4E8E9D13-5B44-2006-3D9F-8F33121DAD43">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>9A36896E-DD3E-37F7-0081-727FEE827BEA</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="03FB8D6B-FDD8-CE63-BD58-5EB8B3FF5E69">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Employee ID Number]]></comment>
+<commentInRDBMS><![CDATA[Employee ID Number]]></commentInRDBMS>
+<generatorID>9F23E22A-A306-643F-28C1-3D878558DD7B</generatorID>
+<notes><![CDATA[Employee ID Number]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4848D9B9-49B1-56E3-32C7-C5AD857C56B7" referredColumn="3FC8E5C6-AC58-17FB-4585-348C27905E28"/>
+</associations>
+</Column>
+<Column name="ecalendar_ID" id="D06EAF67-4989-D6E1-19AE-B3FBCB186276">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09CAAF68-52ED-40E1-25A3-E1337E44C851" name="ecalendar_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D06EAF67-4989-D6E1-19AE-B3FBCB186276"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C409ECF-2EA0-C1F7-A983-57D161DF9544" name="ecalendar_employee_fk">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<generatorID>74AD6B90-D0CD-6B32-2F13-EEC8DB1DAF92</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03FB8D6B-FDD8-CE63-BD58-5EB8B3FF5E69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

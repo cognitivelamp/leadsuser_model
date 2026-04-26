@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="F0C3AEBB-0BFB-D90E-146F-5E1B8192E43D" name="portion">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[PROSE, PEOTRY ,PLAY GEOMETRY, ARITHMETIC, CALCULUS]]></comment>
+<commentInRDBMS><![CDATA[PROSE, PEOTRY ,PLAY GEOMETRY, ARITHMETIC, CALCULUS]]></commentInRDBMS>
+<generatorID>2939C744-7F88-C3DB-DB0A-305FAFA3CA48</generatorID>
+<notes><![CDATA[PROSE, PEOTRY ,PLAY GEOMETRY, ARITHMETIC, CALCULUS]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7332E5D5-734E-DBB1-9C8E-E7921F641F2C</importedID>
+<abbreviation>portion</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="portion_ID" id="796EB5EE-D648-11C7-143A-11410F59F564">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="9BF21AC3-579E-5BFB-B61D-4577C7390F7D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5C023D4F-D1C6-9301-5560-4E7B4155D148</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="45F2A8D5-F092-6551-3A65-896D4F2348DD">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[PEOTRY/PROSE/PLAY/GEOMETRY/ALGEBRA/etc]]></comment>
+<commentInRDBMS><![CDATA[PEOTRY/PROSE/PLAY/GEOMETRY/ALGEBRA/etc]]></commentInRDBMS>
+<generatorID>D44CF607-2C85-6F74-CEC7-049C2D3B92DF</generatorID>
+<notes><![CDATA[PEOTRY/PROSE/PLAY/GEOMETRY/ALGEBRA/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>54A5FDE5-AEF5-583D-1EFC-71B2E9BC7941</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="87E4EC52-F4C2-8777-C5D6-C494E0E1F210">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[description]]></comment>
+<commentInRDBMS><![CDATA[description]]></commentInRDBMS>
+<generatorID>245C26BF-8F36-314F-D78E-C1131912426E</generatorID>
+<notes><![CDATA[description]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5DEC6CFA-057C-4A79-8E70-1AA5562F8BCA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="780AFE7C-A47E-E685-F63B-145F35A453F2" name="portion_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="796EB5EE-D648-11C7-143A-11410F59F564"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3D868A9-9488-2F99-A16B-84E3ED944D97" name="portion_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>674F561E-9014-0EA6-0F4C-E116649D196B</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BF21AC3-579E-5BFB-B61D-4577C7390F7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FBCC8721-50C0-D572-7215-B587C6DF686E" name="portion_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>0BBB7B6D-C53C-0A58-B270-041F0B34C99B</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>911FE393-72DC-227F-3257-18B919AF6836</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45F2A8D5-F092-6551-3A65-896D4F2348DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

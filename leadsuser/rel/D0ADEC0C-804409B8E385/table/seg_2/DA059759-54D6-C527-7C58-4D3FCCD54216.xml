@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="DA059759-54D6-C527-7C58-4D3FCCD54216" name="proficiency">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 07:47:35 UTC</createdTime>
+<generatorID>B01F030F-1128-9835-01ED-E2FA571E82B4</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="6EF9E101-1BAB-EEC7-38C8-B5F90B9FEB85">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 07:47:35 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="proficiency_level" id="FA4AB2E2-6A20-F8DA-28FD-5EF3E7F6D7AD">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 07:47:35 UTC</createdTime>
+<generatorID>59E761E5-8179-CD29-A862-EE9657903EAB</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC6758B1-C791-00D1-8E53-CD1085D0AD3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proficiency_score" id="C39F79F7-1ADF-9515-03A2-57A66247F1C3">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 07:47:35 UTC</createdTime>
+<generatorID>7C96C109-8AF6-3506-FA27-F00D362FF95B</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F01E2F38-7AC8-86BD-B098-0A79206A3B16</domain>
+<defaultValue>90</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="serial_no" id="4AE09B0D-D0AF-3413-5B7A-8E2281E9C5E2">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 07:47:35 UTC</createdTime>
+<generatorID>CAED2960-848C-0065-CCA0-5FC588F28704</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="B2036D09-6222-A20F-3B44-81FA6A7A7B3D">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 07:47:35 UTC</createdTime>
+<generatorID>B8A06163-8288-DD74-B185-3E90599CDB8A</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4086F6FD-7453-BCA9-4620-B5806C311FA6" name="proficiency_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 07:47:35 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="6EF9E101-1BAB-EEC7-38C8-B5F90B9FEB85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2B7DBC2-1BF5-F3BF-19F3-B818F678C0A3" name="proficiency_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 07:47:35 UTC</createdTime>
+<generatorID>CE9175D6-8F3C-AF67-7BB8-F41B0A578B38</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA4AB2E2-6A20-F8DA-28FD-5EF3E7F6D7AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

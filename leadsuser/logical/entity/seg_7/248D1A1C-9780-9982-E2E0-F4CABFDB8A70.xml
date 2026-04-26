@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_7" id="248D1A1C-9780-9982-E2E0-F4CABFDB8A70" name="wordlist">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Wordlist consists of all the dictionary known words.]]></comment>
+<commentInRDBMS><![CDATA[Wordlist consists of all the dictionary known words.]]></commentInRDBMS>
+<notes><![CDATA[Wordlist consists of all the dictionary known words.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0A825069-A007-6121-01E1-60A9BF8BE448</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>wordlist</preferredAbbreviation>
+<shortName>wordlist</shortName>
+<synonym>wordlist</synonym>
+<synonymToDisplay>wordlist</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="name" id="395A5A21-8FE7-74AB-EB4B-137FA3CFF1EC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Word spelling]]></comment>
+<commentInRDBMS><![CDATA[Word spelling]]></commentInRDBMS>
+<notes><![CDATA[Word spelling]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9F97FF9C-F489-E621-51DD-774884452134</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="5E24C8B7-2F71-EB4E-4A57-D02BA45824B4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>17CEC01F-E31B-6C2E-DF98-7969289B7117</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8D0E4309-5542-8BB5-6F94-7CF7DEA241E0" name="wordlist_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>78BCAC67-B9C4-0A74-227D-75B9A6C053A2</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>395A5A21-8FE7-74AB-EB4B-137FA3CFF1EC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

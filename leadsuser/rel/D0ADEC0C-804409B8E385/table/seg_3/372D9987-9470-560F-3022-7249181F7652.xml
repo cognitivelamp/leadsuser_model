@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="372D9987-9470-560F-3022-7249181F7652" name="leave_status">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[Leave Status - PENDING/APPROVED/REJECTED]]></comment>
+<commentInRDBMS><![CDATA[Leave Status - PENDING/APPROVED/REJECTED]]></commentInRDBMS>
+<generatorID>6853CDAC-B7CD-2265-9C49-A3AE054D5F4C</generatorID>
+<notes><![CDATA[Leave Status - PENDING/APPROVED/REJECTED]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F4F8792F-463D-B446-530B-A416730CD27C</importedID>
+<abbreviation>leave_status</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="leave_status_ID" id="D8FBA1E0-CECC-2009-5E4E-EB68CF308BCA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="3D9F59FB-2DEB-2582-F19D-DF0275B9486D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>289F7B18-FBB7-A62B-90BE-C89FAF9CFB7B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="BDD1104F-D568-B6EB-FF26-E0E3959DF2CA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Leave Status - PENDING/APPROVED/REJECTED]]></comment>
+<commentInRDBMS><![CDATA[Leave Status - PENDING/APPROVED/REJECTED]]></commentInRDBMS>
+<generatorID>AB1DCC5F-4B22-017C-AA60-8AE8C0409EDC</generatorID>
+<notes><![CDATA[Leave Status - PENDING/APPROVED/REJECTED]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DFE48D29-4F44-91E0-EAD7-BF911C386D0A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="71D3094E-4FB0-1BC3-AC45-D7D71D3AEED2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>B6FFF77C-79C5-6FD2-143B-C8B301ADA2F2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A6FC7B45-E026-7DB1-15A3-EFBBE8C75A03</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="479A089E-1BF3-9FE5-F2E1-7E1D7C867682" name="leave_status_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D8FBA1E0-CECC-2009-5E4E-EB68CF308BCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE9C2302-2FE3-A936-152E-550BAEFB544A" name="leave_status_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4C0AE2E2-F2BC-11D0-847F-9033B902F093</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D9F59FB-2DEB-2582-F19D-DF0275B9486D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DA774B2-1C60-F31A-F3E6-909F841C88E5" name="leave_status_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>AFE7A5D0-BB48-2BF2-D639-DCBAA7DC81CB</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>98775C05-A6D1-28A1-E6A8-8274EA1C58E3</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDD1104F-D568-B6EB-FF26-E0E3959DF2CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6694927-6885-D614-1991-31B1AF394D50" name="leave_status_id_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>40D39DA7-D2E5-2925-3613-5FE0EE8A7DBC</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D9F59FB-2DEB-2582-F19D-DF0275B9486D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="241D34B3-5C36-7D3A-2541-E818363FDBA1" name="leave_status_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3045C368-A5CF-E6E2-9A18-52F9166A84C0</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDD1104F-D568-B6EB-FF26-E0E3959DF2CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

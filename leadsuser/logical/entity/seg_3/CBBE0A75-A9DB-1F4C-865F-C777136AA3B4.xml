@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="CBBE0A75-A9DB-1F4C-865F-C777136AA3B4" name="lib_policy">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Policy table of the Library - weekly/monthly/quarterly, etc.]]></comment>
+<commentInRDBMS><![CDATA[Policy table of the Library - weekly/monthly/quarterly, etc.]]></commentInRDBMS>
+<notes><![CDATA[Policy table of the Library - weekly/monthly/quarterly, etc.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DFCD982C-56AA-D9D7-AA41-893E6CFA7A89</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>lib_policy</preferredAbbreviation>
+<shortName>lib_policy</shortName>
+<synonym>lib_policy</synonym>
+<synonymToDisplay>lib_policy</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="EC32D9C7-0BA7-628B-59CF-E07C0A2EEF50">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Policy Name of the Library - weekly/monthly/quarterly, etc.]]></comment>
+<commentInRDBMS><![CDATA[Policy Name of the Library - weekly/monthly/quarterly, etc.]]></commentInRDBMS>
+<notes><![CDATA[Policy Name of the Library - weekly/monthly/quarterly, etc.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>115F4915-DA69-028F-1E22-E8C0570A420D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="description" id="7D28F7CB-FA03-C599-BA8C-42DF41259EC0">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Policy description of the Library - weekly/monthly/quarterly, etc.]]></comment>
+<commentInRDBMS><![CDATA[Policy description of the Library - weekly/monthly/quarterly, etc.]]></commentInRDBMS>
+<notes><![CDATA[Policy description of the Library - weekly/monthly/quarterly, etc.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F7201F6F-DF9D-5B19-FAF3-7367A13313BD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="01472E54-29F1-40CC-257A-F4D239CE40CC" name="librarypolicy_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B8041A87-7A0E-7997-A229-88E878EC97C2</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>EC32D9C7-0BA7-628B-59CF-E07C0A2EEF50</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

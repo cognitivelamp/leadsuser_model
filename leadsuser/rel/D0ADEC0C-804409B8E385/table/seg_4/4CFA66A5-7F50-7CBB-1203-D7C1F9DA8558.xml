@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="4CFA66A5-7F50-7CBB-1203-D7C1F9DA8558" name="qualification">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[qualification of employees]]></comment>
+<commentInRDBMS><![CDATA[qualification of employees]]></commentInRDBMS>
+<generatorID>8C67B585-3032-532F-C269-694E5B923B0C</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7876ADA7-0977-A16B-1AF1-9124EA79AAEB</importedID>
+<abbreviation>qualification</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code" id="A9BD3275-75CC-9A07-0390-D71AC2C5F757">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Qualifictation code Size = 4]]></comment>
+<commentInRDBMS><![CDATA[Qualifictation code Size = 4]]></commentInRDBMS>
+<generatorID>CE4D7EF4-E9CA-BB8A-8A89-82EE9A828062</generatorID>
+<notes><![CDATA[Qualifictation code Size = 4]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D5F07CAA-B7B9-0B6B-2DFC-1AAA8591DB81</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="name" id="781950F3-5476-D76C-2345-90FE31880801">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[qualification name]]></comment>
+<commentInRDBMS><![CDATA[qualification name]]></commentInRDBMS>
+<generatorID>53753434-341A-5EB3-ABAB-FE5CCF0CE56A</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1ADB688B-DFCC-C164-33E1-BC031100B4A3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duration" id="5794C7ED-827C-67F7-C162-850F95847777">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Duration of Course in years]]></comment>
+<commentInRDBMS><![CDATA[Duration of Course in years]]></commentInRDBMS>
+<generatorID>C8DA6D26-2A29-0F80-7383-68083CA6C7E4</generatorID>
+<notes><![CDATA[Duration of Course in years]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>60BD9AD8-8054-9FA1-82AE-9E3BB4368019</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="177C300F-A5C4-455F-0892-952A8C14753E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[qualification name description]]></comment>
+<commentInRDBMS><![CDATA[qualification name description]]></commentInRDBMS>
+<generatorID>8D8CCBF0-BFBF-81C7-368B-8FBCF3D3C019</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C6FF1BFA-4B2D-2CE6-BA2D-75EB53C20F8E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="326EC656-A200-9EAA-3AEB-54096DDF4245" name="qualification_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>F1890849-99FE-3EF8-772F-312C01DE70C8</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2947D283-52CE-1761-907F-7416A1ADB9AC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9BD3275-75CC-9A07-0390-D71AC2C5F757"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="934425CD-5790-9D7D-14A8-88E43573C10A" name="qualification_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>97CF8A38-4BB5-BDB3-969E-955BD045FE2F</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B01CF87E-1097-4778-C349-29C83703AEA3</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="781950F3-5476-D76C-2345-90FE31880801"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40678C31-CE4D-CB90-5123-4E7CA243C019" name="qualification_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5D3BEC44-5552-3969-13D5-87A70D9AD905</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9BD3275-75CC-9A07-0390-D71AC2C5F757"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70D7BCE4-A64C-C18B-61BA-CC8F04A481F8" name="qualification_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>311976F5-3F7A-F848-9EFC-53DF6082A749</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="781950F3-5476-D76C-2345-90FE31880801"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

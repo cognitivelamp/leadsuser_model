@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="D3AF5CE1-395A-516C-30AF-18CB8ABE1E7F" name="KPI">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[perforamance KPI]]></comment>
+<commentInRDBMS><![CDATA[perforamance KPI]]></commentInRDBMS>
+<notes><![CDATA[perforamance KPI]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5086A2A5-B67B-FF5E-AA7E-1EF60A64D1B8</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>KPI</preferredAbbreviation>
+<shortName>KPI</shortName>
+<synonym>KPI</synonym>
+<synonymToDisplay>KPI</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="6EA72548-1742-2F91-029B-60924CCB4709">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[KPI Code]]></comment>
+<commentInRDBMS><![CDATA[KPI Code]]></commentInRDBMS>
+<notes><![CDATA[KPI Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>89EBCCE8-2473-5F78-29B4-F891FC34C187</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0000</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="name" id="C86737A5-C0B4-49D6-1B86-707838C5FF3D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[KPI NAME]]></comment>
+<commentInRDBMS><![CDATA[KPI NAME]]></commentInRDBMS>
+<notes><![CDATA[KPI NAME]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9AC554B5-1FC3-1A9F-CE24-D2584AAF901A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="descriptions" id="28062D1C-D997-295B-3524-ED729CCBBB91">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[performance parameter description]]></comment>
+<commentInRDBMS><![CDATA[performance parameter description]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CE50B389-4F96-A28B-F3A1-36EB6A1247FD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E6AC820D-8156-AB5D-7D4C-08503F2E81B9" name="KPI_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8C6D7688-DA68-24F2-E044-C9FA96C5D805</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>C86737A5-C0B4-49D6-1B86-707838C5FF3D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F2B3A7A1-064B-5F9D-7B9F-30E70D23F30D" name="KPI_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0B504315-472A-5EF6-5B23-9340980E8E78</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6EA72548-1742-2F91-029B-60924CCB4709</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

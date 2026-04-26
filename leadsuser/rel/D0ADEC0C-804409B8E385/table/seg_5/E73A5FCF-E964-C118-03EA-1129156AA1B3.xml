@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_5" id="E73A5FCF-E964-C118-03EA-1129156AA1B3" name="route">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>5BCFA14D-F721-D6CB-0D03-8DA57C6EADB9</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>192DD3D6-DB91-1FA5-0CBF-FB1E47C18D54</importedID>
+<abbreviation>route</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="no" id="11E41CDF-778B-DFAA-ACCB-2B00CA800983">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Route No]]></commentInRDBMS>
+<generatorID>0C998621-3327-5961-9DFA-B725736FE8BB</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BAABE9BF-F311-64C2-0916-9619015FC24E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="6D507803-CEFA-91E1-74DD-8775E543E2F0">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[Route name]]></comment>
+<commentInRDBMS><![CDATA[Route name]]></commentInRDBMS>
+<generatorID>8998C2B8-4552-AAC7-260B-5227FCDA4FD1</generatorID>
+<notes><![CDATA[Route name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>13A4054E-58B7-32A6-DC39-B934EE164DB2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_code" id="CF793B92-1293-3030-487F-53FB267F425E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<comment><![CDATA[Company Code - 10 digits]]></comment>
+<commentInRDBMS><![CDATA[Company Code - 10 digits]]></commentInRDBMS>
+<generatorID>8137497D-71C2-9E5B-C311-7437698DAC85</generatorID>
+<notes><![CDATA[Company Code - 10 digits]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3C064028-9E54-0FC6-671D-8087908EF56F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59FAD26C-ED7F-1430-BF1C-A86354F87C11" referredColumn="D71F2D74-C007-FB15-6CBE-EB06C3C933D7"/>
+</associations>
+</Column>
+<Column name="note" id="457269CC-53AB-33DE-5F48-8442FD75C6BB">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>17E971E2-2FEF-9502-A46F-94249021F862</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>89C86372-76D4-E911-12FF-24BFD689AF8F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A3ACAE1E-D34B-996F-6F07-CC3BE4980619" name="route_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>D923AB4E-443B-629E-2048-DF96A26788DC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>45EEFEF6-A23A-FC75-D554-A68124D1D0D9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11E41CDF-778B-DFAA-ACCB-2B00CA800983"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D4FF9E1-67A3-EEC8-318E-DCFECFC1C9C1" name="route_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>BF5C37D1-857C-1162-491E-174290FBEF7F</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>425AF866-B229-8597-535C-7D7AA3799342</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D507803-CEFA-91E1-74DD-8775E543E2F0"/>
+<colUsage columnID="CF793B92-1293-3030-487F-53FB267F425E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41039638-F695-975A-7103-07063FAAF9CB" name="route_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7DDF1C5D-C01D-7EDF-C879-BBB7DCB058CC</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11E41CDF-778B-DFAA-ACCB-2B00CA800983"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="691928C3-753E-E97B-1682-1F34FBA4C2A5" name="route_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EE5F9DB6-CF91-A152-51A2-9EB61ADE6822</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D507803-CEFA-91E1-74DD-8775E543E2F0"/>
+<colUsage columnID="CF793B92-1293-3030-487F-53FB267F425E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19A9B65B-1769-01AF-FBA0-D00AA848B64D" name="route_company_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>94D2C924-A6DF-290C-015E-6807932EE3F4</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF793B92-1293-3030-487F-53FB267F425E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5046694D-E09A-352E-0E88-A31461203153" name="Route_Company_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:22 UTC</createdTime>
+<generatorID>B20D6B97-3CDE-F791-EEFE-A84889ACF3E3</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF793B92-1293-3030-487F-53FB267F425E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

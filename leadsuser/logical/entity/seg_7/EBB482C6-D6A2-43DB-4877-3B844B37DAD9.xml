@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_7" id="EBB482C6-D6A2-43DB-4877-3B844B37DAD9" name="uni_parameter">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Universal Parameter - SCHOOL ACCOUNTING  YEAR/SCHOOL RE-OPEN/EMPLOYEE REPORTING DATE/SCHOOL CLOSING DATE/LAST WORKING DATE]]></comment>
+<commentInRDBMS><![CDATA[Universal Parameter - SCHOOL ACCOUNTING  YEAR/SCHOOL RE-OPEN/EMPLOYEE REPORTING DATE/SCHOOL CLOSING DATE/LAST WORKING DATE]]></commentInRDBMS>
+<notes><![CDATA[Universal Parameter - SCHOOL ACCOUNTING  YEAR/SCHOOL RE-OPEN/EMPLOYEE REPORTING DATE/SCHOOL CLOSING DATE/LAST WORKING DATE]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9CDE3D76-D0B5-EF06-B6EA-9C7E71BBDF80</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>uni_parameter</preferredAbbreviation>
+<shortName>uni_parameter</shortName>
+<synonym>uni_parameter</synonym>
+<synonymToDisplay>uni_parameter</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="BC310031-0858-84FD-A2FE-1A3EC40BA23D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8D18A951-DCAE-EDFC-FACE-826625071C69</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="name" id="6381C663-2752-CEE1-18CA-BC65C098909C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Parameter Name]]></comment>
+<commentInRDBMS><![CDATA[Parameter Name]]></commentInRDBMS>
+<notes><![CDATA[Parameter Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C03C3472-2BB3-7DCC-949D-E80B528E67CD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="description" id="57F0D34B-C127-69CF-AB19-2F90A0522DE4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>02548EAA-1A6D-D350-3622-2E4BD6DDC9AF</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2FE870CA-0B67-5100-77FD-1E2612F409B8" name="uni_parameter_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>35E4C331-2C26-D07B-0FA0-991145E6789D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>6381C663-2752-CEE1-18CA-BC65C098909C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="2AFC7CA2-C539-6964-C76B-71E21F773A95" name="uni_parameter_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>052D7A2C-0C42-8E2D-B01A-F01F76CB9415</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BC310031-0858-84FD-A2FE-1A3EC40BA23D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

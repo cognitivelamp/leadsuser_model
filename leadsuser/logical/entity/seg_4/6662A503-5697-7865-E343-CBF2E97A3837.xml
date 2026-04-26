@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="6662A503-5697-7865-E343-CBF2E97A3837" name="occasion">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Occasion Table - Profile/Personal/Others]]></comment>
+<commentInRDBMS><![CDATA[Occasion Table - Profile/Personal/Others]]></commentInRDBMS>
+<notes><![CDATA[Occasion Table - Profile/Personal/Others]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8C64A955-B2FB-432D-EC28-22437CC238E5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>occasion</preferredAbbreviation>
+<shortName>occasion</shortName>
+<synonym>occasion</synonym>
+<synonymToDisplay>occasion</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="79DC2A0D-4F13-569B-F259-83CFF782AE82">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Ocassion Type - Profile/Personal/etc]]></comment>
+<commentInRDBMS><![CDATA[Ocassion Type - Profile/Personal/etc]]></commentInRDBMS>
+<notes><![CDATA[Ocassion Type - Profile/Personal/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5CBB4D69-4F54-D608-0117-B4A765C86B8B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="C08D6234-8654-5717-9722-ACAF40F3FD79">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>30A77A07-5E60-E340-593B-BD9B2262224F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D145E678-5500-66B6-F137-1FB06A4C6C49" name="occasion_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9B108D39-9FD8-96D5-7B2F-44C58FC9C182</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>79DC2A0D-4F13-569B-F259-83CFF782AE82</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

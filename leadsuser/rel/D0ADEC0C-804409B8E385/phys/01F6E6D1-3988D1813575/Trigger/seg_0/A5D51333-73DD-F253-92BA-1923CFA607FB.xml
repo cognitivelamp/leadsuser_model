@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="constraint_type_chg_trg" directorySegmentName="seg_0" id="A5D51333-73DD-F253-92BA-1923CFA607FB">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-24 08:29:50 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	:new.type := UPPER(:new.type);
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>027354BB-8EA1-CF05-6069-69138CF56862</table>
+</TriggerOraclev10g>

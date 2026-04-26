@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="95AFCAB6-985F-95F7-75D8-A318346BC6BD" name="compulsory">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Compulsory Subject Types - MAIN/ADDITIONAL/CO-CURRICULAR are Flagged 'YES',
+Preferrable Subject Types - OPTIONAL SUBJECT/SECOND LANGUAGE/FOURTH SUBJECT are flagged 'NO']]></comment>
+<commentInRDBMS><![CDATA[Compulsory Subject Types - MAIN/ADDITIONAL/CO-CURRICULAR are Flagged 'YES',
+Preferrable Subject Types - OPTIONAL SUBJECT/SECOND LANGUAGE/FOURTH SUBJECT are flagged 'NO']]></commentInRDBMS>
+<notes><![CDATA[Compulsory Subject Types - MAIN/ADDITIONAL/CO-CURRICULAR are Flagged 'YES',
+Preferrable Subject Types - OPTIONAL SUBJECT/SECOND LANGUAGE/FOURTH SUBJECT are flagged 'NO']]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4D06D0FB-C875-85BC-EA5B-3633FA648351</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>compulsory</preferredAbbreviation>
+<shortName>compulsory</shortName>
+<synonym>compulsory</synonym>
+<synonymToDisplay>compulsory</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="86EA59AB-8324-FC4F-9CD5-056E22169FDD">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Optional is set YES, NO for Compulsory Subject]]></comment>
+<commentInRDBMS><![CDATA[Optional is set YES, NO for Compulsory Subject]]></commentInRDBMS>
+<notes><![CDATA[Optional is set YES, NO for Compulsory Subject]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>39724282-A741-EAC1-B17E-95B52305FCD4</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<defaultValue>YES</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="5F15F1C2-B402-07B1-AF6F-605BDB38F725">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CCB9789F-A703-55DA-5653-CB1E5D8930A2</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="FD3B557B-4CBA-1C69-A434-C5EA71B260A8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BDD5314F-4C6E-0DDB-D399-1B61904597ED</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6DF5A9F4-7A2F-E522-BC58-EA3A8D9A395C" name="compulsory_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6B5AD17D-B0A0-C221-A97B-AAB2DA0CD9E8</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>86EA59AB-8324-FC4F-9CD5-056E22169FDD</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5E98519C-9B13-C4E8-E69A-DC303DA5F6CA" name="compulsory_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DBBBF6BA-3223-2E52-0425-0541C6AF1CD3</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>5F15F1C2-B402-07B1-AF6F-605BDB38F725</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

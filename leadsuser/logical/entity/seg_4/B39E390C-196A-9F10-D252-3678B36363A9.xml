@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="B39E390C-196A-9F10-D252-3678B36363A9" name="priority">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Priority Level - VERY HIGH=1/HIGH=2/MEDIUM=3/LOW=4]]></comment>
+<commentInRDBMS><![CDATA[Priority Level - VERY HIGH=1/HIGH=2/MEDIUM=3/LOW=4]]></commentInRDBMS>
+<notes><![CDATA[Priority Level - VERY HIGH=1/HIGH=2/MEDIUM=3/LOW=4]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>304C1F42-C07B-4FAD-63A7-E04815A1B158</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>priority</preferredAbbreviation>
+<shortName>priority</shortName>
+<synonym>priority</synonym>
+<synonymToDisplay>priority</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="priority_order" id="BABA21FB-6581-9D04-4E8A-EB9931022C4E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Priority Order]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0FF82432-FFED-8A6A-B174-572D974275AA</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="priority_name" id="6FCB4569-912E-A179-0DB8-D7E75E802AAC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CA8717DC-2343-DA7B-9CD7-37982439BE27</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="priority_score" id="BE56E354-7E60-9FEA-DE5E-47DFF2964098">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:48:37 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F01E2F38-7AC8-86BD-B098-0A79206A3B16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="note" id="2D0AFDCD-5BE2-8B8B-1769-07FCD017A9EF">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>842246A8-7EDD-D856-7A98-EBA73E9D9F45</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1362AD29-6B88-E9F4-9031-EFBE88E728A1" name="priority_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-31 03:44:54 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>BABA21FB-6581-9D04-4E8A-EB9931022C4E</newElementsIDs>
+<usedAttributes>
+<attributeRef>BABA21FB-6581-9D04-4E8A-EB9931022C4E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8E6074FE-4967-3C53-F84B-C5A66C0794B9" name="priority_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-31 03:49:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<newElementsIDs>6FCB4569-912E-A179-0DB8-D7E75E802AAC</newElementsIDs>
+<usedAttributes>
+<attributeRef>6FCB4569-912E-A179-0DB8-D7E75E802AAC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

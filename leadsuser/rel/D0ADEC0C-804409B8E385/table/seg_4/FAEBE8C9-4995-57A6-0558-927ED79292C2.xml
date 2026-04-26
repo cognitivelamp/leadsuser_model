@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="FAEBE8C9-4995-57A6-0558-927ED79292C2" name="rate">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>26350B8C-0D84-C8C4-D3A3-C1F4A33A84B1</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>38C7A3D7-10E4-97AC-8E04-B7EF11BF3992</importedID>
+<abbreviation>rate</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rate_ID" id="F043D1BB-93BB-08F5-A260-705AC62E0A28">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="ED22892B-1AC4-E3E9-FD07-57FBA6620767">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7EE70990-525E-32DD-1574-7ED518B9FD83</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="A192798E-37EE-8106-9629-77102CDC1DE3">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Rate Name]]></comment>
+<commentInRDBMS><![CDATA[Rate Name]]></commentInRDBMS>
+<generatorID>BE10BB65-3F8F-A186-AB55-62E5346DB5BA</generatorID>
+<notes><![CDATA[Rate Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E9CFD02E-C3CE-B9F5-1061-7956C595FAF9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="199490D9-07E8-E474-5E76-AD242697921E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>3CE47CBD-D109-AAE6-7129-4AC478120075</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5DD35CED-1344-0D6B-8D36-6F8F749A5220</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F7DC7FA5-2B62-10D0-73D4-8A330D9305BC" name="rate_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="F043D1BB-93BB-08F5-A260-705AC62E0A28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B097830-D67D-3868-6816-D8084BFC52E2" name="rate_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>411223F4-ADBA-3701-8EDF-9766BB2EC45A</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED22892B-1AC4-E3E9-FD07-57FBA6620767"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="819F7E99-1DF2-07D4-4242-3B72878C87DB" name="rate_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>EE6D777A-CFBF-25A6-EB48-52B69028A725</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>FC80AEB9-5B47-2A74-D751-144DEC4BFE0D</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A192798E-37EE-8106-9629-77102CDC1DE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FEDE678-6F02-DE2D-ECFF-DDDF7F51ECD8" name="rate_id_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EBAED796-CBD4-CFBF-B953-AB9966D7DD29</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED22892B-1AC4-E3E9-FD07-57FBA6620767"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB565857-E596-EA7A-1862-314C68A21AA8" name="rate_name_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>359049C4-3ED1-A7F8-A387-65758EC0B2ED</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A192798E-37EE-8106-9629-77102CDC1DE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

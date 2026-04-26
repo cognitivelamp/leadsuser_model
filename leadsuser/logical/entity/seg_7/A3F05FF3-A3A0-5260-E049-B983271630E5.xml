@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_7" id="A3F05FF3-A3A0-5260-E049-B983271630E5" name="year_date">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Year Date containes the dates of the year]]></comment>
+<commentInRDBMS><![CDATA[Year Date containes the dates of the year]]></commentInRDBMS>
+<notes><![CDATA[Year Date containes the dates of the year]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>82049400-1279-D9D5-A24E-C3C60D0F635A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>year_date</shortName>
+<synonym>year_date</synonym>
+<synonymToDisplay>year_date</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="day" id="8471D9B5-E4B1-4AF3-D940-7967D3845CC0">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Day of the year]]></comment>
+<commentInRDBMS><![CDATA[Day of the year]]></commentInRDBMS>
+<notes><![CDATA[Day of the year]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E5A816D2-5434-EEC8-1A39-8C69B183E8AD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="FBE1F03F-8D5B-5F32-237D-B200B4A6F5F1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>235A3184-B5DB-5A9B-025B-4E88F3A33DA9</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="69669951-4DE5-FC39-FCA5-9318DF49C939" name="year_date_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>23F42B5A-B75B-669D-C4FF-EC710AD05124</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>8471D9B5-E4B1-4AF3-D940-7967D3845CC0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

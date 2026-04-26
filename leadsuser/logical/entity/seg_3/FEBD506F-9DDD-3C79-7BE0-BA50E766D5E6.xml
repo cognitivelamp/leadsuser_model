@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="FEBD506F-9DDD-3C79-7BE0-BA50E766D5E6" name="learning_criteria">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Learning Criteria]]></comment>
+<commentInRDBMS><![CDATA[Learning Criteria]]></commentInRDBMS>
+<notes><![CDATA[Learning Criteria]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3FD1DFEF-3FCB-F1F8-6B9E-20EA81F0A7ED</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="9091EB92-DDF6-648A-BE56-D354063045D5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Criteria: KNOWLEDGE/CRITICAL THINKING/]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1F5F9C23-2856-2DC1-DDE5-38927A8442A5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="54A7DEDF-AC1E-0427-0BC8-13A899BC458B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>AC847786-A1E0-1517-C0A6-20D61D175DC7</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="color_hex" id="8CB88DD0-AEAE-2F0C-E0FC-FABD28752456">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Color Code in Hexadecimal]]></comment>
+<commentInRDBMS><![CDATA[Color Code in Hexadecimal]]></commentInRDBMS>
+<notes><![CDATA[Color Code in Hexadecimal]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5CDE7112-3C7B-A4B0-D668-828833FE03AA</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C60B0DB5-CB0A-A049-1E93-0AC43EEF2178</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="6A77FBA2-A921-D455-0D97-9D81FC9C129D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>86EF0A9B-A292-716D-EF33-95C93B1A2CC8</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="48DA5058-90DD-B1E6-CE73-4328990CA5CD" name="learning_criteria_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9D8FC412-3DB2-2877-1418-3068DB81181E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>54A7DEDF-AC1E-0427-0BC8-13A899BC458B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="38226A94-3F86-9254-4113-D61F37B5F1D5" name="learning_criteria_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7A6F7DBD-9FDC-9ADA-4AE4-CD230FBA95FE</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9091EB92-DDF6-648A-BE56-D354063045D5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

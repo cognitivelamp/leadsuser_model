@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="0965CA0F-21B2-8A0D-66F5-BA74A7106526" name="prefix_sex">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[Prefix and Gender]]></comment>
+<commentInRDBMS><![CDATA[Prefix and Gender]]></commentInRDBMS>
+<notes><![CDATA[Prefix and Gender]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2F487B6C-2953-3FAB-6ADB-BB179423E021</importedID>
+<abbreviation>prefix_sex</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="74C23653-34DC-62C2-3B61-AC573D85BB96">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2959F55C-C166-33FA-B80E-281FC568DA14</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prefix_name" id="B17D4FB5-674D-ABC5-7D4D-B43BFE78852B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Mr./Mrs./Ms/Rev./Dr.]]></comment>
+<commentInRDBMS><![CDATA[Mr./Mrs./Ms/Rev./Dr.]]></commentInRDBMS>
+<notes><![CDATA[Mr./Mrs./Ms/Rev./Dr.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DFED61F9-9F54-C494-C31E-2D548B45CC72</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sex_name" id="F80DDC4A-63E9-B2BF-DDCE-C3689E241BD6">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[MALE/FEMALE/OTHERS]]></comment>
+<commentInRDBMS><![CDATA[MALE/FEMALE/OTHERS]]></commentInRDBMS>
+<notes><![CDATA[MALE/FEMALE/OTHERS]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A10EFA01-2DF9-4E64-995E-E6C86300D9CE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="5F9DD23F-8B6C-B816-94CF-65E084A484CE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B17E2429-0320-296C-CD71-0EE36122DA01</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="54B329C2-F986-2061-A5E1-6924D4CE3B11" name="prefix_sex_pk">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>44C527F9-DDF6-A573-0C37-DB35C988A7EF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74C23653-34DC-62C2-3B61-AC573D85BB96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED2C5489-ED4F-8C79-6477-F44017615B04" name="prefix_sex_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>163AC8DB-D3E5-FDA9-71B6-5D7BEFF62CB3</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

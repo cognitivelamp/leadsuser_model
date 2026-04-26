@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="68AEAB27-1203-8155-8711-C0D5023301A8" name="auto_complete">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Auto Completion at the Cut-out Time]]></comment>
+<commentInRDBMS><![CDATA[Auto Completion at the Cut-out Time]]></commentInRDBMS>
+<notes><![CDATA[Auto Completion at the Cut-out Time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1B599EA4-E05C-C437-C1EC-60B1BC9C511E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>auto_complete</preferredAbbreviation>
+<shortName>auto_complete</shortName>
+<synonym>auto_complete</synonym>
+<synonymToDisplay>auto_complete</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="414F480D-16F5-429F-D2F2-14FCA9389C57">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[1 YES/0 NO]]></comment>
+<commentInRDBMS><![CDATA[1 YES/0 NO]]></commentInRDBMS>
+<notes><![CDATA[1 YES/0 NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5F87ED06-9FC2-3E72-67C8-9CAE5DA21100</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="8FCF66B1-17EE-CD6C-CB11-1FCCBA598CF0">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Auto Complete at the End of the Limited Time - YES/NO]]></comment>
+<commentInRDBMS><![CDATA[Auto Complete at the End of the Limited Time - YES/NO]]></commentInRDBMS>
+<notes><![CDATA[Auto Complete at the End of the Limited Time - YES/NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>87B277AC-0A27-5CC5-AC3B-1122A16D514E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC6758B1-C791-00D1-8E53-CD1085D0AD3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="F43B5ED8-B380-81E8-BFCB-739335D4B1CF">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Complete the Survey when Target Time is Reached Automatically]]></comment>
+<commentInRDBMS><![CDATA[Complete the Survey when Target Time is Reached Automatically]]></commentInRDBMS>
+<notes><![CDATA[Complete the Survey when Target Time is Reached Automatically]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1BD19A26-FC8B-9B06-D1C3-56F92DB96749</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3DD7B62B-B46D-C4D2-CD14-96EF12654EE4" name="auto_complete_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>25288202-ABA8-1BC8-E910-A23478BD9E86</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>8FCF66B1-17EE-CD6C-CB11-1FCCBA598CF0</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="9309850F-76FD-67AE-5190-5B4431DC7F56" name="auto_complete_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3B186930-2CDB-C65C-5BFC-3FCA5A100A4F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>414F480D-16F5-429F-D2F2-14FCA9389C57</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

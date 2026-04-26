@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="A7D2E995-E238-98C4-DE8E-BC39119CE668" name="leave">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[employee leave]]></comment>
+<commentInRDBMS><![CDATA[employee leave]]></commentInRDBMS>
+<generatorID>F460925C-2828-947E-44E5-9ED92B73B6C3</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1B03E52E-5CDD-4B9C-50E3-B35100E3E3EF</importedID>
+<abbreviation>leave</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code" id="BA3133C4-87C2-3A91-A38A-40E070BDE132">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Leave Code]]></comment>
+<commentInRDBMS><![CDATA[Leave Code]]></commentInRDBMS>
+<generatorID>9368813E-393F-B691-931E-B547D9D0F543</generatorID>
+<notes><![CDATA[Leave Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2475D32B-5BA8-8D8B-A11F-607A28B1B61F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="52F73C1D-1EB6-A0F5-996B-490583399B80">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[leave type]]></comment>
+<commentInRDBMS><![CDATA[leave type]]></commentInRDBMS>
+<generatorID>890AD491-FEB2-C66B-3189-1E0B40F96E31</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>514ADB47-E5D0-A671-EB0B-572D993E1994</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pseudo" id="596CAF3E-AF38-6F4E-4465-B8AD83DB07F7">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>8A30DC27-8001-27B5-8648-F559425953AD</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>643173F3-B3D6-4849-F036-B57E6A9079B9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="54ED060B-1AD7-8BD8-75B2-E4995BE078D2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[leave type description]]></comment>
+<commentInRDBMS><![CDATA[leave type description]]></commentInRDBMS>
+<generatorID>6F3A87BE-D920-63F3-7C79-DF1A9313187C</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>46833126-FA58-6424-EBF4-F4288B12C5C7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29FD3891-9035-5B3E-BEE4-8FF5C13D6ED8" name="leave_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>035D45A8-4DA0-FA9C-85B6-B06A6091E264</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>03B93043-9017-2ED9-88CE-C883758170C3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA3133C4-87C2-3A91-A38A-40E070BDE132"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32B008FF-FF3A-F0F4-C031-D1EB011C8BDB" name="leave_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>F19BB804-D929-6C74-B9FF-7DF82D7ADB62</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9858CAF5-8C31-A949-CFB8-21C1F0AADC0F</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52F73C1D-1EB6-A0F5-996B-490583399B80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B2D4829-34CE-C27D-EEE2-3CA8D9DDB2B3" name="leave_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>B16EFCA5-F812-C734-EFAA-717B933CE55A</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3CC6B851-6697-A00B-BE5C-EA03EB4304FA</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="596CAF3E-AF38-6F4E-4465-B8AD83DB07F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="771DFC0A-EB37-533A-E077-1ECAE265D824" name="leave_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>75561BDC-7082-4D64-C057-3B2D4779F895</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA3133C4-87C2-3A91-A38A-40E070BDE132"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46D44459-AA17-D70E-EB44-BB11F3B96C85" name="leave_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>996D112B-421C-895C-9090-C865B244322C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52F73C1D-1EB6-A0F5-996B-490583399B80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39755DA7-DCFA-F4D8-FCF7-842D1F3E8D89" name="leave_un2_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>58A81130-167B-527F-3A32-8917B790DE78</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="596CAF3E-AF38-6F4E-4465-B8AD83DB07F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

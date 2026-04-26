@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_5" id="2E3CA740-BC2A-BB8B-0806-F5DE53BAF30C" name="room">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[facility room available]]></comment>
+<commentInRDBMS><![CDATA[facility room available]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>828A9FB3-8816-CE4D-0117-622009B13529</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>room</preferredAbbreviation>
+<shortName>room</shortName>
+<synonym>rooms</synonym>
+<synonymToDisplay>room</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="E443C95F-073F-3FC4-CEEE-D97EB3884FEB">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Room Code]]></comment>
+<commentInRDBMS><![CDATA[Room Code]]></commentInRDBMS>
+<notes><![CDATA[Room Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7AC3AEC2-A3AD-8A92-4DA8-1A20C4ABE7ED</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>411A7036-AE28-9018-332B-691EBC096EF9</domain>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="name" id="F003F46B-ED35-816E-A5F8-059EAFF36C48">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Room Name]]></comment>
+<commentInRDBMS><![CDATA[Room Name]]></commentInRDBMS>
+<notes><![CDATA[Room Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9A528B7B-226E-B610-3890-DDE4AB5A1FDD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="descriptions" id="2A5EC0F9-4584-28D9-7D8F-30F24782DA6C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Description of the Room]]></comment>
+<commentInRDBMS><![CDATA[Description of the Room]]></commentInRDBMS>
+<notes><![CDATA[Description of the Room]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>723AF1DB-6053-2C0D-6B23-0583BE4FD5F1</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0C837D3E-0BB8-E85C-36A0-832796AEFE67" name="room_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>EBFE1AFD-E460-DE94-4495-068D7A2A7AF4</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>F003F46B-ED35-816E-A5F8-059EAFF36C48</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BB5DCB13-F14A-3301-9F3C-427DB58A749F" name="room_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>831A69B2-783E-3476-EBCB-7F4260394CDB</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E443C95F-073F-3FC4-CEEE-D97EB3884FEB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="62436952-4741-E09F-40F3-064D6C263AD3" name="lesson_ordinal">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[Book's Chapter No - 1/2/3/4/5/6/7/8]]></comment>
+<commentInRDBMS><![CDATA[Book's Chapter No - 1/2/3/4/5/6/7/8]]></commentInRDBMS>
+<generatorID>7910E019-7F77-E7CB-2912-7EC0C3F61481</generatorID>
+<notes><![CDATA[Book's Chapter No - 1/2/3/4/5/6/7/8]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6C80A4E2-771D-DE24-8045-BB90CFC660AE</importedID>
+<abbreviation>lesson_ordinal</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="no" id="F1E61B83-661F-7FF6-144A-B874A7E932CC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Heriarchy of Order]]></comment>
+<commentInRDBMS><![CDATA[Heriarchy of Order]]></commentInRDBMS>
+<generatorID>AD995503-E09B-EEE9-FB51-566A0C33D490</generatorID>
+<notes><![CDATA[Heriarchy of Order]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B1A12A25-67B1-CDA0-AAB8-1396B249FE1E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C529B1A-739B-18A4-FCA7-2E2B488C232E" referredColumn="3B56F711-18EC-F856-BDB8-AD504C48DCF3"/>
+</associations>
+</Column>
+<Column name="name" id="F714168D-3F7D-07DE-38C4-09405E859314">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>17405D6B-79CB-E8B2-E03A-061A26EF46CA</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7D7B0A26-0B50-7AB4-F7F1-02BCF55D79E4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pseudo" id="0C75F68C-8629-C36E-02A8-75FC9C595D90">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>90B02C6B-D50E-D917-04F5-5678D0C434E9</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F0805118-1B7A-46AC-89E1-30B4F1FF0499</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="CCC80396-5DB3-5A87-EF2E-3B7D914AFD73">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>6A9E6869-7FA6-FB6E-E3E9-CD56F2B459F2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>944063C4-E681-D2B3-3BF9-25B60DA8691C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF73E193-3AB3-E45E-5C75-3CEA712C9B9B" name="lesson_ordinal_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>EDABA70F-6E84-3713-9F1C-BF530202ED21</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>87CF26BD-7C88-D5AA-F345-B060B4962EAF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1E61B83-661F-7FF6-144A-B874A7E932CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E8A5610-298F-FE98-202B-02DC9B1F0DD6" name="lesson_ordinal_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>660A5DBD-FF98-97ED-72B1-015742A7D7B1</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>445737AE-82E1-8034-C439-C58D2F093AE0</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F714168D-3F7D-07DE-38C4-09405E859314"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBA09117-62E6-54CC-861C-3DDC35DBE246" name="lesson_ordinal_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>329A6D24-DEC6-6125-9A2A-FEF1AE191BCE</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F4280E22-10F0-1382-A04D-A601BEA1597C</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C75F68C-8629-C36E-02A8-75FC9C595D90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE7016F1-BB81-1116-C0E6-1B3E20BDCD86" name="lesson_ordinal_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>23A16823-7C28-B73C-2A1B-75A38C9E793A</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1E61B83-661F-7FF6-144A-B874A7E932CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7046EDCC-58E0-5122-92DC-BF7A6CF37D3A" name="lesson_ordinal_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B67D6327-1063-748C-C7F2-02D2A5D5E1F2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F714168D-3F7D-07DE-38C4-09405E859314"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9FE2FC8-C4C8-3386-81BF-560AD0DA1098" name="lesson_ordinal_un2_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>56D3AA54-3A2C-E5AA-3DAF-7A1B14590621</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C75F68C-8629-C36E-02A8-75FC9C595D90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D68FAC5-0876-A091-DB01-E56D1D340675" name="LessOrd_Ordinal_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>AEC330F8-84A5-B0B0-9635-DF966C162386</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1E61B83-661F-7FF6-144A-B874A7E932CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

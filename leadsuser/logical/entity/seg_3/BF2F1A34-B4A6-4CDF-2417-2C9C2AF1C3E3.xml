@@ -1,0 +1,308 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="BF2F1A34-B4A6-4CDF-2417-2C9C2AF1C3E3" name="inbox">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Inbox - internal communication]]></comment>
+<commentInRDBMS><![CDATA[Inbox - internal communication]]></commentInRDBMS>
+<notes><![CDATA[Inbox - internal communication]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>07F3D363-844A-7591-C211-CA933F56CC7B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>inbox</preferredAbbreviation>
+<shortName>inbox</shortName>
+<synonym>inbox</synonym>
+<synonymToDisplay>inbox</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ireceiver_flag" id="31E57008-9D5F-8D28-4412-130208CBBC9B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Inbox Flag - TO/CC/BCC]]></comment>
+<commentInRDBMS><![CDATA[Inbox Flag - TO/CC/BCC]]></commentInRDBMS>
+<generatorID>F111A12D-CC5F-44B2-C698-479830CEFF64</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>847AD160-679C-1BB4-0695-1DC0E113B4D3</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>inbox_receiverflag_cons</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A34C7AFC-FCD0-29EA-D69B-800F195C5070</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>TO</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="subject" id="5DA31255-F7D0-F15B-381B-4FCAB1044071">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Subject of the Conversation]]></comment>
+<commentInRDBMS><![CDATA[Subject of the Conversation]]></commentInRDBMS>
+<notes><![CDATA[Subject of the Conversation]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A5F82054-0D9C-EE64-197C-42672584A84D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="message" id="FB45DE9A-FF8D-A675-E6B1-0A0D136DCEB8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Content of the Message..,]]></comment>
+<commentInRDBMS><![CDATA[Content of the Message..,]]></commentInRDBMS>
+<notes><![CDATA[Content of the Message..,]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>22F0E0F2-B886-EF69-7222-0BB8CB84C707</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="reply" id="A95E88BA-7996-1FB0-4236-5E3CF5B700C4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BF23297E-E521-D4EA-BBC3-D9E504DAB3F5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="sent_on" id="95E5C171-608B-D40E-BEE4-509217D4E0BC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Sent date and time]]></comment>
+<commentInRDBMS><![CDATA[Sent date and time]]></commentInRDBMS>
+<notes><![CDATA[Sent date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5230CE0B-4A4A-984D-CE67-249899ED9977</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="idraft_flag" id="1FB05AF8-C8D7-3D1F-272A-2B89A6464D01">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Inbox Draft Flag - YES/NO]]></comment>
+<commentInRDBMS><![CDATA[Inbox Draft Flag - YES/NO]]></commentInRDBMS>
+<generatorID>5CD718A6-4850-07AE-00A7-75DF8B304126</generatorID>
+<notes><![CDATA[Inbox Draft Flag - YES/NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>58B95238-E57F-1D37-03CF-632E5D9AADAA</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>inbo_draft_cons</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D29C8203-06D6-8372-E43A-70F25725446B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>NO</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="iread_flag" id="56B1C9E4-FB46-1E89-E431-AE84FCF8E66D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Inbox read (YES) or unread (NO)]]></comment>
+<commentInRDBMS><![CDATA[Inbox read (YES) or unread (NO)]]></commentInRDBMS>
+<generatorID>2755B0B4-0C5B-712F-80A6-03346510D847</generatorID>
+<notes><![CDATA[Inbox read (YES) or unread (NO)]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B846246D-6FB1-BF9C-0C99-2463DBFB1867</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>iread_con</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>54D1405A-BD39-97DE-06CD-4F507E8DFD22</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>NO</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="istarred_flag" id="94C8FC18-8689-F1EF-8DB1-C251147543C2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Flag - YES/NO]]></comment>
+<generatorID>6A310E37-2C99-C7F5-A6F4-B127E2549EAC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0CACA87D-2F23-C6AC-2F2E-6F881A423CFD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>inboxstarred_cons</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>754CC502-1677-ED80-602E-F293CC784039</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>NO</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="idelete_flag" id="5A2255C9-39CB-9545-292A-0B75B63D99D1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Inbox Delete flag - YES/NO]]></comment>
+<commentInRDBMS><![CDATA[Inbox Delete flag - YES/NO]]></commentInRDBMS>
+<generatorID>3E59EADF-3269-9DC5-F1D2-90FC1FFD7F23</generatorID>
+<notes><![CDATA[Inbox Delete flag - YES/NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4B650587-341E-E6BA-62F3-24503A9B8D21</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>inboxdelete_cons</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>678F3203-08D8-D2CF-7E30-382E67395508</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>NO</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="receiver_snapshot_to" id="20F4579D-FC2E-8ACA-53B6-57E593C3AD43">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Receiver Snapshot from the sender's perspective]]></comment>
+<commentInRDBMS><![CDATA[Receiver Snapshot from the sender's perspective]]></commentInRDBMS>
+<notes><![CDATA[Receiver Snapshot from the sender's perspective]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7C7F33C9-2D61-0380-715A-8A489AB5F2A7</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="receiver_snapshot_cc" id="59D81E28-74CC-24F6-EBB5-686E8AA551B8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Receiver Snapshot from the sender's perspective]]></comment>
+<commentInRDBMS><![CDATA[Receiver Snapshot from the sender's perspective]]></commentInRDBMS>
+<notes><![CDATA[Receiver Snapshot from the sender's perspective]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F1272EAB-DAB5-7DCF-4FFA-6EFE8AA133B6</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="receiver_snapshot_bcc" id="E57D5B43-3AA9-A02B-4F2C-9AA1725A0873">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Receiver Snapshot from the sender's perspective]]></comment>
+<commentInRDBMS><![CDATA[Receiver Snapshot from the sender's perspective]]></commentInRDBMS>
+<notes><![CDATA[Receiver Snapshot from the sender's perspective]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C9AF90E6-994C-26CD-923C-44D638510E16</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="changedate" id="41111893-AEDB-639C-25DC-C3513565AE04">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9A770F21-93E2-26C7-BD0E-1FD243801F02</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+</Entity>

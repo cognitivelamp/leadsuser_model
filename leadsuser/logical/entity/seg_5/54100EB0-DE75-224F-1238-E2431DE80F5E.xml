@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_5" id="54100EB0-DE75-224F-1238-E2431DE80F5E" name="remarks">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[remark table - INACIVE/LEAVE/SUSPENSION/BEHAVIOUR/RESIGNATION/NO SHOW/]]></comment>
+<commentInRDBMS><![CDATA[remark table - INACIVE/LEAVE/SUSPENSION/BEHAVIOUR/RESIGNATION/NO SHOW/]]></commentInRDBMS>
+<notes><![CDATA[remark table - INACIVE/LEAVE/SUSPENSION/BEHAVIOUR/RESIGNATION/NO SHOW/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E7028DD0-1174-AF95-62B2-030938AA32B9</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>remarks</preferredAbbreviation>
+<shortName>remarks</shortName>
+<synonym>remarks</synonym>
+<synonymToDisplay>remarks</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="8A1AC237-CFD2-60C5-4520-F9915A9FA681">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Remark Code]]></comment>
+<commentInRDBMS><![CDATA[Remark Code]]></commentInRDBMS>
+<notes><![CDATA[Remark Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2D2A1C50-8677-0256-559A-C45F150CE38D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="type" id="A0700952-91D9-FD22-AE48-04F678AB7AC0">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Type of Remark - INACTIVE/LEAVE/SUSPENSION/BEHAVIOUR/RESIGNATION/NO SHOW/]]></comment>
+<commentInRDBMS><![CDATA[Type of Remark - INACIVE/LEAVE/SUSPENSION/BEHAVIOUR/RESIGNATION/NO SHOW/]]></commentInRDBMS>
+<notes><![CDATA[Type of Remark - INACIVE/LEAVE/SUSPENSION/BEHAVIOUR/RESIGNATION/NO SHOW/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7F7CC6DB-45BA-6929-CB9B-B333C66575DF</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="descriptions" id="82833F7F-D655-AE0E-9112-0158312C0828">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>80A2D00C-59B9-3F7C-87D9-8E49CE085CC6</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C0912EC0-BD0D-5771-6054-9594B473CE02" name="remark_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>44F2A124-78D9-8314-9C90-AC88E84E4AFA</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>A0700952-91D9-FD22-AE48-04F678AB7AC0</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D9030B6E-3C37-0A65-EE94-886733ECF809" name="remarks_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3766FFE5-0BF1-23A0-E14E-F2B27409CDF7</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8A1AC237-CFD2-60C5-4520-F9915A9FA681</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

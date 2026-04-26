@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="D9CF170B-7F45-D38D-88AE-E42AA17ED1D8" name="payment">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></comment>
+<commentInRDBMS><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></commentInRDBMS>
+<notes><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>926CB652-2BE0-B20F-CEAF-A090B979B6AA</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>payment</preferredAbbreviation>
+<shortName>payment</shortName>
+<synonym>payment</synonym>
+<synonymToDisplay>payment</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="mode" id="3187A10D-DA56-AB0A-B0A8-F8370082921A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></comment>
+<commentInRDBMS><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></commentInRDBMS>
+<notes><![CDATA[Payment Mode - Cash/Debit Card/Credit Card/Cheque/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2DEBAA5C-0137-DBE6-0F08-976CF7DD6575</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="descriptions" id="DE88FF09-677B-A746-ADD6-15392DD54EBB">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EDDBAE03-9D9B-E76F-7AB9-D575CBE44495</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="385129C2-851B-EB3F-D067-D084F02F2A49" name="payment_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>E28BFE00-7467-C223-3A3A-50D02D33A590</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>3187A10D-DA56-AB0A-B0A8-F8370082921A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A85E5E32-BF6F-0C97-E67C-C7FBDE8A2FF7" name="break">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[breaks - BREAKFAST/LUNCH/DINNER/SNACKS]]></comment>
+<commentInRDBMS><![CDATA[breaks - BREAKFAST/LUNCH/DINNER/SNACKS]]></commentInRDBMS>
+<notes><![CDATA[breaks - BREAKFAST/LUNCH/DINNER/SNACKS]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>65341A77-0AF7-9C49-A99F-981907E48786</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>break</preferredAbbreviation>
+<shortName>break</shortName>
+<synonym>break</synonym>
+<synonymToDisplay>break</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="4A311EF4-77E3-FBC9-C21C-2690FF560793">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Break Code]]></comment>
+<commentInRDBMS><![CDATA[Break Code]]></commentInRDBMS>
+<notes><![CDATA[Break Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>148F5CA2-FA1D-DF25-9D65-82F3754E43B2</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="5EFE2A2A-3169-602D-892A-68D2D1655D78">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C59AC6D3-F22E-C54C-4D7C-41527F2A29CB</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo_name" id="5DD19E0E-AAA2-B12A-6E93-490CB7CD7AB6">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DA6A646A-1BDE-93EB-32A5-F1C3CB423B7C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="E9927C30-D070-DFA1-791D-C791CE10642E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F687A963-7304-2DF5-297D-8FDB31F2009C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B244ECC2-A18B-8E06-1226-E2E62AAE6A7D" name="break_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>5445D14D-4FBB-53DF-2EBD-4D04367C6B4B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>5EFE2A2A-3169-602D-892A-68D2D1655D78</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="25B55FBB-C990-105C-AA65-572B2176E2DA" name="break_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>960CA2F8-7C45-885C-CCBF-AF23006A2B40</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4A311EF4-77E3-FBC9-C21C-2690FF560793</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

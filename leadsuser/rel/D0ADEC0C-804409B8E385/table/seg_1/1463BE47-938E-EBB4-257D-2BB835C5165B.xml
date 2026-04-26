@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="1463BE47-938E-EBB4-257D-2BB835C5165B" name="difficulty">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>AEFD7E26-1C9F-797E-B0B3-E7C923EC80F9</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8A0030F1-55D2-1459-1930-33CA524690AF</importedID>
+<abbreviation>difficulty</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type" id="817B8D78-D6A2-844C-B4E1-346B8260F8D5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Difficulty Level/Type, ranges from 1 to 3]]></comment>
+<commentInRDBMS><![CDATA[Difficulty Level/Type, ranges from 1 to 3]]></commentInRDBMS>
+<generatorID>B009E638-50C0-B731-4A7F-D3DB039892B0</generatorID>
+<notes><![CDATA[Difficulty Level/Type, ranges from 1 to 3]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CD1D2A17-4F4B-2D3A-55DE-65F2496E04E9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pseudo" id="AD1D96E9-CCA0-A5D2-F04B-CC6529D070E5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Pseudo Name of Difficulty Level]]></comment>
+<commentInRDBMS><![CDATA[Pseudo Name of Difficulty Level]]></commentInRDBMS>
+<generatorID>93E46E6A-561C-A524-E028-CF530D33144C</generatorID>
+<notes><![CDATA[Pseudo Name of Difficulty Level]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B3C963C8-41BF-615A-BE30-750EF8F9536F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="5BD19738-EA23-777F-581B-0A1D2C11BCE2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>D8D4EDBC-B5FA-2082-51F0-1C9ABCF64AE5</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E9A1B8A0-342C-E2A6-5867-11BF7E516CB3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12A820A1-9BDE-C9A7-D21E-C07CCFF7DB57" name="difficulty_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>F4520D76-8070-4DAB-CDCD-B725A1723018</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>214EBC93-F310-6258-5497-CA21180ABB79</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="817B8D78-D6A2-844C-B4E1-346B8260F8D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED7C8518-825F-42D1-4184-B1DF11BCFD11" name="difficulty_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>36F10474-22B5-17C2-F2B1-3532306668C6</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CEB2546D-3B7F-2890-F4B6-B9A3A29FF9B1</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD1D96E9-CCA0-A5D2-F04B-CC6529D070E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BAA154B-9292-2C49-EDE2-884520985417" name="difficulty_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>56E39725-2FC8-5F49-4BDC-43A924EEDF1B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="817B8D78-D6A2-844C-B4E1-346B8260F8D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="948ADD47-5CC0-8004-FB77-896FC52F50A0" name="difficulty_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C78E6D50-9B1D-E5CF-F031-9A0D1DD1BE1C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD1D96E9-CCA0-A5D2-F04B-CC6529D070E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

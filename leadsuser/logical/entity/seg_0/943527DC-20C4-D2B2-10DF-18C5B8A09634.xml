@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="943527DC-20C4-D2B2-10DF-18C5B8A09634" name="assistant">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Assistant - Class Teacher/Assistant Class Teacher/Helper/]]></comment>
+<commentInRDBMS><![CDATA[Assistant - Class Teacher/Assistant Class Teacher/Helper/]]></commentInRDBMS>
+<notes><![CDATA[Assistant - Class Teacher/Assistant Class Teacher/Helper/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5BCC4D82-9301-4E72-E1C0-996AFE3B15D1</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>assistant</preferredAbbreviation>
+<shortName>assistant</shortName>
+<synonym>assistant</synonym>
+<synonymToDisplay>assistant</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="8BA78B9E-76BB-2EEB-E1FA-218C95C94DB5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Assistant Code]]></comment>
+<commentInRDBMS><![CDATA[Assistant Code]]></commentInRDBMS>
+<notes><![CDATA[Assistant Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6BFBD466-9A0A-BA25-5C89-86A400DD00CC</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="4584B84C-1B82-4D9B-5621-57B3A5F24A87">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Assistance Name/Type]]></comment>
+<commentInRDBMS><![CDATA[Assistance Name/Type]]></commentInRDBMS>
+<notes><![CDATA[Assistance Name/Type]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A8C53E38-36BF-FDDC-4032-7A4E3F6E27DC</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="B1F8E0BF-8F1B-0778-BE5A-3300324E5ED9">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>35452085-FD5B-A79C-221A-CE138FABB515</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="51D33E62-468F-D024-25FC-B8C9A72A1F87" name="assistant_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>129353C2-201E-88F5-AF35-165B5ADE8988</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8BA78B9E-76BB-2EEB-E1FA-218C95C94DB5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0EA24798-BBB4-1F7D-20ED-845CBB4EE55A" name="assistant_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>96249D9D-DEFB-3024-C046-2CAC93B04726</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>4584B84C-1B82-4D9B-5621-57B3A5F24A87</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

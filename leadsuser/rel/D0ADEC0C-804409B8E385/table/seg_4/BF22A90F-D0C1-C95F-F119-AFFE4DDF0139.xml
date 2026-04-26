@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="BF22A90F-D0C1-C95F-F119-AFFE4DDF0139" name="religion">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>38F9A2C8-A061-36DA-E436-F117ECE2A656</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7DD86B67-817F-6BB8-7938-40285BABB412</importedID>
+<abbreviation>religion</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code" id="2EFF8F59-BEF2-1006-5A64-F16A324A35A1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Religion Code]]></comment>
+<commentInRDBMS><![CDATA[Religion Code]]></commentInRDBMS>
+<generatorID>C7253B42-D94C-7555-0C6C-9E5CF67BED85</generatorID>
+<notes><![CDATA[Religion Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EBFEB52E-D59E-53C9-7CE4-724FCE605E5F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="name" id="5D6ECA5D-AE05-7954-3DF4-101E691861C3">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Name of the Religion]]></comment>
+<commentInRDBMS><![CDATA[Name of the Religion]]></commentInRDBMS>
+<generatorID>9D77F969-7EF0-512B-3A68-BE4FAA20AB3C</generatorID>
+<notes><![CDATA[Name of the Religion]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D6FEDAAD-7FC5-F47A-27C8-BDB7B77C5D34</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="193FB686-D336-267B-A3F4-434FD1396496">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Any description of the community.]]></comment>
+<commentInRDBMS><![CDATA[Any description of the community.]]></commentInRDBMS>
+<generatorID>93308857-62F3-503B-9B38-886ADBCDEA0E</generatorID>
+<notes><![CDATA[Any description of the community.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2C9E8BE2-BD3A-E7E4-6BCB-DC90E80ADBB3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="103CE396-697D-688E-0BC3-79A4633CF080" name="religion_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>06498825-4C5C-C4B0-951D-909CE5E88043</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D4EEE51D-1F8D-ED80-88D1-4B4531781E06</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EFF8F59-BEF2-1006-5A64-F16A324A35A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FE81A68-4929-54F8-3812-DD3613EABC2D" name="religion_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>D763D8FA-EB82-8970-79D7-68EEDEC2094C</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7383F143-F303-B806-B034-824EC97F5CA8</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D6ECA5D-AE05-7954-3DF4-101E691861C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B999B23C-3E3B-6AEE-6E92-6883FB58BAB7" name="religion_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7D930127-7C83-85DC-6341-E44AB7E3B1F0</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EFF8F59-BEF2-1006-5A64-F16A324A35A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4E7F16A-6247-A280-D39D-6A16AE29C24D" name="religion_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2C480F80-2EB1-D7C4-337E-E312E08BBF42</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D6ECA5D-AE05-7954-3DF4-101E691861C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

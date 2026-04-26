@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="23F798E3-0A83-98D9-DC3B-21613C95F000" name="fulfilment">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>097B4541-922E-9213-4807-6FA2F7C432CE</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2515DD06-7641-0285-51D6-8A4242B34322</importedID>
+<abbreviation>fulfilment</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type" id="9404377D-0C4B-8802-9EC1-2426B198737A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[1=YES/0=NO]]></comment>
+<commentInRDBMS><![CDATA[1=YES/0=NO]]></commentInRDBMS>
+<generatorID>2E048CAD-ECB5-0EBA-8A1E-4F6BC8BA53B0</generatorID>
+<notes><![CDATA[1=YES/0=NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DE97C0D2-7492-B9D0-ABA5-39E9DF60592A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pseudo" id="391A7C50-F441-A82D-834F-A97A631B69B5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[YES/NO]]></comment>
+<commentInRDBMS><![CDATA[YES/NO]]></commentInRDBMS>
+<generatorID>B1D439CE-B3FB-0FE4-8CBA-C713AD3B7050</generatorID>
+<notes><![CDATA[YES/NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6BFFE5B4-7037-2A27-64ED-C52BC354D331</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="2E2F0B26-E852-B3BD-9BE6-E08E43B2F181">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>31FA6340-E16C-C4AB-8865-0A36FEB633AF</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7C40FE3D-1189-6B8D-3BED-B967FAD4A206</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2ABCA38-BC5F-7A82-7CAA-158EB5E731F5" name="fulfilment_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>8E9DEB44-2F5F-6BD3-E2E4-B8E326AEFCE5</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5D00C089-371F-812A-F3C1-260B8D5C3792</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9404377D-0C4B-8802-9EC1-2426B198737A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="393A72CF-D3E1-EACA-CBB3-26F5421BA526" name="fulfilment_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>622C96DB-97F8-5FAC-4A76-11E481B3B2D2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3957BBEF-3E93-FC35-C76A-82B4056EE1A3</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="391A7C50-F441-A82D-834F-A97A631B69B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE833433-79AA-7AA4-A9BF-5BE3A53A67FB" name="fulfilment_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>21DC1C55-66AD-8B9F-7EF2-17198FF23171</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9404377D-0C4B-8802-9EC1-2426B198737A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04A53CA3-B9FE-EE40-032E-13464FD97A04" name="fulfilment_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>57E6A442-D000-F194-6771-69615C4AF08A</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="391A7C50-F441-A82D-834F-A97A631B69B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

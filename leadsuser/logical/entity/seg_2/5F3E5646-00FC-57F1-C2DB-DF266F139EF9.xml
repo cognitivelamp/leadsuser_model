@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="5F3E5646-00FC-57F1-C2DB-DF266F139EF9" name="examination">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Exam Type: INTERNAL/EXTERNAL]]></comment>
+<commentInRDBMS><![CDATA[Exam Type: INTERNAL/EXTERNAL]]></commentInRDBMS>
+<notes><![CDATA[Exam Type: INTERNAL/EXTERNAL]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0DBFA268-46E5-B6C4-5C93-43D21D272D37</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>examination</preferredAbbreviation>
+<shortName>examination</shortName>
+<synonym>examination</synonym>
+<synonymToDisplay>examination</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="8B802B41-BC1D-601D-259C-C51B3F3D85D8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Examination Type: INTERNAL/EXTERNAL]]></comment>
+<commentInRDBMS><![CDATA[Examination Type: INTERNAL/EXTERNAL]]></commentInRDBMS>
+<notes><![CDATA[Examination Type: INTERNAL/EXTERNAL]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>AB976579-620B-7D89-6DC0-D92717FCA00C</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="F54DFD9B-CDBA-2729-979A-2E81080F4371">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Examination Type - Psuedo Name]]></comment>
+<commentInRDBMS><![CDATA[Examination Type - Psuedo Name]]></commentInRDBMS>
+<notes><![CDATA[Examination Type - Psuedo Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E6AC1B39-3857-3CC9-3ADB-3EED9C2BBF6F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="C2C14DCC-DF8F-633F-91E0-F1F9112ECFDE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3D0CE14E-AC91-F4D0-4E71-F4F7EB1C830F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3C820375-5C84-28D1-1F67-B09A8C3CE1DF" name="examination_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>40C112BA-4530-BA34-65E0-F523EA5AE4CF</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>8B802B41-BC1D-601D-259C-C51B3F3D85D8</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F19BA3A3-338B-B00F-BA87-A0CB509EFACB" name="examination_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5372B1CB-2BB6-E872-4FB0-197ED60CF2CC</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>F54DFD9B-CDBA-2729-979A-2E81080F4371</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

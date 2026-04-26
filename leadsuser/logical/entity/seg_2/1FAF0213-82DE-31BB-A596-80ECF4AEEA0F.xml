@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="1FAF0213-82DE-31BB-A596-80ECF4AEEA0F" name="eschedule_log">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Evaluation Schedule history log table]]></comment>
+<commentInRDBMS><![CDATA[Evaluation Schedule history log table]]></commentInRDBMS>
+<notes><![CDATA[Evaluation Schedule history log table]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7ADDD492-B9DB-C2DA-AA7D-7DFC9543A4BA</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>eschedule_log</preferredAbbreviation>
+<shortName>eschedule_log</shortName>
+<synonym>eschedule_log</synonym>
+<synonymToDisplay>eschedule_log</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="startdate" id="072CB3C6-9E19-C231-57AA-FE01FDB29657">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Scheduler start date]]></comment>
+<commentInRDBMS><![CDATA[Scheduler start date]]></commentInRDBMS>
+<notes><![CDATA[Scheduler start date]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A8C723F1-0405-9148-56C9-D1E26B3883F4</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>TRUNC(sysdate, &apos;DD&apos;)</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="enddate" id="B6906F4E-4B9A-F60B-CAF8-9E81127E5F84">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Scheduler end date]]></comment>
+<commentInRDBMS><![CDATA[Scheduler end date]]></commentInRDBMS>
+<notes><![CDATA[Scheduler end date]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>047AAA5B-CF4E-DD2B-FB98-BB5FB0D91857</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>TRUNC(sysdate, &apos;DD&apos;)</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="hour" id="7015B1C6-E0D8-C042-0475-4B5542AACB77">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Hours in 24 hrs time span]]></comment>
+<commentInRDBMS><![CDATA[Hours in 24 hrs time span]]></commentInRDBMS>
+<notes><![CDATA[Hours in 24 hrs time span]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EDC0E2A5-9F7F-865C-15A7-886EE2D56E43</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="minute" id="04165A88-B9D6-7506-CC42-D9F3C986408F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[minute from 0 to 60 mins time span]]></comment>
+<commentInRDBMS><![CDATA[minute from 0 to 60 mins time span]]></commentInRDBMS>
+<notes><![CDATA[minute from 0 to 60 mins time span]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>67C6166A-D44E-1FDB-036E-226CA915880E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="second" id="3E4B9511-C462-CC8C-0409-55E7C76B93AF">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[second from 0 to 60 sec time span]]></comment>
+<commentInRDBMS><![CDATA[second from 0 to 60 sec time span]]></commentInRDBMS>
+<notes><![CDATA[second from 0 to 60 sec time span]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>AB1853B4-7EAA-0F5B-FD9A-AA03E4476BBD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="updated_by" id="B16D7DA2-8611-0F24-D580-EF23C34E15A6">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Updated by - Users who make the changes]]></comment>
+<commentInRDBMS><![CDATA[Updated by - Users who make the changes]]></commentInRDBMS>
+<notes><![CDATA[Updated by - Users who make the changes]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BFCE068F-BB5D-24DF-D448-D60176605264</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="changedate" id="EA02AFBB-5F2E-971D-F9FE-1DB0106D151A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Change date and time]]></comment>
+<commentInRDBMS><![CDATA[Change date and time]]></commentInRDBMS>
+<notes><![CDATA[Change date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B53BBD7A-7615-607A-854D-375BF5EEB246</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="weekday_name" id="053D0129-5B5E-0763-E3BF-A14D741FF45D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Weekday Name]]></comment>
+<commentInRDBMS><![CDATA[Weekday Name]]></commentInRDBMS>
+<generatorID>414551D0-B74A-6EF9-B66C-E9157D945C97</generatorID>
+<notes><![CDATA[Weekday Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5003E4CE-FC4D-3A53-B653-75A740BA9B4E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>46845756-AA84-6605-58F7-ADAE26E5C01A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8DDAC84A-8AF2-A78D-6E0D-5FA34B694C46</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

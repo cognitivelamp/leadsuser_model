@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="497A1910-4A98-965D-7F17-C9F78F788B6F" name="privilege">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[Privilege of student - staff/regular/new student/scholarship/etc]]></comment>
+<commentInRDBMS><![CDATA[Privilege of student - staff/regular/new student/scholarship/etc]]></commentInRDBMS>
+<generatorID>652DCE84-4A60-0FFF-6949-123A209076DF</generatorID>
+<notes><![CDATA[Privilege of student - staff/regular/new student/scholarship/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>AC3465F8-A8C2-E97A-D1B8-7802BA4F7AFA</importedID>
+<abbreviation>privilege</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code" id="CEA97FE9-E7A6-F4BB-8784-583D5D6BB4DC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Privilege Code]]></comment>
+<commentInRDBMS><![CDATA[Privilege Code]]></commentInRDBMS>
+<generatorID>3CF92A79-CFE0-E58A-F92E-BF67E3B42CDE</generatorID>
+<notes><![CDATA[Privilege Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5B94E206-15AC-054F-7F2A-824FF58253BE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="name" id="5C358462-13D4-C5D3-7F12-2B0E894A4CC3">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Privilege Name]]></comment>
+<commentInRDBMS><![CDATA[Privilege Name]]></commentInRDBMS>
+<generatorID>C8882155-53FB-339E-90F9-146C2004A09F</generatorID>
+<notes><![CDATA[Privilege Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CFEFEFC1-BFFF-9C22-2671-61A09C4E7235</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="201602D6-8929-3C3C-423A-BCA3107C46DA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Privilege Description]]></comment>
+<commentInRDBMS><![CDATA[Privilege Description]]></commentInRDBMS>
+<generatorID>5355024B-8F5E-E0D0-5914-DBC27A0C8384</generatorID>
+<notes><![CDATA[Privilege Description]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>22851AB9-87A4-5FDA-DE9B-9451EB194849</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F4FB7F3-9C37-ECDF-E2C6-FB27BA0C1ADB" name="privilege_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>40082CC2-3595-D2EA-53A7-EFA9C8E0495C</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>004A9F96-1639-8A62-A470-F2F91B2C8B05</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEA97FE9-E7A6-F4BB-8784-583D5D6BB4DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="728FCDB9-FD9A-D748-419C-7F120AEAC2E0" name="privilege_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>ED8206C7-6DED-62BD-DEAC-26DA05D2A2A7</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>276015EC-3E01-45F5-FE9A-739CF36B9968</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C358462-13D4-C5D3-7F12-2B0E894A4CC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02A3F246-BF3C-D0CA-9B48-0D85DDEA2252" name="privilege_code_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1ADBC150-31AE-946A-89DB-028EA030A463</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEA97FE9-E7A6-F4BB-8784-583D5D6BB4DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D316ADDA-5668-4CA4-424B-A7E10CB97752" name="privilege_name_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C86BE761-D3DD-EFBC-4B09-1B565E90CA6B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C358462-13D4-C5D3-7F12-2B0E894A4CC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="8C67B585-3032-532F-C269-694E5B923B0C" name="qualification">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[qualification of employees]]></comment>
+<commentInRDBMS><![CDATA[qualification of employees]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>450AF33B-3343-9D89-C7EE-3776593F32F4</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>qual</preferredAbbreviation>
+<shortName>qualification</shortName>
+<synonym>qualification</synonym>
+<synonymToDisplay>qualification</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="CE4D7EF4-E9CA-BB8A-8A89-82EE9A828062">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Qualifictation code Size = 4]]></comment>
+<commentInRDBMS><![CDATA[Qualifictation code Size = 4]]></commentInRDBMS>
+<notes><![CDATA[Qualifictation code Size = 4]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D2B2BB67-D995-58B1-B23B-D529C1FF33B2</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="name" id="53753434-341A-5EB3-ABAB-FE5CCF0CE56A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[qualification name]]></comment>
+<commentInRDBMS><![CDATA[qualification name]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>789E450A-0446-16DF-2850-9D70A3A58ECB</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="duration" id="C8DA6D26-2A29-0F80-7383-68083CA6C7E4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Duration of Course in years]]></comment>
+<commentInRDBMS><![CDATA[Duration of Course in years]]></commentInRDBMS>
+<notes><![CDATA[Duration of Course in years]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E238B2FD-DFB0-730C-FECF-DD40C95E74DF</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="8D8CCBF0-BFBF-81C7-368B-8FBCF3D3C019">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[qualification name description]]></comment>
+<commentInRDBMS><![CDATA[qualification name description]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BB951F39-7382-CDAC-0AAD-E28C3B88256F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="97CF8A38-4BB5-BDB3-969E-955BD045FE2F" name="qualification_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BBC9D605-838D-B3CB-F0AC-EF5596D2F23A</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>53753434-341A-5EB3-ABAB-FE5CCF0CE56A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F1890849-99FE-3EF8-772F-312C01DE70C8" name="qualification_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>484FA82D-4480-92B9-C74A-FB18C25AD452</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CE4D7EF4-E9CA-BB8A-8A89-82EE9A828062</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

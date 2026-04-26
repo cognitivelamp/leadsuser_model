@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="CD463941-F79B-A0D5-8583-36759924D8A0" name="constraint_category">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-24 08:26:49 UTC</createdTime>
+<generatorID>0CC3451A-B9D0-3929-1A9B-19340533F488</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="565C5C1A-96FF-056E-529C-31CDF581C56F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-24 08:26:49 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="category" id="F3B7F70E-117B-FCB7-1DD9-7ACE27537044">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-24 08:26:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Constraint Category]]></commentInRDBMS>
+<generatorID>0B2373A5-3D12-0423-14FE-C48AF29E2730</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="5640C754-C835-9DF0-AC46-03A0A033DD8D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-24 08:26:49 UTC</createdTime>
+<generatorID>AEF1CB8D-64BD-A628-F5FE-1FDCE8164CEB</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F60E1FFE-5DA6-531C-BDFF-CB0CBCB7F7CD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F18C67D3-6E52-E95D-5EEF-6B9929A550EF" name="constraint_category_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-24 08:26:49 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="565C5C1A-96FF-056E-529C-31CDF581C56F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2F31C04-E541-8911-E50C-0B532E57316C" name="constraint_category_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-24 08:26:49 UTC</createdTime>
+<generatorID>CA4631D3-91FA-E57E-B017-81D010E75714</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3B7F70E-117B-FCB7-1DD9-7ACE27537044"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

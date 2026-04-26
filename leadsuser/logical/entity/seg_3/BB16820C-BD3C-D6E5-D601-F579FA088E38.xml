@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="BB16820C-BD3C-D6E5-D601-F579FA088E38" name="ireceiver">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Inbox receiver Flag - TO/CC/BCC]]></comment>
+<commentInRDBMS><![CDATA[Inbox receiver Flag - TO/CC/BCC]]></commentInRDBMS>
+<notes><![CDATA[Inbox receiver Flag - TO/CC/BCC]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1EEED2F8-91A4-4726-24CD-6362F868271D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>ireceiver</preferredAbbreviation>
+<shortName>ireceiver</shortName>
+<synonym>ireceiver</synonym>
+<synonymToDisplay>ireceiver</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="flag" id="A34C7AFC-FCD0-29EA-D69B-800F195C5070">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Inbox Flag - TO/CC/BCC]]></comment>
+<commentInRDBMS><![CDATA[Inbox Flag - TO/CC/BCC]]></commentInRDBMS>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B801DA56-C163-AE00-3C72-EB76D489F1FA</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>receiver_cons</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>TO</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="description" id="A5692AAD-7A12-7B9F-8314-6002A0CC53A4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>45792882-61CD-3361-BC9C-C91D1D15F021</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70AE6CE8-7D88-11F6-97E1-207ABD4AE2F1" name="receiver_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2714E2A4-14DA-8E28-B29D-9F96435F2254</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>A34C7AFC-FCD0-29EA-D69B-800F195C5070</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

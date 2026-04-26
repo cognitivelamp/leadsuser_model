@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_4" id="059A45AD-A629-0857-0472-2B14ED5B0043" name="part_ordinal">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>052D86B4-1563-3193-D545-E33AB59E1A0D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>part_ordinal</preferredAbbreviation>
+<shortName>part_ordinal</shortName>
+<synonym>part_ordinal</synonym>
+<synonymToDisplay>part_ordinal</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="no" id="60B0390E-EF69-29FC-D305-5CC0A3B81408">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Heriarchy of Order]]></comment>
+<commentInRDBMS><![CDATA[Heriarchy of Order]]></commentInRDBMS>
+<generatorID>2EE11050-F3BD-5015-51FA-241AB7087F79</generatorID>
+<notes><![CDATA[Heriarchy of Order]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7862DA20-3617-92BA-CD4B-DA0348773522</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>A8EB8B7F-4F6A-0DC2-873E-E25009B66450</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="part_name" id="37047C45-568E-D65B-2F8A-9946942845DB">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[PART I/II/III/etc]]></comment>
+<commentInRDBMS><![CDATA[PART I/II/III/etc]]></commentInRDBMS>
+<generatorID>E5EACDBF-A447-051E-A29E-11621B0C10DB</generatorID>
+<notes><![CDATA[PART I/II/III/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EA32939E-BF52-0F93-CCA9-28CB66EC44F5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>B5B18B29-674C-261C-5363-09E62D8D053A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A26F5FA0-0733-98D6-2DB4-B6E8C22EC00C" name="part_ordinal_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>763A2C9A-125E-DCA8-8628-CF95DD4D077F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>37047C45-568E-D65B-2F8A-9946942845DB</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="6FF0B3E3-776B-9E33-1D55-88887D86A31B" name="part_ordinal_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3D43479A-5FCB-092C-EF73-C534F2EB52B4</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>60B0390E-EF69-29FC-D305-5CC0A3B81408</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

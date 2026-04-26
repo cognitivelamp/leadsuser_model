@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="FE660FF1-1E11-F709-1AF0-3ACE583032C5" name="product">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></comment>
+<commentInRDBMS><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></commentInRDBMS>
+<generatorID>A3BFBC8C-B6D8-E975-FA64-E5B6751B8DC5</generatorID>
+<notes><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D8D751F2-2B2E-F6E1-6080-08CB67F63644</importedID>
+<abbreviation>product</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code" id="D4764295-F919-24C3-3E26-3090E2E1C1A9">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Product Code]]></comment>
+<commentInRDBMS><![CDATA[Product Code]]></commentInRDBMS>
+<generatorID>16BF57D8-8898-1D80-5C4E-3400481CF8F9</generatorID>
+<notes><![CDATA[Product Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A8507299-6244-D70E-C055-9B3E0EF746AA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="236D87CA-17F4-C923-7237-08C6C1DC047B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></comment>
+<commentInRDBMS><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></commentInRDBMS>
+<generatorID>CF86CBD2-1ADF-BA09-9F31-C3698D06C0C4</generatorID>
+<notes><![CDATA[Name of the Products - Internet/Electricity/Telepone/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5B1C1DFE-3377-0777-DB2D-655E41A6ADF4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="FA1B2F7B-8C19-C918-7643-5F345E42B464">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>D38F175F-A68D-8407-814B-BE1DB445E3C2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A7FB0506-6F1A-646C-724C-AAD198642E0C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78066F3C-5EFD-1009-621F-687042212F39" name="product_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>BED4E059-77E4-F0AF-345A-D00355722F75</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1C183E5C-3539-784B-BAB7-BA526F0E89EB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4764295-F919-24C3-3E26-3090E2E1C1A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0853EE76-1F69-5237-F116-7708BADA9275" name="product_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>7635F15D-0465-BA82-DD3D-AC9691B2567B</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A4DE0E69-955A-E132-AA6E-2CF3F2D4B7CA</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="236D87CA-17F4-C923-7237-08C6C1DC047B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C53E1083-8186-CEC9-8170-C6DD20455AE7" name="product_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5642BA7D-D65E-D6BE-3147-63F8E151A026</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4764295-F919-24C3-3E26-3090E2E1C1A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49FD8FD0-49DB-B65F-005C-AD8E7B28338F" name="product_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>47AE50E4-371A-CEA2-E9CA-793812728555</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="236D87CA-17F4-C923-7237-08C6C1DC047B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

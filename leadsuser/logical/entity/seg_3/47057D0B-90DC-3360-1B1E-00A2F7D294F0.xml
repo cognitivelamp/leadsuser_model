@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="47057D0B-90DC-3360-1B1E-00A2F7D294F0" name="levels">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Leves - 1/2/3/4/5/6]]></comment>
+<commentInRDBMS><![CDATA[Leves - 1/2/3/4/5/6]]></commentInRDBMS>
+<notes><![CDATA[Leves - 1/2/3/4/5/6]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>FA958887-AC5C-EB39-CD44-C4703C18E877</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>levels</preferredAbbreviation>
+<shortName>levels</shortName>
+<synonym>levels</synonym>
+<synonymToDisplay>levels</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="no#" id="43BA9A4C-C52F-1A36-06B9-CA043B5491CD">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Level - 1 to 10, 1 being the highest]]></comment>
+<commentInRDBMS><![CDATA[Level - 1 to 10, 1 being the highest]]></commentInRDBMS>
+<notes><![CDATA[Level - 1 to 10, 1 being the highest]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BD9A5AC7-2E76-D0DD-C239-B659A3B85309</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="name" id="226252E9-E00E-60DE-26D1-AFB8509FCB51">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>43149294-9593-E551-90E5-ECDD148C5FC2</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="9D8DF88D-F703-52E1-19EE-B54F6DDC8B05">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Description of the level]]></comment>
+<commentInRDBMS><![CDATA[Description of the level]]></commentInRDBMS>
+<notes><![CDATA[Description of the level]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4D62ED48-8BC9-5A7E-18BB-FCC2C7E59B2F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4EC914A2-D25D-CFC4-1A51-A337EB4B863E" name="levels_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>E7213C69-C8A9-8F40-FDBA-C8D5DF373CB1</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>226252E9-E00E-60DE-26D1-AFB8509FCB51</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="A953DB13-5703-B264-B1C5-B05AF000AE2F" name="levels_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3CCAD051-7A64-A49A-DD88-C53955814765</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>43BA9A4C-C52F-1A36-06B9-CA043B5491CD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

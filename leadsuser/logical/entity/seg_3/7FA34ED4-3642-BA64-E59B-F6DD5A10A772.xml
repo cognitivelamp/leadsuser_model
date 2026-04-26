@@ -1,0 +1,246 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_3" id="7FA34ED4-3642-BA64-E59B-F6DD5A10A772" name="library">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[Library table - management table]]></comment>
+<commentInRDBMS><![CDATA[Library table - management table]]></commentInRDBMS>
+<notes><![CDATA[Library table - management table]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0B25B2EB-7287-0EC7-69B1-2D1A7631AFE0</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>library</preferredAbbreviation>
+<shortName>library</shortName>
+<synonym>library</synonym>
+<synonymToDisplay>library</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="title" id="40D6B7F8-F137-95D8-EC68-407EA2705029">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Title of the Library's book.]]></comment>
+<commentInRDBMS><![CDATA[Title of the Library's book.]]></commentInRDBMS>
+<notes><![CDATA[Title of the Library's book.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CDC5CA9E-89CD-567C-2F7B-142541BEB568</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="genre_name" id="C6E36535-7073-DBB2-DE5F-7EBEB8C361F5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Genre name - science/arts/mathementics/history/etc]]></comment>
+<commentInRDBMS><![CDATA[Genre name - science/arts/mathementics/history/etc]]></commentInRDBMS>
+<generatorID>DA768EA3-A0FB-00C3-05B4-707A2AE7D8D0</generatorID>
+<notes><![CDATA[Genre name - science/arts/mathementics/history/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7863C264-1FAF-E2C2-788E-35E7266B925F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>A065412B-C1F5-5FFD-BD10-36D6EC5F0C1C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="quantity" id="7D55CD70-BAC2-038C-1841-5CA6A2E9CBB1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Quantity of books in the Library.]]></comment>
+<commentInRDBMS><![CDATA[Quantity of books in the Library.]]></commentInRDBMS>
+<notes><![CDATA[Quantity of books in the Library.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C7AEAD31-3E61-97B1-A926-192ED37CBF0B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="isbn10" id="29A644F4-635E-64D3-88E7-3DDAEA5B4725">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[ISBN 10 digits]]></comment>
+<commentInRDBMS><![CDATA[ISBN 10 digits]]></commentInRDBMS>
+<notes><![CDATA[ISBN 10 digits]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CFC6C2B3-94F2-D1DF-05F5-5FEFC0B66626</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>xxxxxxxxxxxxx</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="isbn13" id="2E7F256E-976C-A2BD-9C0B-D29461117B8D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[ISBN 13 digits]]></comment>
+<commentInRDBMS><![CDATA[ISBN 13 digits]]></commentInRDBMS>
+<notes><![CDATA[ISBN 13 digits]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9F5F4C2D-3999-628B-53CF-6A3B46DC1CDE</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>xxxxxxxxxxxxx</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="created_by" id="D5C707B3-CEBE-D388-0FE9-6E8BF2DDA48F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Created By]]></comment>
+<commentInRDBMS><![CDATA[Created By]]></commentInRDBMS>
+<notes><![CDATA[Created By]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C4B21909-0294-CE86-E0FE-70F87B39867F</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="created_on" id="08364EEA-7F42-698F-ECFC-AFB538F1CAF6">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Created On - Date and Time]]></comment>
+<commentInRDBMS><![CDATA[Created On - Date and Time]]></commentInRDBMS>
+<notes><![CDATA[Created On - Date and Time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>377AE5D0-C838-E9F4-A972-0BBBE202ED73</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="updated_by" id="9B7EF77C-1B58-1C7A-6F2B-E7BE76B4F042">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Updated By]]></comment>
+<commentInRDBMS><![CDATA[Updated By]]></commentInRDBMS>
+<notes><![CDATA[Updated By]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>FFDEA6BA-A6B0-6646-7DAB-15B4F3DE0AE0</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="changedate" id="9840386A-5F99-24D8-0CB9-6975E948E2AC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Change Date of the library book - inserted/updated/etc]]></comment>
+<commentInRDBMS><![CDATA[Change Date of the library book - inserted/updated/etc]]></commentInRDBMS>
+<notes><![CDATA[Change Date of the library book - inserted/updated/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>54AF946E-155C-28EE-6B3A-0799147579ED</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="publisher_code" id="C00A517A-5C13-3D91-962F-C02A5FE5F092">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Publisher Code]]></comment>
+<commentInRDBMS><![CDATA[Publisher Code]]></commentInRDBMS>
+<generatorID>984098B8-6B62-D7F6-16DF-F64AA2DE4F7B</generatorID>
+<notes><![CDATA[Publisher Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B777E538-7EAE-0C06-7A32-FD7E5C13E195</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>2EBD174F-8071-2B24-ECE3-0B4305C96912</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9831123-AE3E-FB78-8AAA-8FEACE6E98EA" name="library_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B1830583-1A55-5875-842E-18E2C8880FDD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>40D6B7F8-F137-95D8-EC68-407EA2705029</attributeRef>
+<attributeRef>C6E36535-7073-DBB2-DE5F-7EBEB8C361F5</attributeRef>
+<attributeRef>C00A517A-5C13-3D91-962F-C02A5FE5F092</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

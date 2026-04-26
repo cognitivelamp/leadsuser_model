@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="AEFD7E26-1C9F-797E-B0B3-E7C923EC80F9" name="difficulty">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6488C11C-B3AF-ED78-DF70-5B671509BE97</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>difficulty</preferredAbbreviation>
+<shortName>difficulty</shortName>
+<synonym>difficulty</synonym>
+<synonymToDisplay>difficulty</synonymToDisplay>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="B009E638-50C0-B731-4A7F-D3DB039892B0">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Difficulty Level/Type, ranges from 1 to 3]]></comment>
+<commentInRDBMS><![CDATA[Difficulty Level/Type, ranges from 1 to 3]]></commentInRDBMS>
+<notes><![CDATA[Difficulty Level/Type, ranges from 1 to 3]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>AF82CB2B-E3E9-4100-ED1A-9445A7984127</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="93E46E6A-561C-A524-E028-CF530D33144C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Pseudo Name of Difficulty Level]]></comment>
+<commentInRDBMS><![CDATA[Pseudo Name of Difficulty Level]]></commentInRDBMS>
+<notes><![CDATA[Pseudo Name of Difficulty Level]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0EB62AFD-B2F2-380C-765C-B5559CB6215D</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="D8D4EDBC-B5FA-2082-51F0-1C9ABCF64AE5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>FEC24DAD-110B-5299-0DEB-CA557785BF9B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="36F10474-22B5-17C2-F2B1-3532306668C6" name="difficulty_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D8E3A6AF-759B-A9FF-A20D-488B04BF0480</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>93E46E6A-561C-A524-E028-CF530D33144C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F4520D76-8070-4DAB-CDCD-B725A1723018" name="difficulty_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B6F9BFA9-15AE-E45E-2A9B-2995B000A591</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B009E638-50C0-B731-4A7F-D3DB039892B0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

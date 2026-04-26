@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="tenant" directorySegmentName="seg_1" id="1B814118-3CB5-F335-0CE4-37EF083F15A9">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:23 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="created_on" id="075DBFC8-8067-6DDB-EA87-C989636F7A07">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="id" id="31CDD20F-60A2-0173-2722-812613FFAF24">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="updated_by" id="731FBF8D-B93D-153E-36B3-7DA44023C7C8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="created_by" id="8302ADC1-293A-0786-0079-9479DA41255B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="note" id="893EB29E-7ED2-BE00-DBAD-8AE6C5CDED70">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="name" id="98EA1EE1-439F-0C21-0E6B-D88A367852BB">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="changed_on" id="AE5C17BC-9333-8C29-26B7-93443E325C7E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="status_yn" id="BC8F4EF1-CE01-8922-676E-186F34822125">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>N</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="tenant__idx" id="CD94508A-E199-7AA7-BC4F-19BEF69B3C1C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="tenant_pk_idx" id="D81C91CF-BF6F-18D9-0ABD-756C605F3D77">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="tenant_un_idx" id="DCA0BC38-EFE9-90B3-0BD1-0D71A3636BFD">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="tenant_statusyn_fk" id="62C8F4E7-4A6B-2EB8-FFC1-8D91426A3C14">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="tenant_pk" id="D3D2A24F-8474-AF65-200C-8DB2A7C6FD27">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="tenant_un" id="20F3612B-8297-7713-1906-958C4A9F2F04">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:50:22 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

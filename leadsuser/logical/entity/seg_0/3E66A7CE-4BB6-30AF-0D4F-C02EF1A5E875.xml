@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3E66A7CE-4BB6-30AF-0D4F-C02EF1A5E875" name="book_usage">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Book Usage - Textbook/Reference]]></comment>
+<commentInRDBMS><![CDATA[Book Usage - Textbook/Reference]]></commentInRDBMS>
+<notes><![CDATA[Book Usage - Textbook/Reference]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CB4AE5BA-D18A-C3E1-815B-5CB490183FCD</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>book_usage</preferredAbbreviation>
+<shortName>book_usage</shortName>
+<synonym>book_usage</synonym>
+<synonymToDisplay>book_usage</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="type" id="D7DCC08B-AA87-D9FE-8574-66AB1C4FAA6F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Usage Type]]></comment>
+<commentInRDBMS><![CDATA[Usage Type]]></commentInRDBMS>
+<notes><![CDATA[Usage Type]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DEFEFD9F-26FE-350E-23D9-64FF683B54A8</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pseudo" id="89E4AE42-8AD1-4597-33F7-2B4AB07C412A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>59114B59-57D5-99E3-1F5B-FD194FD56F39</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="C36EA981-71CA-1C61-3F33-4928CA667C04">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7AB4A755-EE14-FA65-5121-994B0941B762</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="03805671-7669-EB72-F60C-485064A3EEC0" name="book_usage_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5D04060F-E674-D2B6-E07C-4FC0FE504124</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>D7DCC08B-AA87-D9FE-8574-66AB1C4FAA6F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="A4F51F88-734C-731D-BEF8-1D4DB31A2C34" name="book_usage_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>3EC25380-DDC0-137B-9C7B-31C3BE815026</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>89E4AE42-8AD1-4597-33F7-2B4AB07C412A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

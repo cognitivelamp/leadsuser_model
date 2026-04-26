@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="FCBF0E1F-483B-41FD-2E09-329B00598D1A" name="edu_stage">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>3EC4D630-3C76-BB4F-6A67-CC22E606BB9E</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7EC373AB-E971-B152-697D-F252BDD4F23C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="edu_stage_ID" id="30567648-C5AE-A63C-9652-BB1E04C6711D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="C4C37F99-2EAD-917B-ADB9-1DA882A8CE30">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>60DEE9EC-FEDC-0206-D30E-419A2626F5B7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="98E4EDF1-9E87-F434-E61B-E8D9000ADC7B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Stage: K12, SCHOOL, COLLEGE]]></commentInRDBMS>
+<generatorID>9994F213-2F4C-57A7-D847-7E04AE578452</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>399EA509-EABC-4AB5-3580-8D748A94A3E2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="9F09A89D-617B-3944-FC68-56E96D1799B8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>515184A1-684E-3DE6-C390-B9C70CAACD57</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>AB21799F-BC3C-BC27-242D-C5668057DDF4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F20F0EA-3048-6893-FF8B-DF43D53C796C" name="edu_stage_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="30567648-C5AE-A63C-9652-BB1E04C6711D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="548079C7-9881-440F-3DA5-24477A138D0F" name="edu_stage_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4264AD26-67B0-9917-097F-3811754596B6</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4C37F99-2EAD-917B-ADB9-1DA882A8CE30"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE455B2E-FFB0-5DE0-EB32-0B4EC3FAA429" name="edu_stage_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:19 UTC</createdTime>
+<generatorID>EE7993EB-3E2A-932B-F592-7C36678C0EEC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>01960666-4C34-1E7F-192F-FE74286E613C</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98E4EDF1-9E87-F434-E61B-E8D9000ADC7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

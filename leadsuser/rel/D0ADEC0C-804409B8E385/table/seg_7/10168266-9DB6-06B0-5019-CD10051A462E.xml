@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="10168266-9DB6-06B0-5019-CD10051A462E" name="wordlist">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[Wordlist consists of all the dictionary known words.]]></comment>
+<commentInRDBMS><![CDATA[Wordlist consists of all the dictionary known words.]]></commentInRDBMS>
+<generatorID>248D1A1C-9780-9982-E2E0-F4CABFDB8A70</generatorID>
+<notes><![CDATA[Wordlist consists of all the dictionary known words.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E20C3273-2E29-6A37-4322-EE1716FC6E23</importedID>
+<abbreviation>wordlist</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="wordlist_ID" id="CE1A92FF-5AC1-683D-38FF-55578A67EA74">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="name" id="B0F67A28-51EB-F1C1-BF91-B4B62D4064A7">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Word spelling]]></comment>
+<commentInRDBMS><![CDATA[Word spelling]]></commentInRDBMS>
+<generatorID>395A5A21-8FE7-74AB-EB4B-137FA3CFF1EC</generatorID>
+<notes><![CDATA[Word spelling]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>63AA84D8-22CD-51FD-C38F-F363C9B8BCDF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="40DED9F9-0C43-B0E3-44C1-79E1B9D0F849">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>5E24C8B7-2F71-EB4E-4A57-D02BA45824B4</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0949298E-3FA8-29F3-2F6F-0A9F871848FC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id" id="1F18283A-FDA4-C486-BFC4-DCE535C0C385">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>766706B8-4EE6-1937-5FF8-D9BC7CD854FF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5DA3B353-6056-AB78-76BA-436043EB1313" name="wordlist_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="CE1A92FF-5AC1-683D-38FF-55578A67EA74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB325D39-AF82-DE05-C294-00D7253CBABD" name="wordlist_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>79C24011-6A21-7576-D2B5-F2F8AE007048</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F18283A-FDA4-C486-BFC4-DCE535C0C385"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6691AEFE-E62D-F260-7961-ED56C5C12703" name="wordlist_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>8D0E4309-5542-8BB5-6F94-7CF7DEA241E0</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>50D23B5A-3D36-2C26-42C2-02E528057614</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0F67A28-51EB-F1C1-BF91-B4B62D4064A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

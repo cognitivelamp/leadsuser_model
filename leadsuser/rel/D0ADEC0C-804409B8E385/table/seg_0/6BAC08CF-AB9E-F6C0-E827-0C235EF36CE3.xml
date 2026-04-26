@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6BAC08CF-AB9E-F6C0-E827-0C235EF36CE3" name="attendance_status">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[Attendance Status - YES/NO/APPENDING]]></comment>
+<generatorID>91AC7ACF-C01F-AA02-D067-1251A989E5DC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>22E5FBE2-2965-821C-CC0B-59EE28FEB0C6</importedID>
+<abbreviation>attendance_status</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="attendance_status_ID" id="EB3E2E0F-FC4B-A3DA-43D3-B5DCBED5ACD8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="73D68784-EBC1-3A05-9FAB-06AA0804D6D4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F3A9AA76-B914-1980-A9F0-3D9C28BBA812</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_name" id="A1146D67-3FAC-9189-E288-EB1878F2E846">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Status Name]]></comment>
+<commentInRDBMS><![CDATA[Status Name]]></commentInRDBMS>
+<notes><![CDATA[Status Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8F796AC6-3645-C6E9-6929-ECAD83C611E8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="164A7A16-6FAA-542C-33CE-5F6478F1A285">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>158A3BBA-1F65-6A97-C55A-0F5350BA642F</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5FE4BB1D-0BC5-95FF-9041-137D734D6C23</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F9C9B113-7812-649D-6147-92506B589A46" name="attendance_status_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="EB3E2E0F-FC4B-A3DA-43D3-B5DCBED5ACD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56894F2A-1484-4679-A868-8CAFE494492E" name="attendance_status_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5369BA32-3703-4ED8-4CC5-C5912E49C431</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73D68784-EBC1-3A05-9FAB-06AA0804D6D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3EAE7A2A-9FC6-A351-34B0-7F4B80C97172" name="attendance_status_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>9EAECDFE-180D-58D1-19C6-98B92ABAB5DC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>688D0ED9-6C6F-B5D0-2EE6-5B71E5236C7A</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="82DBFEA2-38ED-EF83-D720-16F51951F807" name="attendance_status_id_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2AB8A395-52CA-D262-2117-058B01FCE108</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73D68784-EBC1-3A05-9FAB-06AA0804D6D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88549B10-3411-CE6D-B4D9-40CDB44B7F43" name="attendance_status_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>88D8FF56-7166-11BD-90D5-C591B11DCD09</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1146D67-3FAC-9189-E288-EB1878F2E846"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

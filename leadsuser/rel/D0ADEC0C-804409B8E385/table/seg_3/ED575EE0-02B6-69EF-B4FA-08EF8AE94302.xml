@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="ED575EE0-02B6-69EF-B4FA-08EF8AE94302" name="medium">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[medium of communication type]]></comment>
+<commentInRDBMS><![CDATA[medium of communication type]]></commentInRDBMS>
+<generatorID>2282F320-8D80-736C-C1C7-9A34C3FEE0E2</generatorID>
+<notes><![CDATA[medium of communication type]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>559B6F42-7259-07D1-5FC8-8076D80D51C6</importedID>
+<abbreviation>medium</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="medium_ID" id="1E36D76E-DCF9-C60A-EE85-ED9ECD166532">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="ED6B9FA5-3DD9-D651-20D9-F84A318A8EC3">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>17C173ED-3EE8-7C6C-838C-88176CCA348B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="48141A15-4B89-72FE-195A-1620AC019739">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Medium of Communication - SMS/Email/etc]]></comment>
+<commentInRDBMS><![CDATA[Medium of Communication - SMS/Email/etc]]></commentInRDBMS>
+<generatorID>73887C1C-AD1E-8ED7-F67D-1683649CD9A8</generatorID>
+<notes><![CDATA[Medium of Communication - SMS/Email/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>86F766FA-EFF0-B8A2-6E7A-E55675E6ED22</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC6758B1-C791-00D1-8E53-CD1085D0AD3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="9093DB68-17E2-C61F-0F1E-20E14DB6DEF8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>471648F6-6584-E868-9335-A0F3F083E08A</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EA1CCCCA-EE40-8C05-71E0-70183B527F2A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F306656-4F6A-6287-8797-3BD80565926E" name="medium_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="1E36D76E-DCF9-C60A-EE85-ED9ECD166532"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18802AA7-8F22-4CED-1A6F-3751019DFB54" name="medium_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6580CF57-1186-83FD-66F2-4ED4E09591AC</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED6B9FA5-3DD9-D651-20D9-F84A318A8EC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC58B0E7-8B13-CD74-8649-D04ECDEFD6B3" name="medium_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>05CABAD6-6DF1-DA9C-D33F-577A49D0B044</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>833945E1-63A5-2559-C82E-0637B17E5F02</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48141A15-4B89-72FE-195A-1620AC019739"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6908333A-E788-2F08-C420-E8A4142693D3" name="medium_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BC001898-9D86-90F0-BFB4-68A486A63706</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED6B9FA5-3DD9-D651-20D9-F84A318A8EC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F4A8492-3BC3-61AE-0B9B-C304981BBC02" name="medium_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>93C73168-9754-4CF7-2793-3F36237C9BB2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48141A15-4B89-72FE-195A-1620AC019739"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,488 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_5" id="CF4036DB-A4B2-CF02-1DC4-A02946E2C35A" name="school_offday">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Schoolt offday - entered explicit days]]></comment>
+<commentInRDBMS><![CDATA[Schoolt offday - entered explicit days]]></commentInRDBMS>
+<generatorID>C289B1C7-5709-AA27-C125-28184FC72C1B</generatorID>
+<notes><![CDATA[Schoolt offday - entered explicit days]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CCFAFBB8-22CA-D6BD-3D78-DD9852BB563F</importedID>
+<abbreviation>school_offday</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="school_offday_ID" id="7F5976DC-21C4-5C2A-A0CA-459767B51A60">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="id" id="7574C64E-6594-D77C-2F7E-DFF074877147">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A4500574-0B01-194C-CCC5-2BD1F12D38DA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="school_code" id="E3BE88E4-141A-7C55-1564-FCF40539E710">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[School Code]]></commentInRDBMS>
+<generatorID>18BA0587-65C9-1CBA-69FF-862993EF8322</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>15F7243B-24E3-F195-6A25-56AFD766E912</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>1AB0B0D5-0C91-82C9-89AB-4FC02173FC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="860E02D9-5D53-06CC-23C2-322957695783" referredColumn="37A89B2A-9618-AC1A-5B9D-C5109D7F8C6F"/>
+</associations>
+</Column>
+<Column name="class_code" id="6A80DAB0-2433-66BC-5226-1AC05E91008B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Class Code]]></comment>
+<commentInRDBMS><![CDATA[Class Code]]></commentInRDBMS>
+<generatorID>95301568-0127-E4D4-8689-47280A9E965C</generatorID>
+<notes><![CDATA[Class Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7D3F422F-C8A3-B08D-28B4-73DB294C0312</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>411A7036-AE28-9018-332B-691EBC096EF9</domain>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="CCAFA057-A452-20F3-D662-F176416EF47C" referredColumn="EABC9F10-EC50-8378-0573-2D8764762B9A"/>
+</associations>
+</Column>
+<Column name="stream_code" id="18FDD950-9894-C37A-48B5-97A74D862118">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Stream Code]]></comment>
+<commentInRDBMS><![CDATA[Stream Code]]></commentInRDBMS>
+<generatorID>E8333CBA-2B2E-7A17-14E4-2325B2015394</generatorID>
+<notes><![CDATA[Stream Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>FEA58050-DEB1-F22B-81FC-E0DD331C3178</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>411A7036-AE28-9018-332B-691EBC096EF9</domain>
+<defaultValue>&apos;0001&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7BCDB052-038C-7B4E-6517-FC01D8A3B361" referredColumn="F17D61D3-1FE2-BE16-5971-969D68141F61"/>
+</associations>
+</Column>
+<Column name="section_code" id="E2FB425A-5E7B-EDF1-3BA2-7C887813427A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Section Code]]></comment>
+<commentInRDBMS><![CDATA[Section Code]]></commentInRDBMS>
+<generatorID>6CD08CC3-E9DE-823D-90EA-5EA5E08847F0</generatorID>
+<notes><![CDATA[Section Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9380BDEB-5719-2A88-DB2F-6227B2FE280B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>AA5DADF7-26A0-E52B-6BF9-B17AA18B1E1F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="346C72F3-46D9-6E54-6DAE-40A8B9E66551" referredColumn="8191C4DC-893C-865F-B431-536DC4A87D36"/>
+</associations>
+</Column>
+<Column name="calendar_id" id="A9079547-C48D-F27A-28D0-21EB2C27325C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Calendar ID]]></comment>
+<commentInRDBMS><![CDATA[Calendar ID]]></commentInRDBMS>
+<generatorID>A9D4E605-E5CA-9D8D-77BE-9CEF7640CF8B</generatorID>
+<notes><![CDATA[Calendar ID]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C7B162F8-67F3-53DD-A7A2-4D27AA9B7131</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35FC51B1-E6E3-B43F-5754-BBE317A8BDBC" referredColumn="387DF252-6515-1539-FAFF-494750E1EE3E"/>
+</associations>
+</Column>
+<Column name="effective_from" id="D93C1359-C8ED-F2BC-5B81-CC691EA3AD1F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Effective From]]></comment>
+<commentInRDBMS><![CDATA[Effective From]]></commentInRDBMS>
+<generatorID>1DA0F76E-10DF-2EDC-7F21-0BC757031F11</generatorID>
+<notes><![CDATA[Effective From]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>48A93259-768D-5C44-0D2D-CA86BCAD370D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="effective_upto" id="FAA0F1ED-1F51-BBD5-CE22-9A787710C8D5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Effective Upto]]></comment>
+<commentInRDBMS><![CDATA[Effective Upto]]></commentInRDBMS>
+<generatorID>E11EDF81-FE56-EEDD-6371-D7FBF29A83ED</generatorID>
+<notes><![CDATA[Effective Upto]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E666F6F0-9FF3-946C-221D-6B57350E7A6C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="batch_no#" id="A4CB1A64-454B-C62B-82AF-81F8A9E3D2E2">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Batch Year]]></commentInRDBMS>
+<generatorID>14282C00-74F0-BE29-8F00-9FE337A1FB15</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5FCB9741-4F79-07FF-10F9-C2130EEA00F0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D921B1E5-BB10-E0C6-6F63-D51982E3F48F" referredColumn="F304E2D9-2A03-213E-0AB7-E5AB3DD2B5F6"/>
+</associations>
+</Column>
+<Column name="status_name" id="DA60FC07-4C7D-27C1-4767-136C4D7BA37B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Status Name]]></comment>
+<commentInRDBMS><![CDATA[Status Name]]></commentInRDBMS>
+<notes><![CDATA[Status Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B67C8067-C21E-8BBF-DAF4-688C9DC1E0AD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="1172CDC3-3FF6-4549-AFAC-AFA478F20E57">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[status type - pending/active/inactive/rejected description]]></comment>
+<commentInRDBMS><![CDATA[status type - pending/active/inactive/rejected description]]></commentInRDBMS>
+<generatorID>7B99525F-3375-0BA4-508A-02D8A9D4E9F6</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8F055B91-CEFB-C77D-6D93-6CD74776D40C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_by" id="8BADF58B-564B-10AE-7248-5BA5A63FF9D1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[User who created the record]]></comment>
+<commentInRDBMS><![CDATA[User who created the record]]></commentInRDBMS>
+<generatorID>786AA885-B7D1-AEBF-76B3-1CFC6124FBB6</generatorID>
+<notes><![CDATA[User who created the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D7AF5961-4120-E693-FA30-B3EF1EB848E2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_on" id="89D58461-0B90-897D-9B95-867F9B830201">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Record created - date and time]]></comment>
+<commentInRDBMS><![CDATA[Record created - date and time]]></commentInRDBMS>
+<generatorID>62016115-81F0-08CB-92FE-F93168BD4994</generatorID>
+<notes><![CDATA[Record created - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>AC26E2D7-B393-01C7-B1EA-03CCD65A030F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_by" id="E826DD84-0049-CE6D-B9DF-20C8ADD9B6C1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[User who updated the record]]></comment>
+<commentInRDBMS><![CDATA[User who updated the record]]></commentInRDBMS>
+<generatorID>2FA13538-3B9B-67A1-3548-7D5134A09438</generatorID>
+<notes><![CDATA[User who updated the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7DF7B0C9-FAFB-756A-09ED-76932A6C13B2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="changed_on" id="735CE9A3-5031-44A4-E94B-000604A5B7C1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Last record changed - date and time]]></comment>
+<commentInRDBMS><![CDATA[Last record changed - date and time]]></commentInRDBMS>
+<generatorID>8D2ED0EF-78A0-1B0B-035D-B4EEB813A720</generatorID>
+<notes><![CDATA[Last record changed - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CF8218BE-2C83-3DA1-8912-716FA36D16A1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="087519EC-7DD3-7D62-F962-27EABB04497A" name="school_offday_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="7F5976DC-21C4-5C2A-A0CA-459767B51A60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B208BD36-852B-BA99-CE22-B261425C160B" name="school_offday_id_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>74F137B3-872A-A264-7964-C1E63FE566D9</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7574C64E-6594-D77C-2F7E-DFF074877147"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E323BBB3-FBB6-0B8B-FA11-DDADA7122E34" name="school_offday_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>FC2B2A76-F56B-111D-EC3D-7A68818FC301</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>07E6EAF0-8438-AE3A-95F9-F2E06F7B63E0</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3BE88E4-141A-7C55-1564-FCF40539E710"/>
+<colUsage columnID="6A80DAB0-2433-66BC-5226-1AC05E91008B"/>
+<colUsage columnID="18FDD950-9894-C37A-48B5-97A74D862118"/>
+<colUsage columnID="E2FB425A-5E7B-EDF1-3BA2-7C887813427A"/>
+<colUsage columnID="A9079547-C48D-F27A-28D0-21EB2C27325C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="836EB0A8-9F4C-CDCC-0EFA-5A30F71B236B" name="school_offday_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>27BE4C4B-65E5-5578-F437-6FBCF0279EAA</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7574C64E-6594-D77C-2F7E-DFF074877147"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9F9BF4D-CC60-BEDA-D7ED-D6263F0D38B5" name="school_offday_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>25DBC0C8-7F0E-7560-2497-885E76015A3D</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3BE88E4-141A-7C55-1564-FCF40539E710"/>
+<colUsage columnID="6A80DAB0-2433-66BC-5226-1AC05E91008B"/>
+<colUsage columnID="18FDD950-9894-C37A-48B5-97A74D862118"/>
+<colUsage columnID="E2FB425A-5E7B-EDF1-3BA2-7C887813427A"/>
+<colUsage columnID="A9079547-C48D-F27A-28D0-21EB2C27325C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C7CDE1B-B3BC-639B-F9D1-A2F0BD802165" name="school_offday_bat_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5CB9F856-7AB3-87B8-96B7-CD9CEEB3BA8A</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4CB1A64-454B-C62B-82AF-81F8A9E3D2E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D35D3946-ADBE-CDFB-77DC-04CBAFE2BD21" name="school_offday_cls_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5F2ABDA1-BB38-4234-81EC-15437D5F1F1F</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A80DAB0-2433-66BC-5226-1AC05E91008B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B438B020-91C2-4D09-B25D-7BB658332440" name="school_offday_sch_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B6031EB4-1068-2336-68A0-FB4C919FC9ED</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3BE88E4-141A-7C55-1564-FCF40539E710"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F270D211-04F9-B54F-0A7B-048784CD90D9" name="school_offday_sec_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>36A19E40-E089-DD75-0E29-AA8B3457AD72</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2FB425A-5E7B-EDF1-3BA2-7C887813427A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B2C289E-A979-D327-1C44-C5B433E0E6FA" name="school_offday_cal_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C0CF07F8-F5D0-BD0F-9866-FF9677791BCF</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9079547-C48D-F27A-28D0-21EB2C27325C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47BA0D31-F547-A26C-A191-68529139A927" name="school_offday_stat_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>5940765C-E347-B04C-4376-3CBFF1E88349</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA60FC07-4C7D-27C1-4767-136C4D7BA37B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97242164-E1C3-C375-99A4-F90BF6EDDB60" name="school_offday_strm_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>BC807587-05D4-2498-3AE8-A10C69D11A51</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18FDD950-9894-C37A-48B5-97A74D862118"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4AF343D-0120-EF28-7331-5FF40BC00FC2" name="SchlOffdy_School_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:25 UTC</createdTime>
+<generatorID>4CBA6054-8AA4-AACB-AE38-9E9B1A82C307</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3BE88E4-141A-7C55-1564-FCF40539E710"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41D700B8-829D-BA10-2E5A-85BD6EFCE8C7" name="SchlOffdy_Calendar_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:25 UTC</createdTime>
+<generatorID>04907EFA-4361-FE15-649A-FF0676BB88D6</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9079547-C48D-F27A-28D0-21EB2C27325C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B031645-C754-3DE7-2746-ECF639917398" name="SchlOffdy_Batch_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:26 UTC</createdTime>
+<generatorID>6084ECEB-88DB-DA1B-E221-2B12548E62A9</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4CB1A64-454B-C62B-82AF-81F8A9E3D2E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEE224A5-D3B2-7F4C-8E3F-7EE82B6052AD" name="SchlOffdy_SchoolOffday_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:26 UTC</createdTime>
+<generatorID>C17E85E9-627C-9C3C-162B-7B0F579CEBE8</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18FDD950-9894-C37A-48B5-97A74D862118"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE4120EC-FAA0-B3F1-8583-2591B5400A71" name="SchlOffdy_Section_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:26 UTC</createdTime>
+<generatorID>12740289-7D3D-65C2-E67F-170038E38C9D</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2FB425A-5E7B-EDF1-3BA2-7C887813427A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="722E5948-071C-6AF0-CBE9-50F001F2F572" name="SchlOffdy_Class_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:26 UTC</createdTime>
+<generatorID>88C38559-D9A5-EBB3-64A6-5687A6033E75</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A80DAB0-2433-66BC-5226-1AC05E91008B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

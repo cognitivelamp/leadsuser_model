@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_4" id="F7460EB2-A4D6-C42D-73F9-25F194E7D887" name="room">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[facility room available]]></comment>
+<commentInRDBMS><![CDATA[facility room available]]></commentInRDBMS>
+<generatorID>2E3CA740-BC2A-BB8B-0806-F5DE53BAF30C</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>0FE7F7D5-CAE4-A90E-738D-0B950F388C91</importedID>
+<abbreviation>room</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code" id="EB47F874-3E39-FA61-2735-8E494FBA390E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Room Code]]></comment>
+<commentInRDBMS><![CDATA[Room Code]]></commentInRDBMS>
+<generatorID>E443C95F-073F-3FC4-CEEE-D97EB3884FEB</generatorID>
+<notes><![CDATA[Room Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>41701037-F2C0-101A-A05A-C7830DE22B04</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>411A7036-AE28-9018-332B-691EBC096EF9</domain>
+<defaultValue>0001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="name" id="83C304A7-7018-1BC6-C8E3-49982795D9B0">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Room Name]]></comment>
+<commentInRDBMS><![CDATA[Room Name]]></commentInRDBMS>
+<generatorID>F003F46B-ED35-816E-A5F8-059EAFF36C48</generatorID>
+<notes><![CDATA[Room Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EFD01F3E-E6B6-3582-9AF7-51C2A97227F2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriptions" id="155D086D-FB58-2B41-A532-17A0B3A4D5DC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Description of the Room]]></comment>
+<commentInRDBMS><![CDATA[Description of the Room]]></commentInRDBMS>
+<generatorID>2A5EC0F9-4584-28D9-7D8F-30F24782DA6C</generatorID>
+<notes><![CDATA[Description of the Room]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8E35DA9D-688A-9C43-B338-55B54200CA1B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="40A91F72-86E0-85E8-280E-1F0F780E9A5B" name="room_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>BB5DCB13-F14A-3301-9F3C-427DB58A749F</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>93DBCA1D-D80D-0DE0-E0C5-7431AF981994</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB47F874-3E39-FA61-2735-8E494FBA390E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1499C577-22FF-9B16-A25A-B3665CB8ED94" name="room_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>0C837D3E-0BB8-E85C-36A0-832796AEFE67</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2335BB15-5BA1-5FAF-3E8A-67FAFC0EDABC</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83C304A7-7018-1BC6-C8E3-49982795D9B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="226A32C1-E77E-F2D7-B24C-B9C7BBC483E7" name="room_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>20809202-A70F-1430-7443-64C7493DFA19</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB47F874-3E39-FA61-2735-8E494FBA390E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="112CA34E-E482-2FAC-735D-767DC5179BEF" name="room_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1BD43DE4-ED04-8BA6-A904-4852343CF63E</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83C304A7-7018-1BC6-C8E3-49982795D9B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

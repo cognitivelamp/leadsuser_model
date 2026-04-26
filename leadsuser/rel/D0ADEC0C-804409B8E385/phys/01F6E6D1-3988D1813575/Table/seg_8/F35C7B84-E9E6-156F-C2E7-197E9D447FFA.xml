@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="timetable_version" directorySegmentName="seg_8" id="F35C7B84-E9E6-156F-C2E7-197E9D447FFA">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 04:50:24 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="effective_upto" id="01FE8E2A-3F0E-38E0-3DB2-2B8CC2612370">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="school_code" id="099F54C9-6BE7-7F12-56C4-7F5FFDE1FF67">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 04:50:24 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="name" id="1B6536FE-A934-2298-F8F3-F07F234C056E">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="created_on" id="28D1E8E3-B0A4-E524-A854-A250B02F1ABE">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="note" id="344A5C76-91BF-8BEE-92BE-685BC72F98CD">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="status" id="3C2B78AC-627A-C9DC-A503-E380ED050315">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>DRAFT</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="Is_locked" id="59847EAE-94D7-E97F-48A8-B96278E31BD7">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>N</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="created_by" id="8A68CF03-93E7-F50D-ADF6-7D506ADA431A">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="updated_by" id="B36E3912-246F-2DFE-F565-0C32946735CC">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="batch_no" id="B6937B0D-7D26-9E36-B016-50A8670E2A88">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="D6BE0DD8-E857-7EFB-688C-1D8DC45152E8">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 04:50:24 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="parent_ID" id="E02C1181-A54F-D359-430B-95167EF6CAC9">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="effective_from" id="E7BFCD21-157A-47E9-A5F9-38B4725E8225">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>systimestamp</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="changed_on" id="FB48900B-5408-E8FC-233C-2DEEF0001CA6">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TimeTableVer_School_FK" id="460CC5E7-080B-0D13-1DAC-E845B4C62A6C">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 04:50:24 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TimeTableVer_Batch_FK" id="9934E638-5D2E-38B7-E1EB-DC71D895F598">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TimeTableVer_ParentTtVer_FK" id="B8EAC341-77AE-D5F0-1688-95D927FFE3A2">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:13:03 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="timetable_version_PK" id="5BD7BBCE-D491-4B1B-9881-5F8B19CA6771">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 04:50:24 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>
