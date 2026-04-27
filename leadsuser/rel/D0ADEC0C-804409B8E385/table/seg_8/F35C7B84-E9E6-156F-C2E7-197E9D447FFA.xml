@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="D6BE0DD8-E857-7EFB-688C-1D8DC45152E8">
+<Column name="timetable_ver_ID" id="D6BE0DD8-E857-7EFB-688C-1D8DC45152E8">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 04:50:24 UTC</createdTime>
 <commentInRDBMS><![CDATA[Timetable Version ID]]></commentInRDBMS>
@@ -55,6 +55,15 @@
 <colAssociation fkAssociation="32952C00-358E-E9FC-DAAA-C3130C675A7E" referredColumn="F304E2D9-2A03-213E-0AB7-E5AB3DD2B5F6"/>
 </associations>
 </Column>
+<Column name="version_no" id="0CAA339C-6666-1AD6-865C-168C5E3905CB">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 07:13:18 UTC</createdTime>
+<generatorID>61A488C0-0741-C844-1FC1-FC9890BEBF52</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="name" id="1B6536FE-A934-2298-F8F3-F07F234C056E">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 05:15:19 UTC</createdTime>
@@ -66,7 +75,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="parent_ID" id="E02C1181-A54F-D359-430B-95167EF6CAC9">
+<Column name="parent_ver_ID" id="E02C1181-A54F-D359-430B-95167EF6CAC9">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 05:15:19 UTC</createdTime>
 <commentInRDBMS><![CDATA[Timetable Version ID]]></commentInRDBMS>
@@ -226,6 +235,19 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D6BE0DD8-E857-7EFB-688C-1D8DC45152E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD9D489D-32AB-2482-E84D-681CECF57414" name="timetable_version_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 07:13:18 UTC</createdTime>
+<generatorID>98FE299B-B3D1-B325-FB87-CFA5402903D8</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="099F54C9-6BE7-7F12-56C4-7F5FFDE1FF67"/>
+<colUsage columnID="B6937B0D-7D26-9E36-B016-50A8670E2A88"/>
+<colUsage columnID="0CAA339C-6666-1AD6-865C-168C5E3905CB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="460CC5E7-080B-0D13-1DAC-E845B4C62A6C" name="TimeTableVer_School_FK">

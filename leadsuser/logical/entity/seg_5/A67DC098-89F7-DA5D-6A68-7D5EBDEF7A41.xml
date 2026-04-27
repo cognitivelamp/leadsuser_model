@@ -138,7 +138,7 @@
 <referedAttribute>EA790CF9-1B85-82BA-6167-2A54C5ADF8B9</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <domain>BE73184E-AC0F-664F-EB31-2397541804B9</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
@@ -169,8 +169,8 @@
 </engineerTo>
 <referedAttribute>BFECDE47-30CF-ABD3-C8AD-4F9CB629C12D</referedAttribute>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="employee_ID" id="B720E42C-5E38-38B9-C510-7FA8A7B0E9EC">
@@ -187,6 +187,21 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>66F337EC-19B3-788A-7D86-FBC72722AABD</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="timetable_ver_ID" id="A0142052-06B0-1802-30FE-345B8990F1EB">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 07:10:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timetable Version ID]]></commentInRDBMS>
+<generatorID>304D4B69-8ADA-5F8E-DA0C-AF0376C66281</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>73D8B225-105F-427A-707A-30B6B07A937E</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
@@ -217,6 +232,19 @@
 <endValue>9999</endValue>
 </rangeDef>
 </listOfRanges>
+</Attribute>
+<Attribute name="Is_locked" id="C72A5DDC-1038-9DC8-C8D8-D4BCCD2B0F21">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 07:15:11 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>0A613783-1FEF-4EB4-FC8C-7F07C1F5C8EC</domain>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="descriptions" id="19EAC857-E560-8C89-D7B8-B686470DE934">
 <createdBy>leads</createdBy>
@@ -328,11 +356,10 @@
 <createdBy>leads</createdBy>
 <createdTime>2026-03-24 05:59:16 UTC</createdTime>
 <ownerDesignName>leadsuser</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
-<newElementsIDs>7D9DA18D-3F26-4ED1-662C-771C5FCFCB93,4614C94E-A22A-E3AF-B794-57B8B61EDE05,80AEDB7F-F868-F0C9-E6AC-78B4A0651B6A,D92E7D1E-AD21-207A-17A2-D56D9C14EF7F,82BBB9B9-31FB-B73E-799F-E0B5D2667400,4FE9FAAC-16D3-1F00-F77E-EB39447232BE,D2580A94-C063-478B-3197-0ECD85FF8DC2,FB6832A5-DD64-9AFF-A72C-A9425024A970,76C00AB3-0A89-0389-D5F1-CB9445C41344</newElementsIDs>
+<newElementsIDs>7D9DA18D-3F26-4ED1-662C-771C5FCFCB93,4614C94E-A22A-E3AF-B794-57B8B61EDE05,80AEDB7F-F868-F0C9-E6AC-78B4A0651B6A,D92E7D1E-AD21-207A-17A2-D56D9C14EF7F,82BBB9B9-31FB-B73E-799F-E0B5D2667400,4FE9FAAC-16D3-1F00-F77E-EB39447232BE,D2580A94-C063-478B-3197-0ECD85FF8DC2,FB6832A5-DD64-9AFF-A72C-A9425024A970,76C00AB3-0A89-0389-D5F1-CB9445C41344,304D4B69-8ADA-5F8E-DA0C-AF0376C66281</newElementsIDs>
 <usedAttributes>
 <attributeRef>417DAA34-1A6C-565C-6E8B-6BA38E2252DE</attributeRef>
 <attributeRef>A583C71C-3029-4D93-1BDF-345DC8D3DE8C</attributeRef>
@@ -343,6 +370,7 @@
 <attributeRef>57C8B6A5-EBE8-0E85-C170-0760FA79371F</attributeRef>
 <attributeRef>C3AF4BBD-92FC-7735-B17E-B464CB2678F9</attributeRef>
 <attributeRef>B720E42C-5E38-38B9-C510-7FA8A7B0E9EC</attributeRef>
+<attributeRef>A0142052-06B0-1802-30FE-345B8990F1EB</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

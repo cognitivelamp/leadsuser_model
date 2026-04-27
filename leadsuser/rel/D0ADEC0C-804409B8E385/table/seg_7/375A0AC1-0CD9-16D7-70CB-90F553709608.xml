@@ -21,6 +21,22 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <isSurrogateColumn>true</isSurrogateColumn>
 </Column>
+<Column name="school_code" id="C9830D30-3D66-BB01-884E-487EF9855A02">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 06:10:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[School Code]]></commentInRDBMS>
+<generatorID>1E721D35-2BA2-FDB4-D53A-6412EE5C99D2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1AB0B0D5-0C91-82C9-89AB-4FC02173FC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C5E0ACD2-0941-51A1-7596-8D0B17258A05" referredColumn="37A89B2A-9618-AC1A-5B9D-C5109D7F8C6F"/>
+</associations>
+</Column>
 <Column name="employee_ID" id="C8386F06-2857-4487-0F2E-55B0656D696B">
 <createdBy>leads</createdBy>
 <createdTime>2026-03-17 04:49:57 UTC</createdTime>
@@ -52,7 +68,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="E203703B-0768-5328-11FE-C18D77701236" referredColumn="E8B3E4B2-937D-4A6F-92D5-7E1DA4A7E714"/>
+<colAssociation fkAssociation="34FD43BC-7195-7E5B-912A-31AE20A56FE8" referredColumn="52FB0EFE-627E-CB1E-B1FF-72549646D2B5"/>
 </associations>
 </Column>
 <Column name="is_available" id="D3E5C78A-BD24-2E17-DD48-29D5F4E4A7FA">
@@ -166,6 +182,7 @@
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
+<colUsage columnID="C9830D30-3D66-BB01-884E-487EF9855A02"/>
 <colUsage columnID="C8386F06-2857-4487-0F2E-55B0656D696B"/>
 <colUsage columnID="D0AD083E-0ABD-99ED-72C3-5CE4543E4AF5"/>
 </indexColumnUsage>
@@ -181,9 +198,20 @@
 <colUsage columnID="C8386F06-2857-4487-0F2E-55B0656D696B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="27575D9D-0097-E672-D841-899A4DF10B69" name="TchrAvail_TimetableSlot_FK">
+<ind_PK_UK id="5729D0E4-4A21-FF02-E3DF-350CC56A4C2C" name="TchrAvail_School_FK">
 <createdBy>leads</createdBy>
-<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<createdTime>2026-04-27 06:10:56 UTC</createdTime>
+<generatorID>0A01D051-B2B8-70CD-44A4-273239A3EDF2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9830D30-3D66-BB01-884E-487EF9855A02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95337E99-2E82-1344-48C3-3BC6433EF664" name="TchrAvail_TimetableSlot_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 06:44:54 UTC</createdTime>
 <generatorID>433FC411-2FBD-973E-C23F-5293EE68C528</generatorID>
 <ownerDesignName>leadsuser</ownerDesignName>
 <indexState>Foreign Key</indexState>

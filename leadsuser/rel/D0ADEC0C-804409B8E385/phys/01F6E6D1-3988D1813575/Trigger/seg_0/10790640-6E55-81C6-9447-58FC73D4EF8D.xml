@@ -4,19 +4,22 @@
 <createdTime>2026-04-01 03:48:59 UTC</createdTime>
 <ownerDesignName>leadsuser</ownerDesignName>
 <actions>INSERT, UPDATE</actions>
-<body><![CDATA[BEGIN
+<body><![CDATA[DECLARE
+    v_user VARCHAR2(255) := coalesce(
+        sys_context('APEX$SESSION', 'APP_USER'),
+        user
+    );
+BEGIN
     IF inserting THEN
-        :new.created_by := nvl(sys_context('APEX$SESSION', 'APP_USER'), user);
+        :new.created_by := v_user;
         :new.created_on := current_timestamp;
-        :new.changed_on := current_timestamp;
     END IF;
 
     IF updating THEN
-        :new.updated_by := nvl(sys_context('APEX$SESSION', 'APP_USER'), user);
+        :new.updated_by := v_user;
         :new.changed_on := current_timestamp;
     END IF;
-
-END; ]]></body>
+END;]]></body>
 <triggerTime>BEFORE</triggerTime>
 <table>06AE5EBC-4230-E202-C12E-CA351EC2A5AE</table>
 </TriggerOraclev10g>

@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID" id="73D8B225-105F-427A-707A-30B6B07A937E">
+<Attribute name="timetable_ver_ID" id="73D8B225-105F-427A-707A-30B6B07A937E">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 04:44:27 UTC</createdTime>
 <commentInRDBMS><![CDATA[Timetable Version ID]]></commentInRDBMS>
@@ -58,6 +58,16 @@
 <domain>57E4E726-0278-DC93-9196-ABB2B37DFF18</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="version_no" id="61A488C0-0741-C844-1FC1-FC9890BEBF52">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 07:08:17 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="name" id="13439FE3-E3EE-5678-0DBA-C40A8C8C8B7D">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 04:55:54 UTC</createdTime>
@@ -70,7 +80,7 @@
 <domain>AFB565EB-530B-C812-D408-DD01B4006660</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="parent_ID" id="54AE735A-C451-22DF-2F54-059E7A90B108">
+<Attribute name="parent_ver_ID" id="54AE735A-C451-22DF-2F54-059E7A90B108">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 04:53:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Timetable Version ID]]></commentInRDBMS>
@@ -245,13 +255,26 @@
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 04:45:38 UTC</createdTime>
 <ownerDesignName>leadsuser</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>73D8B225-105F-427A-707A-30B6B07A937E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="98FE299B-B3D1-B325-FB87-CFA5402903D8" name="timetable_version_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 07:08:36 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<newElementsIDs>B9DED681-7B9F-9E4A-EE5F-73052998A261,6D55CC51-7E2C-3A83-CE1C-2D49043EF742,61A488C0-0741-C844-1FC1-FC9890BEBF52</newElementsIDs>
+<usedAttributes>
+<attributeRef>32515A28-80EA-0FD7-9FFA-21F1F52F873F</attributeRef>
+<attributeRef>0CCA71D3-52F9-6ED2-EB81-78C0EB4D20D4</attributeRef>
+<attributeRef>61A488C0-0741-C844-1FC1-FC9890BEBF52</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
