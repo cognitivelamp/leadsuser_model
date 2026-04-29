@@ -19,7 +19,6 @@
 <ownerDesignName>leadsuser</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
@@ -87,7 +86,6 @@
 <importedID>8ECB4C0A-BE88-3BCC-2832-61DFA42ED638</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
 <defaultValue>PENDING</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -103,7 +101,6 @@
 <constraintName>default_incident_cons</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
 <defaultValue>OPEN</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -127,7 +124,6 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -154,7 +150,6 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -181,7 +176,6 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
 <defaultValue>CURRENT_TIMESTAMP</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -215,12 +209,11 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
 <defaultValue>CURRENT_TIMESTAMP</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID1" id="3F8180B9-AA53-E27F-674B-4BB8D83E40FB">
+<Column name="ID2" id="3F8180B9-AA53-E27F-674B-4BB8D83E40FB">
 <createdBy>leads</createdBy>
 <createdTime>2026-03-12 07:49:19 UTC</createdTime>
 <comment><![CDATA[Employee ID Number]]></comment>
@@ -248,7 +241,6 @@
 <importedID>9F5EDDAE-60B0-7E0D-9808-C8EE7ADA693B</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -262,7 +254,6 @@
 <importedID>987CAA69-6C93-882F-1551-81B4A805B132</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -286,7 +277,6 @@
 <importedID>DC66F5D1-6C2F-C138-5CD0-0A241B05CBA8</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -308,6 +298,19 @@
 <associations>
 <colAssociation fkAssociation="9EBDA04A-5A58-269F-CE89-57513D887346" referredColumn="2731F48D-AA51-07C9-5F51-0C037E915042"/>
 </associations>
+</Column>
+<Column name="priority_order1" id="B939110F-5B33-5DCF-CB72-C466251D5C49">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 07:38:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Priority Order]]></commentInRDBMS>
+<generatorID>39619D74-1B34-416B-A2AE-30E60596260B</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

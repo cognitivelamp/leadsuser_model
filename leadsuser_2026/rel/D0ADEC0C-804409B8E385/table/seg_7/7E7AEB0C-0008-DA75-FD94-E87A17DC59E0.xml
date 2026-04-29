@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="7E7AEB0C-0008-DA75-FD94-E87A17DC59E0" name="idelete">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Inbox Delete flag - YES/NO]]></comment>
+<commentInRDBMS><![CDATA[Inbox Delete flag - YES/NO]]></commentInRDBMS>
+<generatorID>B1D165FB-D90A-F580-606C-04F12C0BC9BB</generatorID>
+<notes><![CDATA[Inbox Delete flag - YES/NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>idelete</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="flag" id="D59A86DC-34CF-508D-7C5F-1795F0F78EE5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Inbox Delete flag - YES/NO]]></comment>
+<commentInRDBMS><![CDATA[Inbox Delete flag - YES/NO]]></commentInRDBMS>
+<generatorID>678F3203-08D8-D2CF-7E30-382E67395508</generatorID>
+<notes><![CDATA[Inbox Delete flag - YES/NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>PENDING</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="A8B19FAD-09AA-13AE-A085-CA984083799A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>AB477BE7-3F6E-F4AB-FF02-A817336FADB1</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idelete_ID" id="21D3E582-8564-9A13-A75C-6DB96171BD37">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BACE7FA1-041A-2935-20C2-BEB7F9D5B1F6" name="idelete_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="21D3E582-8564-9A13-A75C-6DB96171BD37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="611A2B68-CBC4-26DD-16C5-11E505DBD725" name="delete_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>CFE0A723-454A-B4F4-4958-289409B6CE30</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D59A86DC-34CF-508D-7C5F-1795F0F78EE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

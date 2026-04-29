@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="ADDEFCC1-ED4A-7CCB-FA78-DA964B245CF5" name="iattachment">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Mail Attachment table]]></comment>
+<commentInRDBMS><![CDATA[Mail Attachment table]]></commentInRDBMS>
+<generatorID>404AE0F0-328E-3F1F-79C1-9EAA79AAB0F3</generatorID>
+<notes><![CDATA[Mail Attachment table]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>iattachment</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="blob_content" id="66FB354A-963F-CB24-9FA1-7637BADDCEF3">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>79667B3B-1AED-1BA0-85FD-5BF96186E49A</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="filename" id="8831A37C-B172-D721-86EA-4088F878D2EB">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Filename of the BLOB]]></comment>
+<commentInRDBMS><![CDATA[Filename of the BLOB]]></commentInRDBMS>
+<generatorID>7E713FAD-7092-6BAC-906C-AAC1F201F9CB</generatorID>
+<notes><![CDATA[Filename of the BLOB]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mime_type" id="3A41F139-4E77-BE68-0DB3-8A265074D922">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>004319A1-7470-495A-8A70-346D8B9C7C7F</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="doc_size" id="60590157-C97D-90CD-59A4-37A081E7763B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>8A3DA2FA-986B-5D84-284B-5C8C091014DA</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="charset" id="903A50B1-5E22-B0B8-FFDE-80BAE622F035">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>B8B6E6D6-8D3F-3697-736F-03016F2EC779</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="changedate" id="5F6C6969-6EE3-E09F-FC65-D6143E28177E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>2BFA911C-A8A8-E82B-A637-A5F577685F96</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="iattachment_ID" id="4C1AC67B-45ED-8928-2157-EDF3DD24A920">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="inbox_inbox_ID" id="378647C7-22BA-EA45-F18B-E38C7EB1EA79">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="713CED2E-ED91-39D0-7791-3D383249D7F2" referredColumn="79D8EF1E-43E0-0688-269F-6BB8D3F75EE1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C437B9C-47EC-32EB-67D9-2B6361CAE81B" name="iattachment_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="4C1AC67B-45ED-8928-2157-EDF3DD24A920"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8656272F-805A-8361-F60F-04348D83DE54" name="Inbox_Iattachment_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<generatorID>BA0AFDC7-D7BC-6BDE-9201-C2BC5B655BDA</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="378647C7-22BA-EA45-F18B-E38C7EB1EA79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

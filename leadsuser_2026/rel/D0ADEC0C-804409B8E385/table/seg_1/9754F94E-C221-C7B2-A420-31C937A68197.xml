@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="9754F94E-C221-C7B2-A420-31C937A68197" name="category_class">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[Category Class Table consists of special classes - Intervension/Musics/Arts/Schetching/etc]]></comment>
+<commentInRDBMS><![CDATA[Category Class Table consists of special classes - Intervension/Musics/Arts/Schetching/etc]]></commentInRDBMS>
+<notes><![CDATA[Category Class Table consists of special classes - Intervension/Musics/Arts/Schetching/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>8835862A-6503-12F1-1FBB-C2F6373DADAA</importedID>
+<abbreviation>category_class</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="2AA73E5A-87BD-4E4D-200E-AAFE0B32D1BC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1A96200E-FA78-D4E2-8C63-1FF5A896A764</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="56399CBD-D926-2F77-708D-40185C311F94">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Specialized Class Table consists of special classes - Intervension/Musics/Arts/Schetching/etc]]></comment>
+<commentInRDBMS><![CDATA[Specialized Class Table consists of special classes - Intervension/Musics/Arts/Schetching/etc]]></commentInRDBMS>
+<notes><![CDATA[Specialized Class Table consists of special classes - Intervension/Musics/Arts/Schetching/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B9103063-F5B1-DAFD-00EE-00C9D62BE7D1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="658712FB-4215-2F52-B7FD-2909533C974D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6CBB4044-1310-4556-09B7-3B8B54695C73</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B792FF35-116D-F647-2DF7-3F8C4FB9C1C5" name="category_class_pk">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E29D0EAC-EC53-5509-5367-4E6C50989CA2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AA73E5A-87BD-4E4D-200E-AAFE0B32D1BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8A404CA-D113-5294-90F0-CEE95A737575" name="specialized_class_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F7606248-57EC-CFEB-594B-C4735B1838FE</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56399CBD-D926-2F77-708D-40185C311F94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F66DD34-F208-CCCF-02EB-C17EF3ABADCE" name="category_class_id_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A9D94F86-AA68-7D93-A4D7-720BE77F224C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AA73E5A-87BD-4E4D-200E-AAFE0B32D1BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F576607D-6122-19BC-A202-B2B6EA31F328" name="category_class_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EB4C1FDD-A5F6-A743-75F6-EFDACB637F19</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56399CBD-D926-2F77-708D-40185C311F94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
