@@ -6,7 +6,6 @@
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
 <temporaryChanged>false</temporaryChanged>
-<user>0B5EB020-65BD-A503-05D0-C6BFF817B0E9</user>
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
@@ -58,6 +57,11 @@
 <createdTime>2026-04-27 07:17:49 UTC</createdTime>
 <ownerDesignName>leadsuser</ownerDesignName>
 </ColumnProxy>
+<ColumnProxy name="ordinal_no" id="794DAFA2-BB27-6555-DCFA-36C21FD83880">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-02 08:53:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
 <ColumnProxy name="Is_locked" id="9083B0EA-0205-F5FB-1569-FCF3EA8B3B23">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-27 07:17:49 UTC</createdTime>
@@ -106,6 +110,13 @@
 <ownerDesignName>leadsuser</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="school_timetable_un2_idx" id="D3B75BC3-4229-BA12-E9EF-BC33ED702687">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 09:54:33 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</IndexProxy>
+</indexProxies>
 <foreignKeys>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ScTT_Period_FK" id="01B9DEAF-64E9-EA11-7858-F14ED17703F6">
 <createdBy>leads</createdBy>
@@ -147,6 +158,11 @@
 <createdTime>2026-04-27 07:17:49 UTC</createdTime>
 <ownerDesignName>leadsuser</ownerDesignName>
 </ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ScTT_Ordinal_FK" id="9DDF588A-E4EB-7A94-A440-50D4577B4EBD">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-02 08:53:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ScTT_Stream_FK" id="B21CBF17-AA17-0871-E1F3-882919C5826E">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-27 07:17:50 UTC</createdTime>
@@ -171,8 +187,27 @@
 <indexSort>SORTED</indexSort>
 </PrimaryKey>
 </primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="school_timetable_subject_emp_CK" id="6CA123AF-409D-D713-A535-457E37F35BED">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-04 02:46:10 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
 <uniqueKeys>
-<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="school_timetable_UN" id="7758AC61-DEFA-4B22-BA03-83319491C7EF">
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="school_timetable_UN" id="25D2DFB3-9920-23A8-BFD6-7FFA335C093A">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-02 08:53:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="school_timetable_UN2" id="56376D46-A217-4107-CD17-4B169A59A487">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="school_timetable_UN1" id="7758AC61-DEFA-4B22-BA03-83319491C7EF">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-27 07:17:49 UTC</createdTime>
 <ownerDesignName>leadsuser</ownerDesignName>

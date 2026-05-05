@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="school_timetable_log_double_trg" directorySegmentName="seg_0" id="19DFB949-EDA5-AFD7-D336-C4B5747017EB">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-05 04:10:00 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+    v_existing_class_info VARCHAR2(100);
+    v_teacher_name        VARCHAR2(100);
+BEGIN
+    -- Skip check for Lunch Period (10) as per your existing rules
+    IF :new.period_no = 10
+    OR :new.employee_id IS NULL THEN
+        RETURN;
+    END IF;
+    
+    --
+    BEGIN
+        SELECT
+            csec.pseudo_name
+            || '[Period '
+            || stt.period_no
+            || ']'
+        INTO v_existing_class_info
+        FROM
+                 school_timetable stt
+            INNER JOIN class_section csec ON ( csec.school_code = stt.school_code
+                                               AND csec.batch_no# = stt.batch_no
+                                               AND csec.class_code = stt.class_code
+                                               AND csec.stream_code = stt.stream_code
+                                               AND csec.section_code = stt.section_code )
+        WHERE
+                stt.school_code = :new.school_code
+            AND stt.batch_no = :new.batch_no
+            AND stt.timetable_ver_id = :new.timetable_ver_id
+            AND stt.term_code = :new.term_code
+            AND stt.day_no = :new.day_no
+            AND stt.period_no = :new.period_no
+            AND stt.employee_id = :new.employee_id
+            AND ( stt.class_code != :new.class_code
+                  OR stt.section_code != :new.section_code
+                  OR stt.stream_code != :new.stream_code )
+            AND ROWNUM = 1;
+            
+        --
+        SELECT
+            first_name
+            || nvl2(middle_name, ' '
+                                 || middle_name
+                                 || ' ', ' ')
+            || last_name
+        INTO v_teacher_name
+        FROM
+            employee
+        WHERE
+                id = :new.employee_id
+            AND ROWNUM = 1;
+
+        raise_application_error(-20001, 'Teacher: '
+                                        || v_teacher_name
+                                        || ') is already assigned to a different class ('
+                                        || v_existing_class_info
+                                        || ') during this period.');
+
+    EXCEPTION
+        WHEN no_data_found THEN
+            NULL; -- No conflicting class found, assignment is valid
+    END;
+
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>4543C05C-4692-60DA-D14E-27EA4F9CA9FC</table>
+</TriggerOraclev10g>

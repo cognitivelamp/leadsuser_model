@@ -1,0 +1,217 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_7" id="9F46E058-34A2-525A-6642-8653986EA09E" name="school_weekday">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 09:56:39 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="school_code" id="A459526E-ADE7-7E5D-A549-386E51154C2B">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 09:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[School Code]]></commentInRDBMS>
+<generatorID>02A966F4-EE40-8E75-C315-70625F5E7030</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>3CCBCFCB-28F7-521B-BFFA-7A69A4144FC5</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1AB0B0D5-0C91-82C9-89AB-4FC02173FC70</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="year_date" id="F0AB2E92-DDD0-16FF-D809-E594D67BDAEE">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:00:27 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>57E4E726-0278-DC93-9196-ABB2B37DFF18</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="day_no" id="423873E3-3ECC-0095-B665-E4346304B6C6">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:00:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Day No.]]></commentInRDBMS>
+<generatorID>D76F72F4-0A68-42BE-AEE4-E6925F43021E</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>F68CA9B5-01F3-D13F-CD67-7D6E51D44A52</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="batch_no" id="21A2C2E7-3926-D1F4-89E7-0B94CD37D269">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 09:59:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Batch Year]]></commentInRDBMS>
+<generatorID>B8980E5E-E7E6-8FFB-300F-CE834F222601</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>AA9DF642-E1D3-2CE4-9ED1-BB1FB4A68130</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>57E4E726-0278-DC93-9196-ABB2B37DFF18</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="is_working_day" id="71FB7659-C69D-FFD6-8085-30B6420AAAC1">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:28:28 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>0A613783-1FEF-4EB4-FC8C-7F07C1F5C8EC</domain>
+<defaultValue>Y</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="is_locked" id="AAA73B42-739A-B6A0-82D1-2ACC6E1D45DF">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:42:00 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>0A613783-1FEF-4EB4-FC8C-7F07C1F5C8EC</domain>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="note" id="6BE70112-27F4-B5AB-4C2F-E1CC015355C6">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:01:14 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="created_by" id="BFC67818-9F52-DF34-C744-356662DEDB67">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:01:14 UTC</createdTime>
+<comment><![CDATA[User who created the record]]></comment>
+<commentInRDBMS><![CDATA[User who created the record]]></commentInRDBMS>
+<notes><![CDATA[User who created the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="created_on" id="626D60A4-B7B2-66E5-E002-BD70F6C28257">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:01:14 UTC</createdTime>
+<comment><![CDATA[Record created - date and time]]></comment>
+<commentInRDBMS><![CDATA[Record created - date and time]]></commentInRDBMS>
+<notes><![CDATA[Record created - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="updated_by" id="A79F4271-6FC5-6A46-AF72-F4A5DFDF5FC5">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:01:14 UTC</createdTime>
+<comment><![CDATA[User who updated the record]]></comment>
+<commentInRDBMS><![CDATA[User who updated the record]]></commentInRDBMS>
+<notes><![CDATA[User who updated the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="changed_on" id="1EA300C3-8924-BC0F-9B32-BC966CF58DF0">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:01:14 UTC</createdTime>
+<comment><![CDATA[Last record changed - date and time]]></comment>
+<commentInRDBMS><![CDATA[Last record changed - date and time]]></commentInRDBMS>
+<notes><![CDATA[Last record changed - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1695077D-B96A-6F24-6730-EF5382F98286" name="school_weekday_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:01:37 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<newElementsIDs>02A966F4-EE40-8E75-C315-70625F5E7030,F0AB2E92-DDD0-16FF-D809-E594D67BDAEE</newElementsIDs>
+<usedAttributes>
+<attributeRef>A459526E-ADE7-7E5D-A549-386E51154C2B</attributeRef>
+<attributeRef>F0AB2E92-DDD0-16FF-D809-E594D67BDAEE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

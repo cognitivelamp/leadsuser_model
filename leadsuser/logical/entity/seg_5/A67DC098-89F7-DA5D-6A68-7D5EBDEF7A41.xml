@@ -119,7 +119,7 @@
 <referedAttribute>795C6F0F-4C9D-460A-FD3B-3FF1394BED94</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <domain>AA5DADF7-26A0-E52B-6BF9-B17AA18B1E1F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
@@ -173,20 +173,18 @@
 <domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="employee_ID" id="B720E42C-5E38-38B9-C510-7FA8A7B0E9EC">
+<Attribute name="ordinal_no" id="9ACAF5E0-F0DA-AC81-D911-571024B084F7">
 <createdBy>leads</createdBy>
-<createdTime>2026-03-12 07:48:53 UTC</createdTime>
-<comment><![CDATA[Employee ID Number]]></comment>
-<commentInRDBMS><![CDATA[Employee ID Number]]></commentInRDBMS>
-<generatorID>76C00AB3-0A89-0389-D5F1-CB9445C41344</generatorID>
-<notes><![CDATA[Employee ID Number]]></notes>
+<createdTime>2026-05-02 08:49:56 UTC</createdTime>
+<comment><![CDATA[Heriarchy of Order]]></comment>
+<commentInRDBMS><![CDATA[Heriarchy of Order]]></commentInRDBMS>
+<generatorID>ED3E41F6-A180-08CF-BBC6-71D5F92259A8</generatorID>
+<notes><![CDATA[Heriarchy of Order]]></notes>
 <ownerDesignName>leadsuser</ownerDesignName>
-<importedID>2381A9B8-4EAD-5079-E794-01FBC57B6197</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>66F337EC-19B3-788A-7D86-FBC72722AABD</referedAttribute>
+<referedAttribute>A8EB8B7F-4F6A-0DC2-873E-E25009B66450</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
@@ -219,6 +217,7 @@
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>BFC0872A-CB98-223A-AC4A-F53520E5A33B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
@@ -232,6 +231,25 @@
 <endValue>9999</endValue>
 </rangeDef>
 </listOfRanges>
+</Attribute>
+<Attribute name="employee_ID" id="B720E42C-5E38-38B9-C510-7FA8A7B0E9EC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:53 UTC</createdTime>
+<comment><![CDATA[Employee ID Number]]></comment>
+<commentInRDBMS><![CDATA[Employee ID Number]]></commentInRDBMS>
+<generatorID>76C00AB3-0A89-0389-D5F1-CB9445C41344</generatorID>
+<notes><![CDATA[Employee ID Number]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2381A9B8-4EAD-5079-E794-01FBC57B6197</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>66F337EC-19B3-788A-7D86-FBC72722AABD</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Is_locked" id="C72A5DDC-1038-9DC8-C8D8-D4BCCD2B0F21">
 <createdBy>leads</createdBy>
@@ -352,7 +370,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="96143BAF-2F85-1F90-9A2D-98207E0221A3" name="school_timetable_UN">
+<identifier id="96143BAF-2F85-1F90-9A2D-98207E0221A3" name="school_timetable_UN1">
 <createdBy>leads</createdBy>
 <createdTime>2026-03-24 05:59:16 UTC</createdTime>
 <ownerDesignName>leadsuser</ownerDesignName>
@@ -360,7 +378,7 @@
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
 </engineerTo>
-<newElementsIDs>7D9DA18D-3F26-4ED1-662C-771C5FCFCB93,4614C94E-A22A-E3AF-B794-57B8B61EDE05,80AEDB7F-F868-F0C9-E6AC-78B4A0651B6A,D92E7D1E-AD21-207A-17A2-D56D9C14EF7F,82BBB9B9-31FB-B73E-799F-E0B5D2667400,4FE9FAAC-16D3-1F00-F77E-EB39447232BE,D2580A94-C063-478B-3197-0ECD85FF8DC2,FB6832A5-DD64-9AFF-A72C-A9425024A970,76C00AB3-0A89-0389-D5F1-CB9445C41344,304D4B69-8ADA-5F8E-DA0C-AF0376C66281</newElementsIDs>
+<newElementsIDs>7D9DA18D-3F26-4ED1-662C-771C5FCFCB93,4614C94E-A22A-E3AF-B794-57B8B61EDE05,80AEDB7F-F868-F0C9-E6AC-78B4A0651B6A,D92E7D1E-AD21-207A-17A2-D56D9C14EF7F,82BBB9B9-31FB-B73E-799F-E0B5D2667400,4FE9FAAC-16D3-1F00-F77E-EB39447232BE,D2580A94-C063-478B-3197-0ECD85FF8DC2,FB6832A5-DD64-9AFF-A72C-A9425024A970,304D4B69-8ADA-5F8E-DA0C-AF0376C66281,1C26BD46-ACF9-4E4B-EE10-B5821733C4F5,76C00AB3-0A89-0389-D5F1-CB9445C41344</newElementsIDs>
 <usedAttributes>
 <attributeRef>417DAA34-1A6C-565C-6E8B-6BA38E2252DE</attributeRef>
 <attributeRef>A583C71C-3029-4D93-1BDF-345DC8D3DE8C</attributeRef>
@@ -370,7 +388,50 @@
 <attributeRef>18643F56-50BD-8315-88DF-4D638CBD5D92</attributeRef>
 <attributeRef>57C8B6A5-EBE8-0E85-C170-0760FA79371F</attributeRef>
 <attributeRef>C3AF4BBD-92FC-7735-B17E-B464CB2678F9</attributeRef>
+<attributeRef>A0142052-06B0-1802-30FE-345B8990F1EB</attributeRef>
+<attributeRef>4850D36D-4D17-2A70-72A7-038BD597B18F</attributeRef>
 <attributeRef>B720E42C-5E38-38B9-C510-7FA8A7B0E9EC</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3EC194C6-BAE9-E12F-9693-6323B0872666" name="school_timetable_UN2">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-02 04:59:19 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<newElementsIDs>7D9DA18D-3F26-4ED1-662C-771C5FCFCB93,4614C94E-A22A-E3AF-B794-57B8B61EDE05,304D4B69-8ADA-5F8E-DA0C-AF0376C66281,4FE9FAAC-16D3-1F00-F77E-EB39447232BE,D2580A94-C063-478B-3197-0ECD85FF8DC2,FB6832A5-DD64-9AFF-A72C-A9425024A970,76C00AB3-0A89-0389-D5F1-CB9445C41344,1C26BD46-ACF9-4E4B-EE10-B5821733C4F5</newElementsIDs>
+<usedAttributes>
+<attributeRef>417DAA34-1A6C-565C-6E8B-6BA38E2252DE</attributeRef>
+<attributeRef>A583C71C-3029-4D93-1BDF-345DC8D3DE8C</attributeRef>
+<attributeRef>A0142052-06B0-1802-30FE-345B8990F1EB</attributeRef>
+<attributeRef>18643F56-50BD-8315-88DF-4D638CBD5D92</attributeRef>
+<attributeRef>57C8B6A5-EBE8-0E85-C170-0760FA79371F</attributeRef>
+<attributeRef>C3AF4BBD-92FC-7735-B17E-B464CB2678F9</attributeRef>
+<attributeRef>B720E42C-5E38-38B9-C510-7FA8A7B0E9EC</attributeRef>
+<attributeRef>4850D36D-4D17-2A70-72A7-038BD597B18F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CDE8580A-D5CB-C058-3A37-48470A40F16A" name="school_timetable_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-02 08:51:05 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<newElementsIDs>7D9DA18D-3F26-4ED1-662C-771C5FCFCB93,4614C94E-A22A-E3AF-B794-57B8B61EDE05,80AEDB7F-F868-F0C9-E6AC-78B4A0651B6A,82BBB9B9-31FB-B73E-799F-E0B5D2667400,D92E7D1E-AD21-207A-17A2-D56D9C14EF7F,4FE9FAAC-16D3-1F00-F77E-EB39447232BE,D2580A94-C063-478B-3197-0ECD85FF8DC2,FB6832A5-DD64-9AFF-A72C-A9425024A970,ED3E41F6-A180-08CF-BBC6-71D5F92259A8,304D4B69-8ADA-5F8E-DA0C-AF0376C66281</newElementsIDs>
+<usedAttributes>
+<attributeRef>417DAA34-1A6C-565C-6E8B-6BA38E2252DE</attributeRef>
+<attributeRef>A583C71C-3029-4D93-1BDF-345DC8D3DE8C</attributeRef>
+<attributeRef>D9760720-B2E0-5503-71FB-4337C97A8EB1</attributeRef>
+<attributeRef>FDB0899D-864A-0BCF-C6BF-11FA5B688AD7</attributeRef>
+<attributeRef>41CA39D8-30C8-5E5A-8933-C1AA94D11B12</attributeRef>
+<attributeRef>18643F56-50BD-8315-88DF-4D638CBD5D92</attributeRef>
+<attributeRef>57C8B6A5-EBE8-0E85-C170-0760FA79371F</attributeRef>
+<attributeRef>C3AF4BBD-92FC-7735-B17E-B464CB2678F9</attributeRef>
+<attributeRef>9ACAF5E0-F0DA-AC81-D911-571024B084F7</attributeRef>
 <attributeRef>A0142052-06B0-1802-30FE-345B8990F1EB</attributeRef>
 </usedAttributes>
 </identifier>

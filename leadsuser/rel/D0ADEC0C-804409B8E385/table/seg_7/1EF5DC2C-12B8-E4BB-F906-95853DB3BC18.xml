@@ -104,6 +104,22 @@
 <colAssociation fkAssociation="329CBD34-0A08-8037-8B0E-5A9879B3245A" referredColumn="47C2C335-5BF8-01E0-6F36-60C5F377063A"/>
 </associations>
 </Column>
+<Column name="timetable_ver_ID" id="8D281FCE-9252-1963-EC3C-7901874BD21C">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 03:30:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timetable Version ID]]></commentInRDBMS>
+<generatorID>4A3BF710-309B-E424-DB38-38881ECF3652</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="74334BF3-11ED-8CC4-0CB9-241FF8AC78EB" referredColumn="D6BE0DD8-E857-7EFB-688C-1D8DC45152E8"/>
+</associations>
+</Column>
 <Column name="start_time" id="F2A2EDA1-B6E9-9680-6A6D-BD8C2EA5DB14">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-27 06:44:54 UTC</createdTime>
@@ -221,10 +237,10 @@
 <colUsage columnID="52FB0EFE-627E-CB1E-B1FF-72549646D2B5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="06682A0C-D45C-D554-FA2F-21814A35FAD2" name="time_slot_UN">
+<ind_PK_UK id="1CAF5927-CF70-E1A0-BBE3-3FE442B58209" name="time_slot_UN">
 <createdBy>leads</createdBy>
-<createdTime>2026-04-27 06:44:54 UTC</createdTime>
-<generatorID>A51DC7C7-D446-0163-88F0-8B1CCE1D07BB</generatorID>
+<createdTime>2026-05-03 03:30:53 UTC</createdTime>
+<generatorID>8C60BAB9-4D47-FDBD-572F-B6CC97830A2E</generatorID>
 <ownerDesignName>leadsuser</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -232,6 +248,9 @@
 <colUsage columnID="94121C9C-A496-9661-7624-F8680240A592"/>
 <colUsage columnID="7F8A8CF4-9658-4E60-AE7C-886EF2B44528"/>
 <colUsage columnID="6731F496-1AEA-A9F3-ED35-7AD9A77100EE"/>
+<colUsage columnID="42A6999B-CD29-FD51-5E80-7BE9C0BE39A5"/>
+<colUsage columnID="7AAA675F-C8F6-6E55-0998-887847A006D9"/>
+<colUsage columnID="8D281FCE-9252-1963-EC3C-7901874BD21C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="266F29F8-9A9D-5037-4CDF-509AF3908A00" name="TtSlot_Batch_FK">
@@ -287,6 +306,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6731F496-1AEA-A9F3-ED35-7AD9A77100EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91840561-AF49-A863-5C13-A310DD0BE17F" name="TTslot_Ttver_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 03:30:53 UTC</createdTime>
+<generatorID>3B35E319-BC5F-97CC-D99A-7DDF9F123CE9</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D281FCE-9252-1963-EC3C-7901874BD21C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

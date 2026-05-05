@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="school_timetable_chg_trg" directorySegmentName="seg_0" id="8495F2ED-FD0E-57D6-C12D-E9E4F49484E3">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-02 03:44:44 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+    v_user VARCHAR2(255) := coalesce(
+        sys_context('APEX$SESSION', 'APP_USER'),
+        user
+    );
+BEGIN
+    IF inserting THEN
+        :new.created_by := v_user;
+        :new.created_on := current_timestamp;
+    END IF;
+
+    IF updating THEN
+        :new.updated_by := v_user;
+        :new.changed_on := current_timestamp;
+    END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>7DEEFCF5-2577-BD49-3B7B-8CA991D55225</owner>
+<table>F5C10864-98D5-69E4-61A6-F96770900C3C</table>
+</TriggerOraclev10g>
