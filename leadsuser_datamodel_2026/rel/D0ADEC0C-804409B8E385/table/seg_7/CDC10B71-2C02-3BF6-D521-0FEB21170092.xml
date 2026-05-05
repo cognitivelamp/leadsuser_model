@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="CDC10B71-2C02-3BF6-D521-0FEB21170092" name="idraft">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>736ABF3F-2BCF-3A31-C367-F919A76447C4</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>idraft</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="flag" id="FB7C22A3-FB21-8F96-9964-4D1BE0420A1E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Inbox Draft Flag - YES/NO]]></comment>
+<commentInRDBMS><![CDATA[Inbox Draft Flag - YES/NO]]></commentInRDBMS>
+<generatorID>D29C8203-06D6-8372-E43A-70F25725446B</generatorID>
+<notes><![CDATA[Inbox Draft Flag - YES/NO]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>PENDING</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="008A80A4-14F4-2BC9-0F7D-469682777756">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>DB6CF6FF-D44F-3617-CA3F-8361CB828081</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idraft_ID" id="886724F4-3FB3-ABC6-8DBE-410F6797D1EA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3801B3E9-D6AD-8DCE-1521-A0EF4DE04E4E" name="idraft_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="886724F4-3FB3-ABC6-8DBE-410F6797D1EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5395B7EA-C626-1F18-9762-250212090011" name="draft_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>39DC1A06-557C-849C-D700-DB0298B24A08</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB7C22A3-FB21-8F96-9964-4D1BE0420A1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

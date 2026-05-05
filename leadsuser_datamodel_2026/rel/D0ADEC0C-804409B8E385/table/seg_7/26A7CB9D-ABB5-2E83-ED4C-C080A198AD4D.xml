@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="26A7CB9D-ABB5-2E83-ED4C-C080A198AD4D" name="iread">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Inbox read (YES) or unread (NO)]]></comment>
+<commentInRDBMS><![CDATA[Inbox read (YES) or unread (NO)]]></commentInRDBMS>
+<generatorID>4D32631D-CF27-2A25-E42C-0A7B7434681D</generatorID>
+<notes><![CDATA[Inbox read (YES) or unread (NO)]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>iread</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="flag" id="A93BD0F2-40E6-82E8-848A-75DF7486773D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Inbox read (YES) or unread (NO)]]></comment>
+<commentInRDBMS><![CDATA[Inbox read (YES) or unread (NO)]]></commentInRDBMS>
+<generatorID>54D1405A-BD39-97DE-06CD-4F507E8DFD22</generatorID>
+<notes><![CDATA[Inbox read (YES) or unread (NO)]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>PENDING</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="ACF9E144-DFE7-1773-533A-825D62DF7B5A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>50629214-755D-5C45-C1E4-2B1C092F57CC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="iread_ID" id="EFF34E7E-7A41-ADC1-B0F3-AAC1F251F87D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3DAA1F97-6C6C-08CE-FE9D-0548BEF6E47A" name="iread_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="EFF34E7E-7A41-ADC1-B0F3-AAC1F251F87D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E20B952D-6715-ED1D-1DE0-B96CBD5E8794" name="iread_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>47739CB3-7033-0258-95FF-73626939EBA5</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A93BD0F2-40E6-82E8-848A-75DF7486773D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

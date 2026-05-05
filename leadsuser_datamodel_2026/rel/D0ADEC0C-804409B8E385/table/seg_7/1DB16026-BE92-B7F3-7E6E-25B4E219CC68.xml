@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="1DB16026-BE92-B7F3-7E6E-25B4E219CC68" name="istarred">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Inbox Starred  - Starred and Unstarred]]></comment>
+<commentInRDBMS><![CDATA[Inbox Starred  - Starred and Unstarred]]></commentInRDBMS>
+<generatorID>FEFFB2A8-BD3F-C1F1-6814-051FEFC76CFC</generatorID>
+<notes><![CDATA[Inbox Starred  - Starred and Unstarred]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>istarred</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="flag" id="62903213-F435-CABD-2A77-EE419E120EFE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Flag - YES/NO]]></comment>
+<generatorID>754CC502-1677-ED80-602E-F293CC784039</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>PENDING</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="643286B2-21D3-7267-BEBD-0AF42C750AB3">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>D1ECAF77-2FA3-0A9E-963F-F2D66AC6B679</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="istarred_ID" id="CCC69192-9F7A-9FC0-AA21-74AD9AC789FE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C345205B-1F7F-E2CB-EF6E-6B1A8378801A" name="istarred_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="CCC69192-9F7A-9FC0-AA21-74AD9AC789FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D28B9DCB-2967-AFC4-776C-5063D8BCABA9" name="starred_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>45ADFBAE-5B24-954A-788B-A84F88528CEC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62903213-F435-CABD-2A77-EE419E120EFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

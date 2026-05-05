@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="42B4CB7A-5FB7-2B17-54C7-262A95025262" name="ireceiver">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Inbox receiver Flag - TO/CC/BCC]]></comment>
+<commentInRDBMS><![CDATA[Inbox receiver Flag - TO/CC/BCC]]></commentInRDBMS>
+<generatorID>BB16820C-BD3C-D6E5-D601-F579FA088E38</generatorID>
+<notes><![CDATA[Inbox receiver Flag - TO/CC/BCC]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>ireceiver</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="flag" id="389B7373-1DA8-3238-757E-FCCE07078142">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Inbox Flag - TO/CC/BCC]]></comment>
+<commentInRDBMS><![CDATA[Inbox Flag - TO/CC/BCC]]></commentInRDBMS>
+<generatorID>A34C7AFC-FCD0-29EA-D69B-800F195C5070</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<constraintName>receiver_cons</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>TO</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="BC269856-9FC1-BF9C-6763-81E323D41FCF">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>A5692AAD-7A12-7B9F-8314-6002A0CC53A4</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ireceiver_ID" id="2FEBA284-33CD-8207-C42F-CC2430A1DED6">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D0495DC-2168-33E8-83EA-E6C598116C16" name="ireceiver_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="2FEBA284-33CD-8207-C42F-CC2430A1DED6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="786F635B-9244-857B-517F-AED549D6FE7C" name="receiver_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>70AE6CE8-7D88-11F6-97E1-207ABD4AE2F1</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="389B7373-1DA8-3238-757E-FCCE07078142"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

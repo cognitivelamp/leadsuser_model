@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="constraint_master_chg_trg" directorySegmentName="seg_0" id="FB3D0DD1-5AD3-0863-2D6D-4323AA6E12FC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-24 08:38:30 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+    IF
+        inserting
+    THEN
+        :new.constraint_name := UPPER(:new.constraint_name);
+        :new.created_by := nvl(sys_context('APEX$SESSION', 'APP_USER'), user);
+        :new.created_on := current_timestamp;
+        :new.changed_on := current_timestamp;
+    END IF;
+
+    IF
+        updating
+    THEN
+    	   :new.constraint_name := UPPER(:new.constraint_name);
+        :new.updated_by := nvl(sys_context('APEX$SESSION', 'APP_USER'), user);
+        :new.changed_on := current_timestamp;
+    END IF;
+
+END; ]]></body>
+<triggerTime>BEFORE</triggerTime>
+<columns>F1C37F25-F984-EEA7-B4DA-9EA079D55887, 1A64357B-BAE1-24D8-4568-92BCE3601805, 9ABC6020-F34B-9BEE-08F7-6D270DC890DA, FD9C8675-998E-6980-A056-4E87918F4517, B0B282AF-4B57-CE45-B917-CD42893DE699, 26628130-EC6A-B353-20B1-E26AF17797A4, 7F584239-4D66-64C5-2D78-EAE0DC7C2C64, 5B0CC6BA-709F-3164-2A96-06EB061657D3</columns>
+<table>9AAAC3BE-918D-1B07-ED8E-38BE17ED1C9D</table>
+</TriggerOraclev10g>

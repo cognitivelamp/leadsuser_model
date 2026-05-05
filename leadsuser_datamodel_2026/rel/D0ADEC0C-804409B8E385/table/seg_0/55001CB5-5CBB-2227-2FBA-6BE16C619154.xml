@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55001CB5-5CBB-2227-2FBA-6BE16C619154" name="attendance_meta">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<generatorID>3386BFB9-4FE5-9363-4AF2-08D95E5E67A7</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A84C71DF-2E42-1CB0-C9C5-3BDACC2CF221</importedID>
+<abbreviation>attendance_meta</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="71FA720E-4E7A-1B2A-F380-56D5DA7FC6EC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Attendance Meta ID]]></comment>
+<commentInRDBMS><![CDATA[Attendance Meta ID]]></commentInRDBMS>
+<generatorID>27C849AF-82E6-C23F-E60D-5102A25E7B19</generatorID>
+<notes><![CDATA[Attendance Meta ID]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>E24008C6-FAE6-EAF2-3A2B-68BE9C7681E6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="meta_data" id="031E3134-D22C-55C9-29CA-A9A6599B33F8">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Attendance Data in json format]]></comment>
+<commentInRDBMS><![CDATA[Attendance Data in json format]]></commentInRDBMS>
+<generatorID>7C45B87E-455C-A2FB-DA5D-216FD112911C</generatorID>
+<notes><![CDATA[Attendance Data in json format]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9FC82417-33C6-3926-8187-7A860F4DDECD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>47823B89-BECE-2D4A-B641-EE3BE6149078</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="notes" id="9FBE542E-74C4-3C79-F46F-8244A2D3EED5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>B9B60CA1-E950-C4FB-3EC6-0EC4021CF3CE</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EECBF959-65E5-6279-E567-3B1C225A149B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="186E09DB-C85E-E34B-1160-48EC8F384E14" name="attendance_meta_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>861898E5-56AE-F1A4-1F04-0F596D2D5F02</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>11E06057-5B34-49FB-A601-29304C4BF3DC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71FA720E-4E7A-1B2A-F380-56D5DA7FC6EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FFFB8CB-B3AF-5F7F-42BE-E8ADC2FEFBAE" name="attendance_meta_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D35A9DFB-DBE7-34FF-D20F-AB0A086E754C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71FA720E-4E7A-1B2A-F380-56D5DA7FC6EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

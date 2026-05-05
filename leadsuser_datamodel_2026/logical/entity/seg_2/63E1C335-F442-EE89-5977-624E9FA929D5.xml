@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="63E1C335-F442-EE89-5977-624E9FA929D5" name="email_log">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:51 UTC</createdTime>
+<comment><![CDATA[email log]]></comment>
+<commentInRDBMS><![CDATA[email log]]></commentInRDBMS>
+<notes><![CDATA[email log]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>79FB573C-A32A-BC59-41A6-D3FEE459D487</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>email_log</preferredAbbreviation>
+<shortName>email_log</shortName>
+<synonym>email_log</synonym>
+<synonymToDisplay>email_log</synonymToDisplay>
+<createSurrogateKey>true</createSurrogateKey>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="send_to" id="2F46C68D-AF07-7C45-5579-26213C8A5534">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[sending to]]></comment>
+<commentInRDBMS><![CDATA[sending to]]></commentInRDBMS>
+<notes><![CDATA[sending to]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7DC8E603-9779-587D-D240-4BF8F5E88FF8</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="send_from" id="A3B7A2E3-2E2B-5CA7-7A18-42259C5CD5A5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[sending from]]></comment>
+<commentInRDBMS><![CDATA[sending from]]></commentInRDBMS>
+<notes><![CDATA[sending from]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1645558B-A06D-DF13-2677-A8E04E13E882</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>yourmailID@domain.com</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="subject" id="C254D0D2-FE80-E3C2-E3E4-CA55612432E7">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[subject of the email]]></comment>
+<commentInRDBMS><![CDATA[subject of the email]]></commentInRDBMS>
+<notes><![CDATA[subject of the email]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>B7456660-DC71-ED27-F579-49681B52C9E0</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="message" id="B20F98B7-0649-B285-9FB6-C4A5D6172D84">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Message content or body of the email.]]></comment>
+<commentInRDBMS><![CDATA[Message content or body of the email.]]></commentInRDBMS>
+<notes><![CDATA[Message content or body of the email.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>6F5A2603-F91A-9DAB-E30C-1B146ECB7986</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="send_cc" id="85FCCACE-6CB2-E649-284C-4FDD61F6A5F4">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Carbon Copy]]></comment>
+<commentInRDBMS><![CDATA[Carbon Copy]]></commentInRDBMS>
+<notes><![CDATA[Carbon Copy]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9387EF84-26BC-3C25-D5EE-55CF294060E5</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>yourmailID@domain.com</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="send_bcc" id="1EC42B7B-E89E-79A0-0A5D-D2F219F41BCE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Blind Carbon Copy]]></comment>
+<commentInRDBMS><![CDATA[Blind Carbon Copy]]></commentInRDBMS>
+<notes><![CDATA[Blind Carbon Copy]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C9E0CFDE-241C-9DF5-9694-EF03E777828E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>yourmailID@domain.com</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="replyto" id="9927F790-210A-7D08-6EA5-97C10E0C3FE1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[Reply to]]></comment>
+<commentInRDBMS><![CDATA[Reply to]]></commentInRDBMS>
+<notes><![CDATA[Reply to]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>66796340-525A-3E8D-C6ED-914BF8EA3437</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>yourmailID@domain.com</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="changedate" id="10C25890-2DCF-14C1-8F81-45ED95534234">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:54 UTC</createdTime>
+<comment><![CDATA[change date and time of the email sent.]]></comment>
+<commentInRDBMS><![CDATA[change date and time of the email sent.]]></commentInRDBMS>
+<notes><![CDATA[change date and time of the email sent.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DD29D7A5-B812-1DA4-98F2-B9F3D63B3063</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+</Entity>

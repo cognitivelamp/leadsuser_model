@@ -1,0 +1,311 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_6" id="2D6A42B6-D852-DF17-F97C-21263AFAE7D7" name="subject_category">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:50 UTC</createdTime>
+<comment><![CDATA[Category: ADDITIONAL/CO-CURRICULAR/OPTIONAL SUBJECT/MAIN SUBJECT/SECOND LANGUAGE (OPTIONAL)]]></comment>
+<commentInRDBMS><![CDATA[Category: ADDITIONAL/CO-CURRICULAR/OPTIONAL SUBJECT/MAIN SUBJECT/SECOND LANGUAGE (OPTIONAL)]]></commentInRDBMS>
+<notes><![CDATA[Category: ADDITIONAL/CO-CURRICULAR/OPTIONAL SUBJECT/MAIN SUBJECT/SECOND LANGUAGE (OPTIONAL)]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F425594B-D10C-02A3-0E6D-82B75BB20D06</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>subject_category</preferredAbbreviation>
+<shortName>subject_category</shortName>
+<synonym>subject_category</synonym>
+<synonymToDisplay>subject_category</synonymToDisplay>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="C5DEF43A-B9B1-0E87-CAFC-E54738E878DB">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Subject Category Code]]></comment>
+<commentInRDBMS><![CDATA[Subject Category Code]]></commentInRDBMS>
+<notes><![CDATA[Subject Category Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>42D8B347-B8D8-2EF7-0F90-C0BDA4149319</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>411A7036-AE28-9018-332B-691EBC096EF9</domain>
+<defaultValue>0000</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="name" id="011A7701-706D-1FA7-3FB8-3473FF861015">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Name of the Division of Subject]]></comment>
+<commentInRDBMS><![CDATA[Name of the Division of Subject]]></commentInRDBMS>
+<notes><![CDATA[Name of the Division of Subject]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>90E609FB-40C6-5553-50E8-DE5054FEFDE2</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>division_cons</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<defaultValue>Main</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="pseudo_name" id="5C5F267F-8F77-44C8-1B3E-B93705E96A83">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>4137DBC8-9258-3B23-B16D-C673962D18D2</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="academic_type" id="25E6881F-5CD6-643A-21E0-8C2752085DFA">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Academic Type - Main, Minor, Optional, Additional, Extra-Curricular]]></comment>
+<commentInRDBMS><![CDATA[Academic Type - Main, Minor, Optional, Additional, Extra-Curricular]]></commentInRDBMS>
+<generatorID>EA7A8904-B3B8-9B36-868C-EE417B658441</generatorID>
+<notes><![CDATA[Academic Type - Main, Minor, Optional, Additional, Extra-Curricular]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>C82B276C-6B02-3322-5987-73683FF8B463</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>C75A0913-1975-E4B4-2EEF-CBB3C876B1BE</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC6758B1-C791-00D1-8E53-CD1085D0AD3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="academic_code" id="F400DDD0-E8EE-94CE-99B8-162C9F9CBF76">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Academic Category Code]]></comment>
+<commentInRDBMS><![CDATA[Academic Category Code]]></commentInRDBMS>
+<generatorID>A4A46217-9C99-E809-C8C2-7C6249B3B239</generatorID>
+<notes><![CDATA[Academic Category Code]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>FC8E3D3A-B0F2-B28C-0556-3785E4FCA859</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>A700E8D1-844E-004A-9FFB-E84003773BB2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>411A7036-AE28-9018-332B-691EBC096EF9</domain>
+<defaultValue>0000</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="priority_level" id="8462C68B-5366-8556-68FC-0B97A5CA7095">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 08:24:05 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<constraintName>sub_cat_priority_cons</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<listOfValues>
+<valueDef value="1" description=""/>
+<valueDef value="2" description=""/>
+<valueDef value="3" description=""/>
+<valueDef value="4" description=""/>
+<valueDef value="5" description=""/>
+<valueDef value="6" description=""/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="serial_no" id="23585792-1429-D40B-3148-499AF023BE99">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[1, 2, 3, 4,...]]></comment>
+<commentInRDBMS><![CDATA[1, 2, 3, 4,...]]></commentInRDBMS>
+<generatorID>11F3F830-E7B8-0C16-CCF1-1CE543E1E815</generatorID>
+<notes><![CDATA[1, 2, 3, 4,...]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>A643A916-A4E9-F995-49F5-BE951E1B6708</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>D1406C02-98BE-E579-0425-6B01DDEEDC72</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriptions" id="E9289837-1617-74DF-F526-FB89A20883EB">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>1D3899CA-1EB9-370F-1315-C9912DC5E338</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="created_by" id="CD34E11D-6F31-2FD2-1DEE-0F577E4DAC8C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[User who created the record]]></comment>
+<commentInRDBMS><![CDATA[User who created the record]]></commentInRDBMS>
+<notes><![CDATA[User who created the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>16252C0C-B7AF-A948-1983-515F6B993E7E</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="created_on" id="F0D94729-4F63-DC59-573E-9FE89BDC3846">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Record created - date and time]]></comment>
+<commentInRDBMS><![CDATA[Record created - date and time]]></commentInRDBMS>
+<notes><![CDATA[Record created - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9AB498C8-0C0D-6BBA-BAA1-1F05D439398B</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="updated_by" id="AEAFEEE6-ACE9-3E30-4B45-9E3318A43375">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[User who updated the record]]></comment>
+<commentInRDBMS><![CDATA[User who updated the record]]></commentInRDBMS>
+<notes><![CDATA[User who updated the record]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>CE4F1F8B-76BA-FB50-7779-931F58246BE7</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FCF40FD2-658F-71B5-EA0B-1055E4223B0E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+<Attribute name="changed_on" id="DFE37372-5768-1902-6AD2-F274452E52ED">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<comment><![CDATA[Last record changed - date and time]]></comment>
+<commentInRDBMS><![CDATA[Last record changed - date and time]]></commentInRDBMS>
+<notes><![CDATA[Last record changed - date and time]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>F26F423C-DEDA-E6E5-0A91-437C0BDCC459</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8B1C2E1D-8285-0384-9C6C-4B36B9F449D6" name="subject_category_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>87168222-042D-8602-AE2B-F7530D164DC1</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<propertyMap>
+<property name="engineerTo" value=""/>
+</propertyMap>
+<usedAttributes>
+<attributeRef>011A7701-706D-1FA7-3FB8-3473FF861015</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3C6E3634-1367-217A-3C24-5C5797739827" name="subject_category_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:48:52 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>8345B3E3-21E1-0F20-AE31-1482C7DE8AD8</importedID>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C5DEF43A-B9B1-0E87-CAFC-E54738E878DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

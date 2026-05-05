@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_8" id="598462F4-B7D8-7BBC-065D-8489B670F08A" name="subscriber">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<comment><![CDATA[subscriber - type : student/teacher/staff/etc/]]></comment>
+<commentInRDBMS><![CDATA[subscriber - type : student/teacher/staff/etc/]]></commentInRDBMS>
+<generatorID>CDF11CE4-1AD0-FD67-B910-1475CB77CCA7</generatorID>
+<notes><![CDATA[subscriber - type : student/teacher/staff/etc/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>subscriber</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type" id="890D6AFB-6115-5B44-A307-9D51A5CF22DE">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<comment><![CDATA[subscriber type - teacher/student/staff/etc/]]></comment>
+<commentInRDBMS><![CDATA[subscriber type - teacher/student/staff/etc/]]></commentInRDBMS>
+<generatorID>A9C8BB44-0D18-965B-963B-9692B5BE15D6</generatorID>
+<notes><![CDATA[subscriber type - teacher/student/staff/etc/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="C2FD3F98-0EFD-B65E-7340-B16F3625A842">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<comment><![CDATA[subscriber type description - teacher/student/staff/etc/]]></comment>
+<commentInRDBMS><![CDATA[subscriber type description - teacher/student/staff/etc/]]></commentInRDBMS>
+<generatorID>2F92A22F-F57C-0E5E-EC60-35FFB3A4A107</generatorID>
+<notes><![CDATA[subscriber type description - teacher/student/staff/etc/]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subscriber_ID" id="5033AC2F-905C-035B-698E-3FC42696E078">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39D3DAD7-9451-3B0D-A11E-3EB18DBA2980" name="subscriber_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="5033AC2F-905C-035B-698E-3FC42696E078"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91106DAA-07EF-2CDE-FFD1-D9354F94AF6B" name="subscriber_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<generatorID>40D414DF-1673-1101-9433-6A8C5FEA57FD</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="890D6AFB-6115-5B44-A307-9D51A5CF22DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

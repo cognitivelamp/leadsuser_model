@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_8" id="5F605D4F-8221-EEA0-5C69-942113C21F0B" name="priority">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-31 03:50:19 UTC</createdTime>
+<comment><![CDATA[Priority Level - VERY HIGH=1/HIGH=2/MEDIUM=3/LOW=4]]></comment>
+<commentInRDBMS><![CDATA[Priority Level - VERY HIGH=1/HIGH=2/MEDIUM=3/LOW=4]]></commentInRDBMS>
+<generatorID>B39E390C-196A-9F10-D252-3678B36363A9</generatorID>
+<notes><![CDATA[Priority Level - VERY HIGH=1/HIGH=2/MEDIUM=3/LOW=4]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>priority</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="priority_order" id="2731F48D-AA51-07C9-5F51-0C037E915042">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-31 03:50:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Priority Order]]></commentInRDBMS>
+<generatorID>BABA21FB-6581-9D04-4E8A-EB9931022C4E</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="priority_name" id="90B0D17C-7417-3DD5-501A-4F03903AE682">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-31 03:50:19 UTC</createdTime>
+<generatorID>6FCB4569-912E-A179-0DB8-D7E75E802AAC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>35AF6BA5-100E-363B-D4F8-59F7EA81EED9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="priority_score" id="8066222B-0FE8-0663-668A-FC5BB7E7A0B8">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 06:49:01 UTC</createdTime>
+<generatorID>BE56E354-7E60-9FEA-DE5E-47DFF2964098</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F01E2F38-7AC8-86BD-B098-0A79206A3B16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="42207172-BC36-0BBC-E65A-621019B97147">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-31 03:50:19 UTC</createdTime>
+<generatorID>2D0AFDCD-5BE2-8B8B-1769-07FCD017A9EF</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B6AF2FB-BB18-8558-C2A6-6E6AD6A4D2CE" name="priority_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-31 03:50:19 UTC</createdTime>
+<generatorID>1362AD29-6B88-E9F4-9031-EFBE88E728A1</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2731F48D-AA51-07C9-5F51-0C037E915042"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="772FB353-A609-55EB-5E2E-8C9AA62B91CA" name="priority_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-31 03:50:19 UTC</createdTime>
+<generatorID>8E6074FE-4967-3C53-F84B-C5A66C0794B9</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90B0D17C-7417-3DD5-501A-4F03903AE682"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

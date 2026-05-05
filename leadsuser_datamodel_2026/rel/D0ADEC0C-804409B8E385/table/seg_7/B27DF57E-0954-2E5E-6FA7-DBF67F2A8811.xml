@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="B27DF57E-0954-2E5E-6FA7-DBF67F2A8811" name="weekday">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:17 UTC</createdTime>
+<comment><![CDATA[weekday - SUN/MON/TUE/WED/THU/FRI/SAT]]></comment>
+<commentInRDBMS><![CDATA[weekday - SUN/MON/TUE/WED/THU/FRI/SAT]]></commentInRDBMS>
+<generatorID>57DFF94B-0637-BA05-87C0-C27DEE3D5040</generatorID>
+<notes><![CDATA[weekday - SUN/MON/TUE/WED/THU/FRI/SAT]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>7CACBDE4-EFCF-A567-10F7-C6D05BB55D25</importedID>
+<abbreviation>weekday</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="name" id="C5141C14-3FDE-BD72-015B-E9111E8357A9">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Weekday Name]]></comment>
+<commentInRDBMS><![CDATA[Weekday Name]]></commentInRDBMS>
+<generatorID>46845756-AA84-6605-58F7-ADAE26E5C01A</generatorID>
+<notes><![CDATA[Weekday Name]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>EAFF38BB-5A84-93FB-6236-F1611BA9823D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8DDAC84A-8AF2-A78D-6E0D-5FA34B694C46</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="abbrv" id="2F81E6EC-CCDE-3BE9-6ECF-C99818DB9A33">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[Abbreviation of Weekday]]></comment>
+<commentInRDBMS><![CDATA[Abbreviation of Weekday]]></commentInRDBMS>
+<generatorID>F60D6919-88D5-8689-159C-0AD4A47A5722</generatorID>
+<notes><![CDATA[Abbreviation of Weekday]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>56C3D72F-5C41-9D1A-CD1C-807CE76252E2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9E81D49F-7F07-4FA1-2B22-C13A79C8D44E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="serial_no" id="B2DB70C9-E258-306F-251F-869DC4E35282">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<comment><![CDATA[1, 2, 3, 4,...]]></comment>
+<commentInRDBMS><![CDATA[1, 2, 3, 4,...]]></commentInRDBMS>
+<generatorID>43F2AD11-5C7B-C38C-4B98-B55E001E226F</generatorID>
+<notes><![CDATA[1, 2, 3, 4,...]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>2BABC7C8-3411-90E6-50D8-3CB03B5F4B00</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC994999-AB92-CEEB-948D-A5125AD268CA" referredColumn="265DDB83-DBAB-FC88-AD37-E80E3AB9575F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="08E0F261-E01D-367E-B070-6E86CDE05884" name="weekday_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>335D0519-45F6-BFDB-AD85-A9C83C491BF2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>D68B01BE-1CDB-D34E-5DCA-B05DDB4ADFBC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5141C14-3FDE-BD72-015B-E9111E8357A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="378019C0-E43B-C565-E7C9-B81445DE731D" name="weekday_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<generatorID>443F37E2-DFA5-3D15-7D5D-0640C3A1C414</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>26490026-4873-43C8-F936-FD1A1370BD55</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F81E6EC-CCDE-3BE9-6ECF-C99818DB9A33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E047B1E-7AAD-6847-49D5-E456B9ADA027" name="weekday_pk_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>9351F412-3A64-A06C-6772-D84EE23796AE</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5141C14-3FDE-BD72-015B-E9111E8357A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B231EBD2-8C3C-1CA1-9AE5-33F810DF1D81" name="weekday_un_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>50694FC9-895E-9C92-5572-164B8A0ED3BB</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F81E6EC-CCDE-3BE9-6ECF-C99818DB9A33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8D9B73F-7FE8-0B49-8BAA-794DDF1A5036" name="weekday_slno_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:18 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<importedID>DED49EAD-93CD-158A-78DD-E16222B950D8</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2DB70C9-E258-306F-251F-869DC4E35282"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A1E382C-6471-8726-4C4A-537314FA7755" name="Wkday_Serial_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-12 07:49:22 UTC</createdTime>
+<generatorID>C1100D73-0DEC-9526-129A-655475BCB43E</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2DB70C9-E258-306F-251F-869DC4E35282"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

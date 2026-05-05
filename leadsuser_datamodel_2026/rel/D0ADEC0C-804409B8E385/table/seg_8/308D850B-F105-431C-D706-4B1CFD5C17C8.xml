@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_8" id="308D850B-F105-431C-D706-4B1CFD5C17C8" name="zip">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<comment><![CDATA[zip or PIN code]]></comment>
+<commentInRDBMS><![CDATA[zip or PIN code]]></commentInRDBMS>
+<generatorID>82116C1B-6B5A-10C9-11FE-25BC06D1A87A</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>zip</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code" id="55D02FD8-2ADD-CC09-9377-4F09DCAEE6DC">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<comment><![CDATA[zip code]]></comment>
+<generatorID>B71AB28F-9639-5361-BB38-6ECE3AFDDA78</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zip_ID" id="550D9109-EEF9-2AA0-D2BD-8FFF103E4B0C">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D6E1970F-CF71-44E5-E7B6-AD4C68F860CF" name="zip_PKv1">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="550D9109-EEF9-2AA0-D2BD-8FFF103E4B0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0145AEC4-BB92-B9BA-B057-D90BCF986C6B" name="zip_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:41 UTC</createdTime>
+<generatorID>2F5E1609-4841-71BC-06B1-EBDC96CA6DD2</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55D02FD8-2ADD-CC09-9377-4F09DCAEE6DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

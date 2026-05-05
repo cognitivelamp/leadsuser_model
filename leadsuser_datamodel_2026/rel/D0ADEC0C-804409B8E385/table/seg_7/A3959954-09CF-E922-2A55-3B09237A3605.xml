@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="A3959954-09CF-E922-2A55-3B09237A3605" name="lib_policy">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Policy table of the Library - weekly/monthly/quarterly, etc.]]></comment>
+<commentInRDBMS><![CDATA[Policy table of the Library - weekly/monthly/quarterly, etc.]]></commentInRDBMS>
+<generatorID>CBBE0A75-A9DB-1F4C-865F-C777136AA3B4</generatorID>
+<notes><![CDATA[Policy table of the Library - weekly/monthly/quarterly, etc.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>lib_policy</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="type" id="6EA6F573-2381-B1E6-8282-8ECC1B822F66">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Policy Name of the Library - weekly/monthly/quarterly, etc.]]></comment>
+<commentInRDBMS><![CDATA[Policy Name of the Library - weekly/monthly/quarterly, etc.]]></commentInRDBMS>
+<generatorID>EC32D9C7-0BA7-628B-59CF-E07C0A2EEF50</generatorID>
+<notes><![CDATA[Policy Name of the Library - weekly/monthly/quarterly, etc.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="1A0ADEFF-A89D-0E4E-5B7A-3B6C5DED593A">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Policy description of the Library - weekly/monthly/quarterly, etc.]]></comment>
+<commentInRDBMS><![CDATA[Policy description of the Library - weekly/monthly/quarterly, etc.]]></commentInRDBMS>
+<generatorID>7D28F7CB-FA03-C599-BA8C-42DF41259EC0</generatorID>
+<notes><![CDATA[Policy description of the Library - weekly/monthly/quarterly, etc.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lib_policy_ID" id="0B3B0C6D-B96C-4815-5C81-FAD90398D478">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B553794E-7E2D-CB57-C7AD-F2876E7A2C0D" name="lib_policy_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="0B3B0C6D-B96C-4815-5C81-FAD90398D478"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6713199-798C-1D9D-EBB2-8AC4D0AD833E" name="librarypolicy_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>01472E54-29F1-40CC-257A-F4D239CE40CC</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EA6F573-2381-B1E6-8282-8ECC1B822F66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

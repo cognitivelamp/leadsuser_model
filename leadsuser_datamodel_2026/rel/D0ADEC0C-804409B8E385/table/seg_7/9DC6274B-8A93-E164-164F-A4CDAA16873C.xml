@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_7" id="9DC6274B-8A93-E164-164F-A4CDAA16873C" name="genre">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Genre type and description table.]]></comment>
+<commentInRDBMS><![CDATA[Genre type and description table.]]></commentInRDBMS>
+<generatorID>62A773A3-454F-B123-441C-0D9C8FAC210F</generatorID>
+<notes><![CDATA[Genre type and description table.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<abbreviation>genre</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="name" id="3DB6131E-A2BE-B2F4-B4C9-C0D6AB69E31E">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Genre name - science/arts/mathementics/history/etc]]></comment>
+<commentInRDBMS><![CDATA[Genre name - science/arts/mathementics/history/etc]]></commentInRDBMS>
+<generatorID>A065412B-C1F5-5FFD-BD10-36D6EC5F0C1C</generatorID>
+<notes><![CDATA[Genre name - science/arts/mathementics/history/etc]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="7D2B7A26-F420-343C-EAC8-6051268BB14F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<comment><![CDATA[Description of the genre type.]]></comment>
+<commentInRDBMS><![CDATA[Description of the genre type.]]></commentInRDBMS>
+<generatorID>45F29455-F184-DB41-4B4B-22B5481B21E6</generatorID>
+<notes><![CDATA[Description of the genre type.]]></notes>
+<ownerDesignName>leadsuser</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<defaultValue>793001</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genre_ID" id="EB9149D5-D3EB-401F-8EE8-3D46FC531B09">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A8B227D-60B0-1409-8E30-6D7CAF27328D" name="genre_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="EB9149D5-D3EB-401F-8EE8-3D46FC531B09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6C0C39C-A4F0-F9D3-6A74-C05166A591FC" name="genre_un">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-23 07:31:40 UTC</createdTime>
+<generatorID>D0A0A689-6F5B-8E12-F8BB-348A77AF14E9</generatorID>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DB6131E-A2BE-B2F4-B4C9-C0D6AB69E31E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="teacher_availability" directorySegmentName="seg_7" id="375A0AC1-0CD9-16D7-70CB-90F553709608">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="created_on" id="2145E50B-0574-F8A1-E01B-F6DD05292F2D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="note" id="26B8C07F-DF5E-343B-4DE6-271ACD2BBA7D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="39DC4ECF-37B1-0101-A737-5EB9E64A2ABD">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="updated_by" id="43B55BDD-439A-DB47-E534-F968FDDC6922">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="changed_on" id="49ADCDF3-3995-B0A8-5849-E1A57A597D1F">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="created_by" id="6880344A-225A-6078-1B1D-94B7B491DB55">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="employee_ID" id="C8386F06-2857-4487-0F2E-55B0656D696B">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="school_code" id="C9830D30-3D66-BB01-884E-487EF9855A02">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 06:10:56 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="time_slot_ID" id="D0AD083E-0ABD-99ED-72C3-5CE4543E4AF5">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="is_available" id="D3E5C78A-BD24-2E17-DD48-29D5F4E4A7FA">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-20 09:51:49 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>Y</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TchrAvail_School_FK" id="5729D0E4-4A21-FF02-E3DF-350CC56A4C2C">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 06:10:56 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TchrAvail_Employee_FK" id="94F50EBA-8833-0C7D-DE5B-C2744D5C210D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TchrAvail_TimetableSlot_FK" id="95337E99-2E82-1344-48C3-3BC6433EF664">
+<createdBy>leads</createdBy>
+<createdTime>2026-04-27 06:44:54 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="teacher_availability_PK" id="98770CEC-4953-54C5-EA49-6B94DAF88169">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="teacher_availability_UN" id="5ECA9655-6018-1EBF-8568-208BE5A8164D">
+<createdBy>leads</createdBy>
+<createdTime>2026-03-17 04:49:57 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="school_weekday" directorySegmentName="seg_3" id="55093FE5-29FB-C103-D18A-4D41284536C2">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="created_on" id="04782201-2103-AC51-3F96-EA6E922586D9">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="is_locked" id="1803F789-48B7-894A-2100-FBF2330D4AB4">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-04 02:46:10 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>N</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="day_no" id="212BE98A-3744-D97E-30AF-287D66560F2A">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="year_date" id="363B86DF-42F8-6B3D-F3E9-C390FFF6DEF8">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="is_working_day" id="38F4ACE0-F48F-AD37-6450-75984A9E18DE">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:29:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>Y</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="updated_by" id="3C6EFA75-2E1C-DEEE-8B34-DF4433345764">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="5F7BFAA4-2766-4043-B87A-DC85BE5155BC">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="batch_no" id="66E41EAE-E86F-612D-CB60-97283EFE7D58">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="created_by" id="BAC0FE19-72AA-1BBE-334B-ADE6D299F14D">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="note" id="C8ADFEA3-35B2-8F7F-14D2-6F1FB9D48923">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="school_code" id="E98D9F55-6843-25D4-FFF2-3D0C79D2DB33">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="changed_on" id="F36FF775-819D-4692-5DD0-0353A2CF3B8C">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ScWkdy_School_FK" id="077ED22E-787F-D73F-161B-04D6265FB556">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ScWkdy_Batch_FK" id="7451D811-5F02-FBAB-5A69-86198E7578D4">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ScWkdy_SchoolDay_FK" id="B0340DAB-F25E-C6C2-943D-31C2A717EF04">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="school_weekday_PK" id="47C5D199-A7A3-C537-9529-D81BFA85F856">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="school_weekday_UN" id="FC90DEB9-5C2D-7179-E1DF-F74FE11C59B0">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-03 10:02:42 UTC</createdTime>
+<ownerDesignName>leadsuser</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>
