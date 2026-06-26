@@ -2,72 +2,126 @@
 <TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="school_timetable_double_trg" directorySegmentName="seg_0" id="8F55BB78-4ECC-0000-AB80-0161F1C9F32F">
 <createdBy>leads</createdBy>
 <createdTime>2026-05-04 06:17:20 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <actions>INSERT, UPDATE</actions>
-<body><![CDATA[DECLARE
-    v_existing_class_info VARCHAR2(100);
-    v_teacher_name        VARCHAR2(100);
-BEGIN
-    -- Skip check for Lunch Period (10) as per your existing rules
-    IF :new.period_no = 10
-    OR :new.employee_id IS NULL THEN
-        RETURN;
-    END IF;
+<body><![CDATA[    -- ==========================================
+    -- 1. DECLARATION SECTION
+    -- ==========================================
+    -- Define a record structure to hold the :NEW values we need to validate
+    TYPE t_timetable_rec IS RECORD (
+        school_code        school_timetable.school_code%TYPE,
+        batch_no           school_timetable.batch_no%TYPE,
+        timetable_ver_id   school_timetable.timetable_ver_id%TYPE,
+        term_code          school_timetable.term_code%TYPE,
+        day_no             school_timetable.day_no%TYPE,
+        period_no          school_timetable.period_no%TYPE,
+        employee_id        school_timetable.employee_id%TYPE,
+        class_code         school_timetable.class_code%TYPE,
+        section_code       school_timetable.section_code%TYPE,
+        stream_code        school_timetable.stream_code%TYPE,
+        subject_code        school_timetable.subject_code%TYPE
+    );
+
+    -- Define a collection (nested table) of the record type
+    TYPE t_timetable_tab IS TABLE OF t_timetable_rec;
     
-    --
+    -- Instantiate the collection variable
+    v_new_rows t_timetable_tab := t_timetable_tab();
+
+    -- ==========================================
+    -- 2. AFTER EACH ROW SECTION
+    -- ==========================================
+    AFTER EACH ROW IS
     BEGIN
-        SELECT
-            csec.pseudo_name
-            || '[Period '
-            || stt.period_no
-            || ']'
-        INTO v_existing_class_info
-        FROM
-                 school_timetable stt
-            INNER JOIN class_section csec ON ( csec.school_code = stt.school_code
-                                               AND csec.batch_no# = stt.batch_no
-                                               AND csec.class_code = stt.class_code
-                                               AND csec.stream_code = stt.stream_code
-                                               AND csec.section_code = stt.section_code )
-        WHERE
-                stt.school_code = :new.school_code
-            AND stt.batch_no = :new.batch_no
-            AND stt.timetable_ver_id = :new.timetable_ver_id
-            AND stt.term_code = :new.term_code
-            AND stt.day_no = :new.day_no
-            AND stt.period_no = :new.period_no
-            AND stt.employee_id = :new.employee_id
-            AND ( stt.class_code != :new.class_code
-                  OR stt.section_code != :new.section_code
-                  OR stt.stream_code != :new.stream_code )
-            AND ROWNUM = 1;
+        -- FIX: Instead of checking and returning, invert the logic.
+        -- Only process and cache the record if it is NOT a Lunch Period (10) AND employee_id is NOT NULL.
+        IF :new.period_no != 10 AND :new.employee_id IS NOT NULL THEN
+
+            -- Extend the collection and store the :NEW row values for later
+            v_new_rows.EXTEND;
+            v_new_rows(v_new_rows.LAST).school_code      := :new.school_code;
+            v_new_rows(v_new_rows.LAST).batch_no         := :new.batch_no;
+            v_new_rows(v_new_rows.LAST).timetable_ver_id := :new.timetable_ver_id;
+            v_new_rows(v_new_rows.LAST).term_code        := :new.term_code;
+            v_new_rows(v_new_rows.LAST).day_no           := :new.day_no;
+            v_new_rows(v_new_rows.LAST).period_no        := :new.period_no;
+            v_new_rows(v_new_rows.LAST).employee_id      := :new.employee_id;
+            v_new_rows(v_new_rows.LAST).class_code       := :new.class_code;
+            v_new_rows(v_new_rows.LAST).section_code     := :new.section_code;
+            v_new_rows(v_new_rows.LAST).stream_code      := :new.stream_code;
+            v_new_rows(v_new_rows.LAST).subject_code     := :new.subject_code;
             
-        --
-        SELECT
-            first_name
-            || nvl2(middle_name, ' '
-                                 || middle_name
-                                 || ' ', ' ')
-            || last_name
-        INTO v_teacher_name
-        FROM
-            employee
-        WHERE
-                id = :new.employee_id
-            AND ROWNUM = 1;
+        END IF;
+    END AFTER EACH ROW;
 
-        raise_application_error(-20001, 'Teacher: '
-                                        || v_teacher_name
-                                        || ') is already assigned to a different class ('
-                                        || v_existing_class_info
-                                        || ') during this period.');
+    -- ==========================================
+    -- 3. AFTER STATEMENT SECTION
+    -- ==========================================
+    AFTER STATEMENT IS
+        v_existing_class_info VARCHAR2(100);
+        v_teacher_name        VARCHAR2(100);
+    BEGIN
+        -- Loop through the collected rows. The table is no longer mutating here.
+        FOR i IN 1 .. v_new_rows.COUNT LOOP
+            BEGIN
+                -- Run your conflict validation query against the collection data
+                SELECT
+                    csec.pseudo_name || '[Period ' || stt.period_no || ']'
+                INTO v_existing_class_info
+                FROM school_timetable stt
+                INNER JOIN class_section csec ON ( 
+                        csec.school_code = stt.school_code
+                    AND csec.batch_no# = stt.batch_no
+                    AND csec.class_code = stt.class_code
+                    AND csec.stream_code = stt.stream_code
+                    AND csec.section_code = stt.section_code 
+                )
+                WHERE stt.school_code = v_new_rows(i).school_code
+                  AND stt.batch_no = v_new_rows(i).batch_no
+                  AND stt.timetable_ver_id = v_new_rows(i).timetable_ver_id
+                  AND stt.term_code = v_new_rows(i).term_code
+                  AND stt.day_no = v_new_rows(i).day_no
+                  AND stt.period_no = v_new_rows(i).period_no
+                  AND stt.employee_id = v_new_rows(i).employee_id
+                  -- NEW LOGIC: Raise conflict ONLY IF it's a different class OR different subject
+                  AND (stt.class_code != v_new_rows(i).class_code
+                       OR stt.subject_code != v_new_rows(i).subject_code
+                       -- If Class and Subject are same, ensure it's not the exact same Stream being duplicated
+                       OR (stt.class_code = v_new_rows(i).class_code 
+                           AND stt.subject_code = v_new_rows(i).subject_code 
+                           AND stt.stream_code = v_new_rows(i).stream_code
+                           AND stt.section_code != v_new_rows(i).section_code)
+                      )
+                  AND ROWNUM = 1;
 
-    EXCEPTION
-        WHEN no_data_found THEN
-            NULL; -- No conflicting class found, assignment is valid
-    END;
+                -- If the SELECT above finds data, it means there IS a conflict.
+                -- Fetch the teacher's name.
+                SELECT
+                    first_name || nvl2(middle_name, ' ' || middle_name || ' ', ' ') || last_name
+                INTO v_teacher_name
+                FROM employee
+                WHERE id = v_new_rows(i).employee_id
+                  AND ROWNUM = 1;
 
-END;]]></body>
-<triggerTime>BEFORE</triggerTime>
+                -- Raise the application error, rolling back the statement
+                raise_application_error(-20001, 'Teacher: ' || v_teacher_name || 
+                                                ' is already assigned to a different class (' || 
+                                                v_existing_class_info || ') during this period.');
+
+            EXCEPTION
+                WHEN no_data_found THEN
+                    -- No conflicting class found, assignment is valid. 
+                    -- Exception caught cleanly; the loop simply moves to the next record.
+                    NULL; 
+            END;
+        END LOOP;
+        
+        -- Free up memory once the statement checks are done
+        v_new_rows.DELETE;
+        
+    END AFTER STATEMENT;
+
+END school_timetable_double_trg;]]></body>
+<triggerTime>COMPOUND</triggerTime>
 <table>F5C10864-98D5-69E4-61A6-F96770900C3C</table>
 </TriggerOraclev10g>

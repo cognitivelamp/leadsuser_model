@@ -125,21 +125,16 @@
 <colAssociation fkAssociation="549B2160-8478-8413-1F75-F7868B83BE9F" referredColumn="87D6DE54-C9AD-3924-8A36-6C51B8E252E2"/>
 </associations>
 </Column>
-<Column name="day_no" id="6AE0D30C-6EE2-63F3-1FEB-38A9A9B9D1E2">
+<Column name="year_date" id="45FB83A2-EF5D-6A6A-B53B-DCB18D9F47CA">
 <createdBy>leads</createdBy>
-<createdTime>2026-05-05 03:44:45 UTC</createdTime>
-<commentInRDBMS><![CDATA[Day No.]]></commentInRDBMS>
-<generatorID>AF623569-732A-EDD0-6B6E-38F32F86E1B1</generatorID>
+<createdTime>2026-05-07 08:57:32 UTC</createdTime>
+<generatorID>0D95B7E0-7A7F-848B-0741-E92926955EC7</generatorID>
 <ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>57E4E726-0278-DC93-9196-ABB2B37DFF18</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="27794283-E7E1-FDC8-4D8D-904691D70756" referredColumn="5CBCF0C9-4C68-5AC5-B09C-FB2E18D39F67"/>
-</associations>
 </Column>
 <Column name="period_no" id="F2B5126C-FA0C-AD94-CA26-A8264FCEA66B">
 <createdBy>leads</createdBy>
@@ -155,6 +150,22 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="A7E7B34B-2F71-C8D5-0CB2-92CBED4C7E4F" referredColumn="47C2C335-5BF8-01E0-6F36-60C5F377063A"/>
+</associations>
+</Column>
+<Column name="timetable_ver_ID" id="8BBC0F3A-9424-3ACE-1AA7-C551BE04B7CD">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-05 03:44:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timetable Version ID]]></commentInRDBMS>
+<generatorID>E16790BC-CBBC-6026-E564-64BD72849961</generatorID>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A575FFD2-DCB2-80C7-E202-C7FEBD29AC8C" referredColumn="D6BE0DD8-E857-7EFB-688C-1D8DC45152E8"/>
 </associations>
 </Column>
 <Column name="ordinal_no" id="1C222354-8BD1-7260-D8A7-290F8923D752">
@@ -173,22 +184,6 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="84AABFEE-59C1-F58E-A32F-E59DE0CA0269" referredColumn="3B56F711-18EC-F856-BDB8-AD504C48DCF3"/>
-</associations>
-</Column>
-<Column name="timetable_ver_ID" id="8BBC0F3A-9424-3ACE-1AA7-C551BE04B7CD">
-<createdBy>leads</createdBy>
-<createdTime>2026-05-05 03:44:45 UTC</createdTime>
-<commentInRDBMS><![CDATA[Timetable Version ID]]></commentInRDBMS>
-<generatorID>E16790BC-CBBC-6026-E564-64BD72849961</generatorID>
-<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A575FFD2-DCB2-80C7-E202-C7FEBD29AC8C" referredColumn="D6BE0DD8-E857-7EFB-688C-1D8DC45152E8"/>
 </associations>
 </Column>
 <Column name="subject_code" id="AE54095E-A89B-FAB8-F157-E304A86206CB">
@@ -227,6 +222,41 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="15E8A72C-CC28-C1CC-B43F-CE639677C1E7" referredColumn="3FC8E5C6-AC58-17FB-4585-348C27905E28"/>
+</associations>
+</Column>
+<Column name="substitute_ID" id="680A0175-3DBC-81A6-7EC9-B72A6462CD7C">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-07 04:13:53 UTC</createdTime>
+<comment><![CDATA[Employee ID Number]]></comment>
+<commentInRDBMS><![CDATA[Employee ID Number]]></commentInRDBMS>
+<generatorID>29FEFF42-2BE4-A347-3964-B1ECF2FEEFC6</generatorID>
+<notes><![CDATA[Employee ID Number]]></notes>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10CB9497-3118-63CC-D9F2-7E3973B5C1C3" referredColumn="3FC8E5C6-AC58-17FB-4585-348C27905E28"/>
+</associations>
+</Column>
+<Column name="day_no" id="6AE0D30C-6EE2-63F3-1FEB-38A9A9B9D1E2">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-05 03:44:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Day No.]]></commentInRDBMS>
+<generatorID>AF623569-732A-EDD0-6B6E-38F32F86E1B1</generatorID>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27794283-E7E1-FDC8-4D8D-904691D70756" referredColumn="5CBCF0C9-4C68-5AC5-B09C-FB2E18D39F67"/>
 </associations>
 </Column>
 <Column name="Is_locked" id="3E9AE4C6-6D4B-90A6-42F6-0EC84BAF87F6">
@@ -346,33 +376,16 @@
 <colUsage columnID="0D0DB02A-64F9-FEF1-2333-DC1C38FA3EDD"/>
 <colUsage columnID="722EAB92-91BC-33B6-1C95-81EFB83816F5"/>
 <colUsage columnID="37808201-5761-0E50-47D6-02CE4DB2A984"/>
-<colUsage columnID="6AE0D30C-6EE2-63F3-1FEB-38A9A9B9D1E2"/>
+<colUsage columnID="45FB83A2-EF5D-6A6A-B53B-DCB18D9F47CA"/>
 <colUsage columnID="F2B5126C-FA0C-AD94-CA26-A8264FCEA66B"/>
 <colUsage columnID="1C222354-8BD1-7260-D8A7-290F8923D752"/>
 <colUsage columnID="8BBC0F3A-9424-3ACE-1AA7-C551BE04B7CD"/>
 <colUsage columnID="AE54095E-A89B-FAB8-F157-E304A86206CB"/>
 <colUsage columnID="C109CEB1-F4A2-9DBD-4F86-1F0B788333DA"/>
+<colUsage columnID="680A0175-3DBC-81A6-7EC9-B72A6462CD7C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9EB52CE9-7C71-E074-3117-08AE9EEF678F" name="school_timetable_log_UN2">
-<createdBy>leads</createdBy>
-<createdTime>2026-05-05 03:44:45 UTC</createdTime>
-<generatorID>F6D9E731-7CCB-BBC5-86CD-44667AB87A21</generatorID>
-<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
-<indexState>Unique Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="EC718162-FC19-E2AF-7981-087D0E5A5035"/>
-<colUsage columnID="D5A72636-7267-2052-0A34-15223785ACB5"/>
-<colUsage columnID="8BBC0F3A-9424-3ACE-1AA7-C551BE04B7CD"/>
-<colUsage columnID="37808201-5761-0E50-47D6-02CE4DB2A984"/>
-<colUsage columnID="6AE0D30C-6EE2-63F3-1FEB-38A9A9B9D1E2"/>
-<colUsage columnID="F2B5126C-FA0C-AD94-CA26-A8264FCEA66B"/>
-<colUsage columnID="C109CEB1-F4A2-9DBD-4F86-1F0B788333DA"/>
-<colUsage columnID="AE54095E-A89B-FAB8-F157-E304A86206CB"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="877E1C55-8B64-B57E-23F2-4E300A6D55C8" name="school_timetable_log_UN3">
+<ind_PK_UK id="877E1C55-8B64-B57E-23F2-4E300A6D55C8" name="school_timetable_log_UN2">
 <createdBy>leads</createdBy>
 <createdTime>2026-05-05 03:44:45 UTC</createdTime>
 <generatorID>B1B9EF3D-FECB-2B63-D8DA-FFFFE1142A48</generatorID>
@@ -386,11 +399,27 @@
 <colUsage columnID="0D0DB02A-64F9-FEF1-2333-DC1C38FA3EDD"/>
 <colUsage columnID="722EAB92-91BC-33B6-1C95-81EFB83816F5"/>
 <colUsage columnID="37808201-5761-0E50-47D6-02CE4DB2A984"/>
-<colUsage columnID="6AE0D30C-6EE2-63F3-1FEB-38A9A9B9D1E2"/>
+<colUsage columnID="45FB83A2-EF5D-6A6A-B53B-DCB18D9F47CA"/>
 <colUsage columnID="F2B5126C-FA0C-AD94-CA26-A8264FCEA66B"/>
 <colUsage columnID="1C222354-8BD1-7260-D8A7-290F8923D752"/>
 <colUsage columnID="8BBC0F3A-9424-3ACE-1AA7-C551BE04B7CD"/>
 </indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F3FEFC0-592C-647A-471D-F07E2DD08CFA" name="school_timetable_log_u1_IDX">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-07 09:01:50 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<indexExpression>school_code,
+batch_no,
+timetable_ver_id,
+term_code,
+year_date,
+period_no,
+CASE WHEN subject_code IS NULL THEN id ELSE 1 END,
+employee_id,
+substitute_id</indexExpression>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
 </ind_PK_UK>
 <ind_PK_UK id="EDFBA8C4-F1B9-F285-D31A-FE94718141E2" name="ScTtLog_Batch_FK">
 <createdBy>leads</createdBy>
@@ -522,6 +551,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8BBC0F3A-9424-3ACE-1AA7-C551BE04B7CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A61C79F5-9BD3-49D5-1114-76C091A28AC3" name="ScTtLog_SubTeacher_FK">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-07 04:13:53 UTC</createdTime>
+<generatorID>D68F04D6-75E7-D3DB-35B3-DEEDB8571735</generatorID>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="680A0175-3DBC-81A6-7EC9-B72A6462CD7C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

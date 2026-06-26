@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="mtss_pillar_chg_trg" directorySegmentName="seg_0" id="74DCE15B-C874-7A80-B14F-B46F08788F38">
+<createdBy>leads</createdBy>
+<createdTime>2026-06-04 09:42:00 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	:new.pillar_name := UPPER(:new.pillar_name);
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>60B6B28F-0795-3BCF-6551-22015B6349DD</table>
+</TriggerOraclev10g>

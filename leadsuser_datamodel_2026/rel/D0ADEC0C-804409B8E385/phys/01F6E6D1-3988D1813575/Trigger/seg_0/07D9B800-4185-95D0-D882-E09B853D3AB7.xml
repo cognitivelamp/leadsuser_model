@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="attendance_chg_trg" directorySegmentName="seg_0" id="07D9B800-4185-95D0-D882-E09B853D3AB7">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-09 09:05:44 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+    v_user VARCHAR2(255) := coalesce(
+        sys_context('APEX$SESSION', 'APP_USER'),
+        user
+    );
+BEGIN
+    IF inserting THEN
+        :new.created_by := v_user;
+        :new.created_on := current_timestamp;
+    END IF;
+
+    IF updating THEN
+        :new.updated_by := v_user;
+        :new.changed_on := current_timestamp;
+    END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>5DA34273-E40F-38B1-BB1F-14E4054E5200</table>
+</TriggerOraclev10g>

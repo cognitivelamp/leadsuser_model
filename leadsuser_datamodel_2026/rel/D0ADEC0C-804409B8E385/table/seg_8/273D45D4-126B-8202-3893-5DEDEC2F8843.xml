@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_8" id="273D45D4-126B-8202-3893-5DEDEC2F8843" name="int_category">
+<createdBy>leads</createdBy>
+<createdTime>2026-06-04 10:36:01 UTC</createdTime>
+<generatorID>8BA5A2A2-CE50-F8C5-34D8-80D6690B57F3</generatorID>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="0A6B2C2A-337B-3D98-433E-317E38831530">
+<createdBy>leads</createdBy>
+<createdTime>2026-06-04 10:36:01 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="category_type" id="1FD420E9-3AB0-E570-44E6-050E3BFE3936">
+<createdBy>leads</createdBy>
+<createdTime>2026-06-04 10:36:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Intervention Category Type]]></commentInRDBMS>
+<generatorID>911AA41A-7AFB-55AC-058A-2AA0317241FE</generatorID>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>AFB565EB-530B-C812-D408-DD01B4006660</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="BFCFD0C7-8FB6-9854-0D84-6B4D167E8089">
+<createdBy>leads</createdBy>
+<createdTime>2026-06-04 10:36:01 UTC</createdTime>
+<generatorID>897004F7-B5B1-79DE-23EB-53EA8F4778D2</generatorID>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D8145389-4D0D-CC31-9923-FD4288ACF409</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4AB891F1-97AB-BAAE-8D70-0BC9F80F12F3" name="int_category_PK">
+<createdBy>leads</createdBy>
+<createdTime>2026-06-04 10:36:01 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="0A6B2C2A-337B-3D98-433E-317E38831530"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="110C5FC3-E2AE-43DD-0FF9-243D5069FF3E" name="int_category_UN">
+<createdBy>leads</createdBy>
+<createdTime>2026-06-04 10:36:01 UTC</createdTime>
+<generatorID>B0963439-0182-9F67-D782-EE2403C80CD7</generatorID>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FD420E9-3AB0-E570-44E6-050E3BFE3936"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

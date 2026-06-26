@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="ED9A3790-3C3D-5609-FDA6-AFCE4A797910" name="teacher_master">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 06:58:30 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
@@ -19,7 +19,7 @@
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 07:09:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[Teacher Master ID]]></commentInRDBMS>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
@@ -33,7 +33,7 @@
 <createdTime>2026-04-20 07:05:56 UTC</createdTime>
 <commentInRDBMS><![CDATA[School Code]]></commentInRDBMS>
 <generatorID>4D9FDB87-9C38-78CA-58C9-E849EFADF9FB</generatorID>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
@@ -50,7 +50,7 @@
 <commentInRDBMS><![CDATA[Employee ID Number]]></commentInRDBMS>
 <generatorID>541C767F-B094-A0EC-0354-689CCF1DCD1B</generatorID>
 <notes><![CDATA[Employee ID Number]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
@@ -63,7 +63,7 @@
 <Attribute name="alias" id="54B89889-8C5B-78E0-683C-D3AB1A595272">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-30 04:30:04 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
@@ -72,34 +72,105 @@
 <domain>411A7036-AE28-9018-332B-691EBC096EF9</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="stream_code" id="A297247C-0AC2-9393-3542-249DF3F36D20">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-17 07:33:15 UTC</createdTime>
+<comment><![CDATA[Stream Code]]></comment>
+<commentInRDBMS><![CDATA[Stream Code]]></commentInRDBMS>
+<generatorID>9C3671F4-959C-F128-9597-ED959BC4FD62</generatorID>
+<notes><![CDATA[Stream Code]]></notes>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<referedAttribute>5292D905-E42E-3263-D0ED-C5B9C28CCB04</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>411A7036-AE28-9018-332B-691EBC096EF9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="max_period_day" id="B234B153-7EB5-4B70-F21E-6B3AFDF6E15B">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 06:59:36 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<defaultValue>4</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="max_period_week" id="54D05940-F9D0-60F6-953D-BDE58F320423">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 07:00:00 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>B002B7FD-9D40-C06E-8624-3E7A2074410C</domain>
+<defaultValue>22</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_from" id="B2AC44A9-474D-F1C5-7264-182B9F742D8A">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-09 15:13:18 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>57E4E726-0278-DC93-9196-ABB2B37DFF18</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_upto" id="53090BEC-ABAE-1EB9-3FE9-69B0427EE60D">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-09 15:13:32 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>57E4E726-0278-DC93-9196-ABB2B37DFF18</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="is_prefer_early" id="6D6657FD-8C1B-965F-67FD-2B0CDFFA4485">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-22 11:43:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Early Morning Preference]]></commentInRDBMS>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>0A613783-1FEF-4EB4-FC8C-7F07C1F5C8EC</domain>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="is_admin" id="9557DD3E-20D3-55AA-5CFE-E597DD9F9723">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-14 02:16:13 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>0A613783-1FEF-4EB4-FC8C-7F07C1F5C8EC</domain>
+<defaultValue>N</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="status" id="4A8FE963-0648-88FC-C05E-976CF5A62AA1">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 07:02:34 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
@@ -113,7 +184,7 @@
 <Attribute name="note" id="0180FE66-657C-389F-0200-4E97EA592A38">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 07:03:55 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
@@ -133,7 +204,7 @@
 <comment><![CDATA[User who created the record]]></comment>
 <commentInRDBMS><![CDATA[User who created the record]]></commentInRDBMS>
 <notes><![CDATA[User who created the record]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
@@ -153,7 +224,7 @@
 <comment><![CDATA[Record created - date and time]]></comment>
 <commentInRDBMS><![CDATA[Record created - date and time]]></commentInRDBMS>
 <notes><![CDATA[Record created - date and time]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
@@ -174,7 +245,7 @@
 <comment><![CDATA[User who updated the record]]></comment>
 <commentInRDBMS><![CDATA[User who updated the record]]></commentInRDBMS>
 <notes><![CDATA[User who updated the record]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
@@ -194,7 +265,7 @@
 <comment><![CDATA[Last record changed - date and time]]></comment>
 <commentInRDBMS><![CDATA[Last record changed - date and time]]></commentInRDBMS>
 <notes><![CDATA[Last record changed - date and time]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
@@ -214,10 +285,9 @@
 <identifier id="D4ACA65A-A6CC-A209-899C-7013A967AE9E" name="teacher_master_UN">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 07:07:19 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
-<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <newElementsIDs>541C767F-B094-A0EC-0354-689CCF1DCD1B,4D9FDB87-9C38-78CA-58C9-E849EFADF9FB,675A147C-1B92-AEC6-2B40-FC18555B3154</newElementsIDs>
 <usedAttributes>
@@ -228,10 +298,9 @@
 <identifier id="FFF29970-5C40-CA8A-307C-B74690019430" name="teacher_master PK">
 <createdBy>leads</createdBy>
 <createdTime>2026-04-20 07:09:41 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <engineerTo>
-<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="false"/>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

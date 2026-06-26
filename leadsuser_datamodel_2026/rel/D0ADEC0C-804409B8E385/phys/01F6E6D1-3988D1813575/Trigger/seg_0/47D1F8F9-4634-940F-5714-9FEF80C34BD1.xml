@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="ref_remark_type_code_trg" directorySegmentName="seg_0" id="47D1F8F9-4634-940F-5714-9FEF80C34BD1">
+<createdBy>leads</createdBy>
+<createdTime>2026-06-24 07:28:51 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+    -- Pulls the next safe numeric value, pads it with zeros up to 4 characters
+    :NEW.code := LPAD(ref_remark_type_seq.NEXTVAL, 4, '0');
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<condition><![CDATA[(NEW.code IS NULL)]]></condition>
+<table>F6F2BBA7-B430-7403-E3B7-E285BDD93A3D</table>
+</TriggerOraclev10g>

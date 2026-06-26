@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="school_certificate_chg_trg" directorySegmentName="seg_0" id="1E1619B1-BBDE-09C6-3D44-51336CF0D848">
+<createdBy>leads</createdBy>
+<createdTime>2026-06-23 12:25:27 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+    IF
+        inserting
+    THEN
+        :new.created_by := nvl(sys_context('APEX$SESSION', 'APP_USER'), user);
+        :new.created_on := current_timestamp;
+        :new.changed_on := current_timestamp;
+    END IF;
+
+    IF
+        updating
+    THEN
+    	   :new.updated_by := nvl(sys_context('APEX$SESSION', 'APP_USER'), user);
+        :new.changed_on := current_timestamp;
+    END IF;
+
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>A23F5D62-9568-4872-DC1F-8F2BE1E14B56</table>
+</TriggerOraclev10g>

@@ -5,7 +5,7 @@
 <comment><![CDATA[attendance log table]]></comment>
 <commentInRDBMS><![CDATA[attendance log table]]></commentInRDBMS>
 <notes><![CDATA[attendance log table]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>1004CD6F-50C9-0301-A9B2-EF0185439CF0</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
@@ -32,13 +32,15 @@
 <createdTime>2026-03-12 07:48:52 UTC</createdTime>
 <comment><![CDATA[resource no.]]></comment>
 <commentInRDBMS><![CDATA[resource no.]]></commentInRDBMS>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>1E4C3040-C79A-A7CC-A06A-1C2C1A4CF30F</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6710EB0C-147F-2A76-3E65-7CC212963D46</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
 <property name="engineerTo" value=""/>
@@ -48,7 +50,7 @@
 <createdBy>leads</createdBy>
 <createdTime>2026-03-12 07:48:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[punch date]]></commentInRDBMS>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>F607A952-3988-CD8E-1915-453376A962B5</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
@@ -57,6 +59,7 @@
 <use>0</use>
 <logicalDatatype>LOGDT015</logicalDatatype>
 <domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>systimestamp</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
 <property name="engineerTo" value=""/>
@@ -69,7 +72,7 @@
 <commentInRDBMS><![CDATA[Device Asset ID]]></commentInRDBMS>
 <generatorID>F3EA8745-AB8E-DEA7-CE6A-CD63323B5F8D</generatorID>
 <notes><![CDATA[Device Asset ID]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>3C5CCF52-EDE7-F2D6-4066-8796A29B13CB</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
@@ -87,14 +90,16 @@
 <commentInRDBMS><![CDATA[Entry Type: MANUAL/MACHINE/FACIAL/CARD/FINGERPRINT]]></commentInRDBMS>
 <generatorID>366703C8-2E04-3EAD-0D2D-AB17016A4823</generatorID>
 <notes><![CDATA[Entry Type: MANUAL/MACHINE]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>6A21ADF8-9F89-DFAD-8F78-DDB00C80E52E</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <referedAttribute>10481BB8-C30D-194C-9295-B5B0238E25DA</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC6758B1-C791-00D1-8E53-CD1085D0AD3B</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="direction_type" id="473F347A-4EAA-F3F8-6328-4740BB04E7DA">
@@ -104,14 +109,35 @@
 <commentInRDBMS><![CDATA[Direction Type: IN/OUT/etc]]></commentInRDBMS>
 <generatorID>5F867E11-60FA-9FE3-7189-24978670D7AA</generatorID>
 <notes><![CDATA[Direction Type: IN/OUT/etc]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>144CFB30-6F8C-B623-D12F-A9149483D1AC</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <referedAttribute>7E9FD694-F981-620C-2725-2518E61A8540</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC6758B1-C791-00D1-8E53-CD1085D0AD3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_name" id="F6666A67-7D7F-64A6-72DB-946284C7250F">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-09 08:53:44 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CC6758B1-C791-00D1-8E53-CD1085D0AD3B</domain>
+<listOfValues>
+<valueDef value="APPROVED" description=""/>
+<valueDef value="PENDING" description=""/>
+<valueDef value="REJECTED" description=""/>
+</listOfValues>
+<defaultValue>APPROVED</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="recorded_on" id="58215801-F32E-F5A4-4ADF-C626EF12166C">
@@ -120,7 +146,7 @@
 <comment><![CDATA[Recorded On is the date and timestamp of entries in the machine.]]></comment>
 <commentInRDBMS><![CDATA[Recorded On is the date and timestamp of entries in the machine.]]></commentInRDBMS>
 <notes><![CDATA[Recorded On is the date and timestamp of entries in the machine.]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>4038FD27-B987-1738-EAE3-7038AA8DDBE1</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
@@ -129,71 +155,82 @@
 <use>0</use>
 <logicalDatatype>LOGDT015</logicalDatatype>
 <domain>4A67150B-1396-BA5B-65B0-74D0D4FA6D8A</domain>
+<defaultValue>systimestamp</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="c1" id="F318D5FE-9073-DB02-86F4-4F859318E1DD">
 <createdBy>leads</createdBy>
 <createdTime>2026-03-12 07:48:52 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>D01EDFF5-F480-CD76-CBC8-1CB96F989BF8</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>AFB565EB-530B-C812-D408-DD01B4006660</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="c2" id="DAD6D683-2A54-660E-7A26-C08BBAAB6E26">
 <createdBy>leads</createdBy>
 <createdTime>2026-03-12 07:48:52 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>3C42BA37-25FE-F85D-A7DB-15CAEB89FED9</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C53373E2-F314-0647-905E-3D61C9965182</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="c3" id="3DD4D2C8-D651-DBFD-7190-D11A08C52269">
 <createdBy>leads</createdBy>
 <createdTime>2026-03-12 07:48:52 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>AA0FCEE2-F215-9511-15F3-92395B801C41</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>AFB565EB-530B-C812-D408-DD01B4006660</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="c4" id="2D2ECB95-A6E6-D2FF-E158-00D284F829E3">
 <createdBy>leads</createdBy>
 <createdTime>2026-03-12 07:48:52 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>3231A6EB-9DC9-C40F-8024-2B99DE3686D5</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C53373E2-F314-0647-905E-3D61C9965182</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="c5" id="7B735FAB-4B10-8B9B-D7FB-1B1F6D2640CE">
 <createdBy>leads</createdBy>
 <createdTime>2026-03-12 07:48:52 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>7B212253-8AC6-6D5E-462B-9596C207C2AF</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>90B036C7-C776-9355-8F80-DD6128DA0B91</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="c6" id="FCC166C6-104D-EEE3-8D6A-480B6F57FC40">
@@ -203,7 +240,7 @@
 <commentInRDBMS><![CDATA[Attendance Meta ID]]></commentInRDBMS>
 <generatorID>4B9F2B71-5473-D505-9D1F-B3243774F134</generatorID>
 <notes><![CDATA[Attendance Meta ID]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>E80D3278-6972-6C0B-6CAB-34EFDFD37B0D</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
@@ -218,14 +255,16 @@
 <Attribute name="notes" id="62444430-8E19-F483-D5EC-5E70EB034C5F">
 <createdBy>leads</createdBy>
 <createdTime>2026-03-12 07:48:52 UTC</createdTime>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>156341B9-43A3-69E5-D418-1B38114C23CF</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F60E1FFE-5DA6-531C-BDFF-CB0CBCB7F7CD</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <propertyMap>
 <property name="engineerTo" value=""/>
@@ -237,7 +276,7 @@
 <comment><![CDATA[User who created the record]]></comment>
 <commentInRDBMS><![CDATA[User who created the record]]></commentInRDBMS>
 <notes><![CDATA[User who created the record]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>C6DC7F0E-D7C5-CFD6-3D7C-2C59C443C4FA</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
@@ -258,7 +297,7 @@
 <comment><![CDATA[Record created - date and time]]></comment>
 <commentInRDBMS><![CDATA[Record created - date and time]]></commentInRDBMS>
 <notes><![CDATA[Record created - date and time]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>C9823A34-75A4-F32D-7206-0506CAD30B61</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
@@ -280,7 +319,7 @@
 <comment><![CDATA[User who updated the record]]></comment>
 <commentInRDBMS><![CDATA[User who updated the record]]></commentInRDBMS>
 <notes><![CDATA[User who updated the record]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>68480BD2-0CB7-1946-D044-7DA0A0D1176C</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
@@ -301,7 +340,7 @@
 <comment><![CDATA[Last record changed - date and time]]></comment>
 <commentInRDBMS><![CDATA[Last record changed - date and time]]></commentInRDBMS>
 <notes><![CDATA[Last record changed - date and time]]></notes>
-<ownerDesignName>leadsuser</ownerDesignName>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
 <importedID>7E00B005-43FB-E8E6-4DC1-68CFC79D9D31</importedID>
 <engineerTo>
 <item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
@@ -318,4 +357,20 @@
 </propertyMap>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A313DFAF-A1E2-3802-313E-670CB48BC4A3" name="attendance_per_punch_stts_idx">
+<createdBy>leads</createdBy>
+<createdTime>2026-05-09 08:52:24 UTC</createdTime>
+<ownerDesignName>leadsuser_datamodel_2026</ownerDesignName>
+<engineerTo>
+<item key="D0ADEC0C-0B6F-9EE3-0047-804409B8E385" value="true"/>
+</engineerTo>
+<newElementsIDs>C7D3D30A-1FBF-1819-B814-2641995D9A32,92EBF8A2-B962-FDA4-0B77-9FA7735CC2DE,F6666A67-7D7F-64A6-72DB-946284C7250F</newElementsIDs>
+<usedAttributes>
+<attributeRef>C7D3D30A-1FBF-1819-B814-2641995D9A32</attributeRef>
+<attributeRef>92EBF8A2-B962-FDA4-0B77-9FA7735CC2DE</attributeRef>
+<attributeRef>F6666A67-7D7F-64A6-72DB-946284C7250F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
